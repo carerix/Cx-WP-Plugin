@@ -6,13 +6,13 @@
 
 ****Application Token****
     
-    *   Carerix WordPress plugin - Technical information
-    *   Requirements
-    *   Installation
-        *   Initial Steps
-        *   Installing the Carerix Plugin
-        *   Installing Email templates            
-        *   Change ApplyURL to website            
+    * Carerix WordPress plugin - Technical information
+    * Requirements
+    * Installation
+        * Initial Steps
+        * Installing the Carerix Plugin
+        * Installing Email templates            
+        * Change ApplyURL to website            
     *   Updating the Plugin        
     *   Uninstall the Plugin        
     *   Features        
