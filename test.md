@@ -1,11 +1,9 @@
-*WordPress Plugin*
+WordPress Plugin
 ----------------
 
-##Table of Contents
+Table of Contents
 -----------------
-
-****Application Token****
-    
+Application Token
     * Carerix WordPress plugin - Technical information
     * Requirements
     * Installation
