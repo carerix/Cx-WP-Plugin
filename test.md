@@ -7,8 +7,8 @@ Dit document bevat een backup van 2 Wiki pagina’s :
 
 voorheen te vinden op: https://development.wiki.carerix.com/doku.php?id=cxwordpress2
 
-Go to [[cxwordpress2#release_notes|Release Notes]] and download the latest version.\\
-Also see Demo & Tips at [[https://demo.carerix.com/plugin/|https://demo.carerix.com/plugin/]]
+Go to cxwordpress2#release_notes|Release Notes]] and download the latest version.
+Also see Demo & Tips at [plugin.demo.carerix.com]([url](https://demo.carerix.com/plugin/))
 
 <!--
 > [!NOTE]
@@ -711,34 +711,17 @@ To create an open application form, create a page and insert the **cx_open_appli
 
 
 #### Release Notes ####
-<WRAP center tip>
-The new plugin has much more features, to benefit from all these features it could take more time to configure the website as a whole. Be aware that you can use other plugins as well, as WordPress is a modular system. Also see [[http://demo.carerix.com/plugin/en|http://demo.carerix.com/plugin/]] for a demo and recommended plugins & widgets.
-To download the latest version of the plugin? Click here: [[https://plugin.carerix.com/aanschaffen-van-de-wordpress-plugin/]]
-\\
-\\
-Notes:
-  * The Jobs default page is purely to be used as reference. Make sure to use blog listing like www.website.com/category/vacatures for an overview of vacancies.
-  * Are you using Jobalerts and Newsletters? Be aware that the URLs of publications.\\
-  * [[cxwordpress2-faqs#gewijzigde_urls|Read here how to set the link in Jobalerts and Newsletters]] to publications with the new plugin.\\
-  * The plugin uses WordPress posts. If you want to use WordPress posts for a different purpose be aware to use a different category and/or that these might interfere with your Vacancy posts.
-</WRAP>
-<WRAP center tip>
-**If you have an issue, please follow these steps: [[cxwordpress2#issue_tracking|Issue tracking]]**\\
-\\
-We don't support any Beta versions, so we advise to update to the latest stable version. We highly recommend to install the new release on a testlocation, we cannot and will not provide support for the plugin in a live website if it was not first tested in a test location.
-</WRAP>
-## Upcoming release ##
-  * The features of the next release are under review and will be listed here
+
 ## Stable version ##
 
-<WRAP center download>
-### Version 3.0.2 ###
-30 MARCH 2023 | [[https://tools.carerix.com/wpupdate/packages/CxWordpress_3.0.2.zip|CxWordPress 2 (v3.0.2)]]
-
-  * WP-147 **Added** Filter hook `carerix_search_action`
-  * WP-149 **Fix** Applytags fix (cx_applysource cx_applytags)
-  * WP-151 **Fix** Submit label missing on open application form for Dutch language
-</WRAP>
+> [!NOTE]
+> ### Version 3.0.2 ###
+> 30 MARCH 2023 | [[https://tools.carerix.com/wpupdate/packages/CxWordpress_3.0.2.zip|CxWordPress 2 (v3.0.2)]]
+> 
+  > * WP-147 **Added** Filter hook `carerix_search_action`
+  > * WP-149 **Fix** Applytags fix (cx_applysource cx_applytags)
+  > * WP-151 **Fix** Submit label missing on open application form for Dutch language
+> 
 
 ### Version 3.0.1 ###
 20 MARCH 2023 | [[https://tools.carerix.com/wpupdate/packages/CxWordpress_3.0.1.zip|CxWordPress 2 (v3.0.1)]]
