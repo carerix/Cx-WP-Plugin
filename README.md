@@ -1,11 +1,10 @@
 Carerix WordPress Plugin
 ----------------
 
-See Demo & Tips at <a href="https://plugin.carerix.com" target="new" >plugin.carerix.com</a>
+See Demo & Tips at <a href="https://plugin.carerix.com" target="_blank" >plugin.carerix.com</a>
 
 
 ## 1. Introduction
-
 
 
 * Carerix Wordpress Plugin v3.1.2.2
@@ -14,17 +13,13 @@ See Demo & Tips at <a href="https://plugin.carerix.com" target="new" >plugin.car
     This means more flexibility and a big performance boost. The plugin therefore works ideally for responsive websites, and also ensures search engine optimized vacancies on your website.
 
 
-
 ### Features
-
-
 
 * Show Carerix Vacancies as WordPress Posts
 * Job Alert
 * Create your own (custom) layout for Vacancy posts
 * Create your own (custom) Application Form
 * Show multiple overviews of Vacancy posts from different sources
-  
 
 * SEO Optimized
 * Google for Jobs
@@ -35,8 +30,6 @@ See Demo & Tips at <a href="https://plugin.carerix.com" target="new" >plugin.car
 ## 2. Installation
 
 **Mandatory**:
-
-
 
 * Linux OS
 * Apache 2.x (NGINX is not supported)
