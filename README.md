@@ -340,12 +340,11 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 3. Deleting a source will not delete the generated posts from wordpress.
 4. The following fields can be set:
 
-    **Source name \
-**Helps you to identify the configured source.
+    **Source name**
+   Helps you to identify the configured source.
 
-
-    **Publications Details Options \
-**Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source.
+    **Publications Details Options**
+   Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source.
 
 
 **Apply Form**: Select the Application Form to be used for this specific Source
