@@ -353,8 +353,6 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 
 ## Configuring a Job source
 
-
-
 1. Add a new Jobs source click via Add New button.
 2. When you Add or edit a Source you need to synchronize to see changes
 3. Deleting a source will not delete the generated posts from wordpress.
@@ -368,16 +366,14 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 **Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source.
 
 
-        **Apply Form**: Select the Application Form to be used for this specific Source \
+**Apply Form** : Select the Application Form to be used for this specific Source
 **Title - Location**: Select if you want to show the work location after the Title or not.
 
+**Set Alternative Feed Source Parameters**
+You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application.
 
-    **Set Alternative Feed Source Parameters \
-**You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application.
-
-
-    **Publication Details Header and Publication Details Footer \
-**If you want to display details in the footer or the header, use the following shortcodes:
+**Publication Details Header and Publication Details Footer**
+If you want to display details in the footer or the header, use the following shortcodes:
 
 
 <table>
