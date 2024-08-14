@@ -719,22 +719,22 @@ The following table items are used:
 * For business-lines the table 'Vakgebied' (business-line)
 * For function groups the table 'functie0'
 
-### Shorten the country selection
+#### Shorten the country selection
 
 If your working area is a single country (or a few) you can shorten the dropdown box of countries.
 
 For each country you want to disable in the job alert form, edit the item, and uncheck the box “not for web”. \
 Note: if you only enable one country, the country selection is disabled on the job alert form.
 
-### Shorten the business-line selection
+#### Shorten the business-line selection
 
 In Carerix every function group can be connected to a business-line. If one or more function groups are connected to a business-line the business-line dropdown box on the jobalert form will appear. So if you don't work with multiple business-lines, you need to configure the business-lines as follows:
 
 1. Edit each business-line item in the table “vakgebied” (business-line) and enable the checkbox “not for web”
-2. Locate the business-line “Standaard” (default) and disable the checkbox “not for web”. This leaves you with one mandatory business-line which will NOT appear for candidates on the job alert form
+2. Locate the business-line “Standard” (default) and disable the checkbox “not for web”. This leaves you with one mandatory business-line which will NOT appear for candidates on the job alert form
 3. Finally, in Wordpress, go to Dashboard → Carerix → Application Forms → Tab: Settings, and click on “Clear DataNodes cache”
 
-### Configure/shorten function group selection
+#### Configure/shorten function group selection
 
 1. Edit each function group item (table: functie0) you want to include in the group selection for the candidates. Disable 'not for web' and enable each desired business-line you want to connect the function group to. You need at least connect it to one business-line
 2. Finally, in Wordpress, go to Dashboard → Carerix → Application Forms → Tab: Settings, and click on “Clear DataNodes cache”
