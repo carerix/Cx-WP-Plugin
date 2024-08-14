@@ -1,7 +1,7 @@
 Carerix WordPress Plugin
 ----------------
 
-See Demo & Tips at [ https://plugin.carerix.com/](https://plugin.carerix.com/){:target="_blank"}
+See Demo & Tips at <a href="https://plugin.carerix.com" target="_blank">plugin.carerix.com</a>
 
 
 ## 1. Introduction
