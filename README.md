@@ -81,7 +81,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 * Remove the plugin
     * Go to Plugins section
     * Find the plugin,
-    * Click on **Deactivate**, if the plugin is active
+    * Click on **Deactivate** (if the plugin is active)
     * Click on **Delete**
 
 **Installation Steps**
@@ -103,10 +103,10 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 ### Settings Carerix
 
 * **Change ApplyURL**
-* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings → Attributes and fields → Apply**url)
+* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings → Attributes and fields → Apply_url)
 
     ```
-    http://www.domainname.com/?pub**id=<cx:write value="$publication.publicationID"/>
+    https://www.domainname.com/?pub**id=<cx:write value="$publication.publicationID"/>
     ```
 
     This will link to the according Vacancy publication on the website
@@ -117,8 +117,8 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 * Create links to jobs in your emails, alerts and newsletters?
 * Add to the link in your template: pub**id = xxx, where xxx is the Publication ID
 * For example
-* Create link to a template with the website URL:[ website.com/pubid/xxx](http://website.com/pubid/xxx), where xxx is the pubID
-* For example[ http://www.website.com/pubid/123](http://www.website.com/pubid/123)
+* Create link to a template with the website URL:[website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID
+* For example [https://www.website.com/pubid/123](https://www.website.com/pubid/123)
 
 
 ## 3. Usage
@@ -144,7 +144,7 @@ like this:
 
 
 ```
-http://example.com/category/publications/feed
+https://example.com/category/publications/feed
 ```
 
 
@@ -200,8 +200,6 @@ Additional Tips:
 * Include clear code snippets for developers (in a separate section if needed).
 * Maintain a consistent tone and style throughout the documentation.
 
- \
-
 
 
 # Technical Information WordPress plugin
@@ -244,11 +242,11 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 
 ## Change ApplyURL to website
 
-Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (Settings →  Attributes and fields →  Apply**url)
+Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (Settings →  Attributes and fields →  Apply_url)
 
 
 ```
-http://www.domainname.com/?pub**id=<cx:write value="$publication.publicationID"/>
+https://www.domainname.com/?pub**id=<cx:write value="$publication.publicationID"/>
 ```
 
 
