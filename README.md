@@ -212,15 +212,12 @@ Additional Tips:
 
 # Technical Information WordPress plugin
 
-~~BACKUP with Markup: \
-[https://docs.google.com/document/d/1wwBEEv1BphBextT-zxSMWAmhJ3Y1nBkNDtcof7aZzdU/edit](https://docs.google.com/document/d/1wwBEEv1BphBextT-zxSMWAmhJ3Y1nBkNDtcof7aZzdU/edit)~~ \
  \
 See Demo & Tips at[ https://plugin.carerix.com/ \
  \
-](https://plugin.carerix.com/)**Application Token**
-
-
-## The plugin needs an Application Token to authorize the plugin with the Carerix Application (yourapplicationname.carerix.net). The Admin of the Carerix application can use a mailtemplate "Application Token' or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
+](https://plugin.carerix.com/)
+**Application Token**
+The plugin needs an Application Token to authorize the plugin with the Carerix Application (yourapplicationname.carerix.net). The Admin of the Carerix application can use a mailtemplate "Application Token' or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
 Carerix will not be able to provide you the Application token directly, as this is the authorization procedure.
 
 
