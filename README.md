@@ -333,22 +333,22 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 3. Deleting a source will not delete the generated posts from wordpress.
 4. The following fields can be set:
 
-**Source name** \
+* **Source name** \
 Helps you to identify the configured source.
 
-**Publications Details Options** \
+* **Publications Details Options** \
 Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source.
 
-**Apply Form** \
+* **Apply Form** \
 Select the Application Form to be used for this specific Source
 
-**Title - Location** \
+* **Title - Location** \
 Select if you want to show the work location after the Title or not.
 
-**Set Alternative Feed Source Parameters** \
+* **Set Alternative Feed Source Parameters** \
 You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application.
 
-**Publication Details Header and Publication Details Footer** \
+* **Publication Details Header and Publication Details Footer** \
 If you want to display details in the footer or the header, use the following shortcodes:
 
 
@@ -410,12 +410,12 @@ If you want to display details in the footer or the header, use the following sh
   </tr>
 </table>
 
-**Publication Excerpt**
+* **Publication Excerpt**
 
 Here you can use an alternative/better teaser (summary text) which will be used as a summary, specifically in vacancy overview/listing pages. This excerpt will also be used as intro/description text as preview text on Social Media etc.
 
 
-**Publication Details Body**
+* **Publication Details Body**
 
 You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
 
