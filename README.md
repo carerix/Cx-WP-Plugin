@@ -83,12 +83,12 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 **Installation Steps**
 
 * Make sure the hosting environment meets the technical requirements
-* Go to Plugins → Add New → Upload
+* Go to Plugins → Add New → **Upload**
     * Locate the archive you have just saved
-    * Click Install
-* When the upload is completed, click on the “Activate Plugin” link
-* Go to the Settings → Permalinks panel and choose any of the options listed.
-* Do NOT put your site url in the permalinks slot. You must use one of the structure tags, or a combination of tags only.
+    * Click **Install**
+* When the upload is completed, click on the **Activate Plugin** link
+* Go to the **Settings** → **Permalinks** panel and choose any of the options listed.
+* Do NOT put your site url in the permalinks field. You must use one of the structure tags, or a combination of tags only.
     * Make sure you don't cache the Vacancy Posts with caching plugins like W3 total cache, Comet cache, Rocket cache.
 * Check your Administration Panels or WordPress blog to see if the Plugin is working.
 * Follow the instructions in the Settings section to setup the plugin.
