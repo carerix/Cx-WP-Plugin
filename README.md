@@ -99,7 +99,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 * Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings → Attributes and fields → Apply_url)
 
     ```
-    https://www.domainname.com/?pub**id=<cx:write value="$publication.publicationID"/>
+    https://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
     ```
 
     This will link to the according Vacancy publication on the website
@@ -108,7 +108,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 
 ### Modified URLs
 * Create links to jobs in your emails, alerts and newsletters?
-* Add to the link in your template: pub**id = xxx, where xxx is the Publication ID
+* Add to the link in your template: pub_id = xxx, where xxx is the Publication ID
 * For example
 * Create link to a template with the website URL:[website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID
 * For example [https://www.website.com/pubid/123](https://www.website.com/pubid/123)
@@ -197,10 +197,8 @@ Additional Tips:
 
 # Technical Information WordPress plugin
 
- \
-See Demo & Tips at[ https://plugin.carerix.com/ \
- \
-](https://plugin.carerix.com/)
+See Demo & Tips at[ https://plugin.carerix.com/](https://plugin.carerix.com/)
+
 **Application Token**
 The plugin needs an Application Token to authorize the plugin with the Carerix Application (yourapplicationname.carerix.net). The Admin of the Carerix application can use a mailtemplate "Application Token' or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
 Carerix will not be able to provide you the Application token directly, as this is the authorization procedure.
@@ -265,7 +263,7 @@ If you check the Allow the plugin to report its location, the plugin will period
 1. Automatically every 10 minutes
 2. Manually hit the Button: **Synchronize new/changed items from Carerix**
 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
-4. Go to the external link [https://website.com/?carerix**sync](https://website.com/?carerix**sync) that is available without logging in. After syncing you will see a log file of that last sync.
+4. Go to the external link [https://website.com/?carerix_sync](https://website.com/?carerix_sync) that is available without logging in. After syncing you will see a log file of that last sync.
 
  \
 The data that exists in WordPress is periodically updated (every 10 minutes) to reflect the actual data in the system. You can use the Synchronize Now button to manually initiate the synchronize mechanism, if you want to see the changes immediately.
