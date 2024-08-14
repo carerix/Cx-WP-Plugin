@@ -572,5 +572,3 @@ Define your own values for the taxonomies creating for each languge a different 
 
 ## Shortcodes
 
-… in de plugin aanbieden?
-This is supposably a readme file!
