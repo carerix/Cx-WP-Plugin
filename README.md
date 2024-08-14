@@ -422,17 +422,14 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 
 
 ## Special jobs
-One language website, multiple languages used for publication texts
-
-You have a website entirely in Dutch but you want to display one or more jobs in a different language? By default, your publications will receive all header sections in Dutch. take the following steps in order to have the labels in the correct language.
+Website in one language but do you want multiple languages used for publication texts?
+If you have a website entirely in Dutch but you want to display one or more jobs in a different language? By default, your publications will receive all header sections in Dutch. take the following steps in order to have the labels in the correct language.
 
 **In Carerix:**
 1. If an extra medium for language is not already active: Create a medium with the desired code (i.e. 'web-en') for use of publications in the different language of the website.
 2. Create publications in this medium in the extra language that you need to publish
 
 **In the WordPress plugin** (under Sources)
-
-
 
 1. Create new source to generate your jobs page. **Eg. Page name: Mixed jobs**
 2. In the Set Feed Source Parameters section, after the default feed, in the input text insert **Eg. for English:** medium=web|web-en
