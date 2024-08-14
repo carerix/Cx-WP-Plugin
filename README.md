@@ -186,10 +186,7 @@ The resulting match will be created with previous tracking values.
 
 
 
-* Address common questions users might have about the plugin's functionality or troubleshooting. \
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "TO DO LATER: FAQs"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+* Address common questions users might have about the plugin's functionality or troubleshooting.
 
 [TO DO LATER: FAQs](#heading=h.96rfs9gsyc8s)
 
@@ -314,11 +311,7 @@ The data that exists in WordPress is periodically updated (every 10 minutes) to 
  \
 `[cx_open_application openFormID="2"] \
  \
-`also see 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Open Application"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Open Application](#heading=h.tglj98aziw6l) for more parameters
+`also see [Open Application](#heading=h.tglj98aziw6l) for more parameters
 
 
 ## Specify the form for your source
