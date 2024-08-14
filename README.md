@@ -510,7 +510,7 @@ Configuring custom conversion/tracking code
 
 ## Taxonomies
 
-The plugin is generating Taxonomies for Jobs posts. The current taxonomies and the corresponding Carerix tables are
+The plugin is generating Taxonomies for Jobs posts:
 
 **Jobs**
 
