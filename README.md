@@ -53,7 +53,8 @@ See Demo & Tips at[ https://plugin.carerix.com/](https://plugin.carerix.com/)
 * 256 MB (for regular sites)
 * 512 MB or higher (for sites with heavyweight themes/ many plugins)
 
-_May 2023 _The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up to 6.2
+_May 2023_
+The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up to 6.2
 
 
 ## 
