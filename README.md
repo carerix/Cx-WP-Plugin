@@ -540,3 +540,117 @@ Define your own values for the taxonomies creating for each languge a different 
 
 ## Shortcodes
 
+## Job Alert Subscription
+You can create a standalone Job Alert Subscription page, using the the [cx_job_alert_subscription] shortcode.
+Job alerts
+## Job Alert Subscription
+You can create a standalone Job Alert Subscription page, using the the [cx_job_alert_subscription] shortcode.
+
+In WordPress you can use this shortcode to show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
+
+See the example in
+
+The following fields will be displayed in the form:
+
+
+
+* Email address
+* First name
+* Last name (and prefix)
+* Gender
+* Country selection preference (only if multiple countries are published in Carerix)
+* Three “sub region” selector preferences like provinces, counties and departments (only if these are published in Carerix)
+* Two function group preferences with an optional parent business-line selector (the business-line selector will only appear if multiple business-lines are published in Carerix)
+* Agreement to terms checkbox (also enforces the storage term of the personal information to comply to GDPR)
+* Anti bot abuse system (by captcha)
+
+The process for the candidate is as follows:
+
+
+
+1. Candidate selects the criteria to receive job opportunities for and submits the form
+2. Candidate receives an opt-in activation mail and clicks on the activation link
+3. Candidate starts receiving mail with (new) vacancies on a daily basis that match the selected criteria
+4. To cancel, the candidate can use the unsubscribe link in the job alert mails
+
+<h4>Parameters</h4>
+
+
+
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Is Mandatory</strong>
+   </td>
+   <td><strong>Possible values</strong>
+   </td>
+   <td><strong>Details</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>frequency (supported since v3.0.0)
+   </td>
+   <td>NO
+   </td>
+   <td>daily, bidaily, tridaily, twiceweekly, weekly, biweekly or monthly (defaults to daily)
+   </td>
+   <td>sets the default mailing frequency for the subscription
+   </td>
+  </tr>
+  <tr>
+   <td>confirmation_message
+   </td>
+   <td>NO
+   </td>
+   <td>text/html string
+   </td>
+   <td>the actual message that appears after a successful user submission
+   </td>
+  </tr>
+  <tr>
+   <td>confirmation_url
+   </td>
+   <td>NO
+   </td>
+   <td>relative or full URL
+   </td>
+   <td>redirects the users' browser to the provided URL after a successful submission
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Usage example</strong>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Example
+   </td>
+   <td colspan="3" >Result
+   </td>
+  </tr>
+  <tr>
+   <td>[cx_job_alert_subscription confirmation_url=“/jobalert_thank_you/”]
+   </td>
+   <td colspan="3" >It will display a form for the user to choose on what kind of publications to subscribe. After a successful submission the browser redirects to the URL /jobalert_thank_you/
+   </td>
+  </tr>
+</table>
+
+
+
