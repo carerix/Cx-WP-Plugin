@@ -128,28 +128,16 @@ _May 2023 _The (latest) Carerix Wordpress Plugin has been tested for Wordpress v
 
 ## 3. Usage
 
-
-
 * Getting Started: A basic guide to using the plugin's core functionalities.
 * Configuration Options: Explain any settings or configuration options available for the plugin.
 * Shortcodes or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
 
-Verplaatsen van 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Technical Information WordPress plugin"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Technical Information WordPress plugin](#heading=h.uthhpn7m7umu)
-
-
 ## 4. Advanced Features (Optional)
-
-
 
 * For developers or experienced users, this section can cover:
     * Hooks and filters used by the plugin.
     * Custom functions available.
     * Integration with other plugins or WordPress APIs.
-
 
 ## Create RSS feeds per category
 
