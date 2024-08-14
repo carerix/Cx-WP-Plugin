@@ -561,7 +561,7 @@ You can also show jobs from different languages ​​(different mediums) withou
 _____________
 
 ## Job Alert Subscription
-You can create a standalone Job Alert Subscription page, using the the [cx_job_alert_subscription] shortcode.
+You can create a standalone Job Alert Subscription page, using the the `[cx_job_alert_subscription]` shortcode.
 
 In WordPress you can use this shortcode to show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
