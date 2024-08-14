@@ -407,10 +407,12 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 </table>
 
 **Publication Excerpt**
+
 Here you can use an alternative/better teaser (summary text) which will be used as a summary, specifically in vacancy overview/listing pages. This excerpt will also be used as intro/description text as preview text on Social Media etc.
 
 
 **Publication Details Body**
+
 You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
 
 
