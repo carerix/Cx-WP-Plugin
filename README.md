@@ -438,26 +438,21 @@ Under the Sources section you can create one or more Jobs sources. You can use t
   </tr>
 </table>
 
+**Publication Excerpt**
+Here you can use an alternative/better teaser (summary text) which will be used as a summary, specifically in vacancy overview/listing pages. This excerpt will also be used as intro/description text as preview text on Social Media etc.
 
 
-    **Publication Excerpt \
-**Here you can use an alternative/better teaser (summary text) which will be used as a summary, specifically in vacancy overview/listing pages. This excerpt will also be used as intro/description text as preview text on Social Media etc.
-
-
-    **Publication Details Body \
-**You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source. \
+**Publication Details Body**
+You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source. \
 
 
 
-## Special jobs \
+## Special jobs
 One language website, multiple languages used for publication texts
 
 You have a website entirely in Dutch but you want to display one or more jobs in a different language? By default, your publications will receive all header sections in Dutch. take the following steps in order to have the labels in the correct language.
 
 **In Carerix:**
-
-
-
 1. If an extra medium for language is not already active: Create a medium with the desired code (i.e. 'web-en') for use of publications in the different language of the website.
 2. Create publications in this medium in the extra language that you need to publish
 
