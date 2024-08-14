@@ -197,7 +197,6 @@ The resulting match will be created with previous tracking values.
 
 
 * Provide information on where users can get help, such as a support forum, email address, or ticketing system.
-
  \
 Additional Tips:
 
@@ -307,10 +306,10 @@ The data that exists in WordPress is periodically updated (every 10 minutes) to 
 4. You can reorder fields with drag and drop and you can drag & drop whole sections (on the right side)
 5. Copy paste the shortcode of the form to the page where you want to use it as an 'Open Application form', for example: \
  \
-`[cx_open_application openFormID="2"]
+`[cx_open_application openFormID="2"]`
 \
 \
-`also see [Open Application](#heading=h.tglj98aziw6l) for more parameters
+also see [Open Application](#heading=h.tglj98aziw6l) for more parameters
 
 
 ## Specify the form for your source
