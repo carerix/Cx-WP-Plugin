@@ -108,8 +108,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 
 
 ### Modified URLs
-* Create links to jobs in your emails, alerts and newsletters.
-* Use cx-script code ```<cx:write value="$publication.publicationID"/>```in a template
+* Use above cx-script code ```<cx:write value="$publication.publicationID"/>```in your Carerix email templates to Create links to jobs in your emails, alerts and newsletters?
 * To generate a link with the correct vacancy page URL: [https://website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID \
 For example [https://www.website.com/pubid/123](https://www.website.com/pubid/123)
 
@@ -153,7 +152,7 @@ The apply page supports 2 new GET parameters cx_applysource and cx_applytags as 
 
 
 ```
-https://somecustomer.com/vacancy/1234/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA
+https://example.com/vacancy/1234/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA
 ```
 
 
@@ -163,7 +162,7 @@ If your wordpress is configured differently and you are not using default urls, 
 
 
 ```
-https://somecustomer.com/vacancy/9876/apply
+https://example.com/vacancy/9876/apply
 ```
 
 
@@ -176,7 +175,7 @@ The resulting match will be created with previous tracking values.
 
 * Address common questions users might have about the plugin's functionality or troubleshooting.
 
-[TO DO LATER: FAQs](#heading=h.96rfs9gsyc8s)
+[TO DO LATER: FAQs]
 
 
 ## 6. Support
