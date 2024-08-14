@@ -432,8 +432,8 @@ If you have a website entirely in Dutch but you want to display one or more jobs
 **In the WordPress plugin** (under Sources)
 
 1. Create new source to generate your jobs page. **Eg. Page name: Mixed jobs**
-2. In the Set Feed Source Parameters section, after the default feed, in the input text insert **Eg. for English:** medium=web|web-en
-3. If you want to mix the Vacancy posts from the different languages you can use medium=web|web-en. 
+2. In the Set Feed Source Parameters section, after the default feed, in the input text insert **Eg. for English:** `medium=web|web-en`
+3. If you want to mix the Vacancy posts from the different languages you can use `medium=web|web-en`. 
 4. Finish the rest of settings and save.
 
 **Result:** Page named **Mixed Jobs** is created. The page will display jobs from the 2 defined mediums.
@@ -660,6 +660,6 @@ IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed
 You can also show jobs from different languages ​​(different mediums) without multilingual plugin:
 
 1. Create a medium (per language) a separate job to feed source,
-2. On Set Feed Source Parameters Add 'medium=web' and as parameter behind /cxtools/wp_feed.php?
+2. On Set Feed Source Parameters Add `medium=web` and as parameter behind `/cxtools/wp_feed.php?`
 3. You now have several job feeds, jobs are created as separate jobs in the'd really rather know categories. The page is created only displays the jobs with the medium 'and web.
 
