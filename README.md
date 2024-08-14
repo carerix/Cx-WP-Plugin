@@ -111,7 +111,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 * Create links to jobs in your emails, alerts and newsletters?
 * Add to the link in your template: pub_id = xxx, where xxx is the Publication ID
 * For example
-* Create link to a template with the website URL:[website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID
+* Create link to a template with the website URL: [https://website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID
 * For example [https://www.website.com/pubid/123](https://www.website.com/pubid/123)
 
 
