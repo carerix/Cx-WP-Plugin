@@ -528,7 +528,7 @@ Default resources are used to generate the names of the taxonomies. The language
 Define your own values for the taxonomies creating for each languge a different / new value to overwrite the default ones filled from resources.
 
 
-## Shortcodes
+## 🔴 Shortcodes
 
 ## Job Alert Subscription
 You can create a standalone Job Alert Subscription page, using the the [cx_job_alert_subscription] shortcode.
