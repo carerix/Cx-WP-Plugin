@@ -530,6 +530,36 @@ Define your own values for the taxonomies creating for each languge a different 
 
 ## 🔴 Shortcodes
 
+# Multilingual Websites
+
+The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
+
+1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
+2. Create an additional publications of a job
+3. One publication (1st language) already has the medium `web`. Make an extra publication of the same job and web (2nd language) with it. Please note that this publication contains the texts in the 2nd language.
+4. Go to the WordPress Website
+5. Install WPML and adjust it as desired
+6. Go to the Carerix settings and synchronize all items Carerix
+7. In the list of all messages (posts) you can see which posts have been published in any language
+
+NB: Please note that the 'Translation Options' of WPML are good.
+
+1. WPML → Translate Options
+2. Optionally sync again
+
+## Without multilingual plugin
+
+
+IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
+
+You can also show jobs from different languages ​​(different mediums) without multilingual plugin:
+
+1. Create a medium (per language) a separate job to feed source,
+2. On Set Feed Source Parameters Add `medium=web` and as parameter behind `/cxtools/wp_feed.php?`
+3. You now have several job feeds, jobs are created as separate jobs in the'd really rather know categories. The page is created only displays the jobs with the medium 'and web.
+
+_____________
+
 ## Job Alert Subscription
 You can create a standalone Job Alert Subscription page, using the the [cx_job_alert_subscription] shortcode.
 
@@ -633,39 +663,83 @@ The process for the candidate is as follows:
   </tr>
 </table>
 
+### Jobalert Step 1: Preparation in Carerix
+
+Follow the steps in the following help article:
 
 
-# Multilingual Websites
-
-The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
-
-1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
-2. Create an additional publications of a job
-3. One publication (1st language) already has the medium `web`. Make an extra publication of the same job and web (2nd language) with it. Please note that this publication contains the texts in the 2nd language.
-4. Go to the WordPress Website
-5. Install WPML and adjust it as desired
-6. Go to the Carerix settings and synchronize all items Carerix
-7. In the list of all messages (posts) you can see which posts have been published in any language
-
-NB: Please note that the 'Translation Options' of WPML are good.
-
-1. WPML → Translate Options
-2. Optionally sync again
-
-## Without multilingual plugin
+1. Follow the steps in the following help article:[ https://help.carerix.com/en/articles/1954170](https://help.carerix.com/en/articles/1954170)
+2. Make sure the email template called “Vacature abonnement bevestiging” (Vacancy subscription confirmation) is also installed. It has the \
+code web-subscribe and it's not described in the help article. \
+Step
 
 
-IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
+### Jobalert Step 2: Preparation in Wordpress
 
-You can also show jobs from different languages ​​(different mediums) without multilingual plugin:
+Create a general page and paste the following shortcode in the content:
 
-1. Create a medium (per language) a separate job to feed source,
-2. On Set Feed Source Parameters Add `medium=web` and as parameter behind `/cxtools/wp_feed.php?`
-3. You now have several job feeds, jobs are created as separate jobs in the'd really rather know categories. The page is created only displays the jobs with the medium 'and web.
+
+```
+[cx_job_alert_subscription]
+```
+
+
+Optional attributes are can be added to control the confirmation message.
+
+Set a custom confirmation message:
+
+
+```
+[cx_job_alert_subscription confirmation_message="Thank you for subscribing. Shortly you will receive an email with an activation link. After activation you will start receiving new job opportunities in your mailbox on a daily basis!"]
+```
+
+
+Set a custom page/url for the confirmation message:
+
+
+```
+[cx_job_alert_subscription confirmation_url="/jobalert_thank_you/"]
+```
+
+
+
+### Jobalert Step 3: Fine-tuning in Carerix
+
+In Carerix, you can fine-tune the following candidate criteria for the job alert form:
+
+* Country selection
+* Business-line selection
+* Function group selection
+
+For the following instructions you need to be familiar with Carerix Tables editing. The principles explained in[ Table management](https://help.carerix.com/en/articles/1810726) are used to edit the tables.
+
+The following table items are used:
+
+* For countries the table 'Land' (country)
+* For business-lines the table 'Vakgebied' (business-line)
+* For function groups the table 'functie0'
+
+**Shorten the country selection**
+
+If your working area is a single country (or a few) you can shorten the dropdown box of countries.
+
+For each country you want to disable in the job alert form, edit the item, and uncheck the box “not for web”. \
+Note: if you only enable one country, the country selection is disabled on the job alert form.
+
+**Shorten the business-line selection**
+
+In Carerix every function group can be connected to a business-line. If one or more function groups are connected to a business-line the business-line dropdown box on the jobalert form will appear. So if you don't work with multiple business-lines, you need to configure the business-lines as follows:
+
+1. Edit each business-line item in the table “vakgebied” (business-line) and enable the checkbox “not for web”
+2. Locate the business-line “Standaard” (default) and disable the checkbox “not for web”. This leaves you with one mandatory business-line which will NOT appear for candidates on the job alert form
+3. Finally, in Wordpress, go to Dashboard→Carerix→Application Forms→Tab: Settings, and click on “Clear DataNodes cache”
+
+*Configure/shorten function group selection*
+
+1. Edit each function group item (table: functie0) you want to include in the group selection for the candidates. Disable 'not for web' and enable each desired business-line you want to connect the function group to. You need at least connect it to one business-line
+2. Finally, in Wordpress, go to Dashboard→Carerix→Application Forms→Tab: Settings, and click on “Clear DataNodes cache”
 
 _____________
-
-------------------
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
