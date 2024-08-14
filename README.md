@@ -545,7 +545,7 @@ You can create a standalone Job Alert Subscription page, using the the [cx_job_a
 
 In WordPress you can use this shortcode to show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
-See the example in
+`See the example in`
 
 The following fields will be displayed in the form:
 
