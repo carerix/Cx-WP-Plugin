@@ -52,19 +52,15 @@ See Demo & Tips at[ https://plugin.carerix.com/](https://plugin.carerix.com/)
 
 * 128 MB (for sites with lightweight themes / few plugins)
 * 256 MB (for regular sites)
-* 512 MB or higher (for sites with heavyweight themes/ many plugins)
+* 512 MB or higher (for sites with heavy weight themes/ many plugins)
 
 ##Latest release
 **May 2023**
 The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up to 6.2
 
 
-## 
-
 
 ## **Updating the Plugin**
-
-
 
 1. Make sure to make a backup of your website before updating the plugin which is good practice for updating WordPress plugins. Also check your Website after updating.
 2. In Wordpress dashboard → Plugins, locate the Carerix Wordpress Plugin
@@ -72,8 +68,6 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 
 
 ## **Uninstall the Plugin**
-
-
 
 * Deactivate
     * Go to Plugins section
@@ -86,8 +80,6 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
     * Click on **Delete**
 
 **Installation Steps**
-
-
 
 * Make sure the hosting environment meets the technical requirements
 * Go to Plugins → Add New → Upload
@@ -103,7 +95,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 
 ### Settings Carerix
 
-* **Change ApplyURL**
+* Change ApplyURL
 * Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings → Attributes and fields → Apply_url)
 
     ```
