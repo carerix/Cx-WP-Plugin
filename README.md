@@ -641,7 +641,7 @@ The Carerix WordPress plugin supports multilingualism. To do this, you use a mul
 
 1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
 2. Create an additional publications of a job
-3. One publication (1st language) already has the medium 'web'. Make an extra publication of the same job 'and web (2nd language) with it. Please note that this publication contains the texts in the 2nd language.
+3. One publication (1st language) already has the medium `web`. Make an extra publication of the same job and web (2nd language) with it. Please note that this publication contains the texts in the 2nd language.
 4. Go to the WordPress Website
 5. Install WPML and adjust it as desired
 6. Go to the Carerix settings and synchronize all items Carerix
