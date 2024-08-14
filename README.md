@@ -490,9 +490,7 @@ The hiring organization is also included in Google for Jobs. If you don't mark y
 
 ## Job Conversion Tracking for web analytics
 
-
-## The Cx WP plugin supports custom code snippets for extended web analytics usage (e.g. Facebook pixel, Google Analytics, etc.)
-
+The Cx WP plugin supports custom code snippets for extended web analytics usage (e.g. Facebook pixel, Google Analytics, etc.)
 Custom (javascript) code can be applied to the following webpage sections:
 
 
