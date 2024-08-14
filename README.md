@@ -168,7 +168,7 @@ The resulting match will be created with previous tracking values.
 
 * Address common questions users might have about the plugin's functionality or troubleshooting.
 
-[TO DO LATER: FAQs]
+🔴 [TO DO LATER: FAQs]
 
 
 ## 6. Support
