@@ -138,7 +138,8 @@ This will result in a standard RSS page containing all posts from category publi
 
 ## Applicant Source Tracking
 
-The apply page supports 2 new GET parameters cx_applysource and cx_applytags as of version 2.14.36
+<span style="background-color:green;color:red!important;">The apply page supports 2 new GET parameters cx_applysource and cx_applytags as of version 2.14.36</span>
+<span style="background-color:#FF00FF;color:red!important;">The apply page supports 2 new GET parameters cx_applysource and cx_applytags as of version 2.14.36</span>
 
 
 ## Usage example
