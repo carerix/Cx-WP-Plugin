@@ -23,7 +23,8 @@ See Demo & Tips at[ https://plugin.carerix.com/](https://plugin.carerix.com/)
 * Job Alert
 * Create your own (custom) layout for Vacancy posts
 * Create your own (custom) Application Form
-* Show multiple overviews of Vacancy posts from different sources \
+* Show multiple overviews of Vacancy posts from different sources
+  
 
 * SEO Optimized
 * Google for Jobs
@@ -101,25 +102,18 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 
 ### Settings Carerix
 
-
-
 * **Change ApplyURL**
-* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings –> Attributes and fields –> Apply_url)
+* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings » Attributes and fields » Apply_url)
 
     ```
     http://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
     ```
-
-
 
     This will link to the according Vacancy publication on the website
 
 
 
 ### Modified URLs
-
-
-
 * Create links to jobs in your emails, alerts and newsletters?
 * Add to the link in your template: pub_id = xxx, where xxx is the Publication ID
 * For example
@@ -366,7 +360,8 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 **Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source.
 
 
-**Apply Form** : Select the Application Form to be used for this specific Source
+**Apply Form**: Select the Application Form to be used for this specific Source
+
 **Title - Location**: Select if you want to show the work location after the Title or not.
 
 **Set Alternative Feed Source Parameters**
@@ -439,7 +434,7 @@ Here you can use an alternative/better teaser (summary text) which will be used 
 
 
 **Publication Details Body**
-You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source. \
+You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
 
 
 
