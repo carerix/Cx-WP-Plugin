@@ -637,7 +637,7 @@ The process for the candidate is as follows:
 
 # Multilingual Websites
 
-The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports[ Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
+The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
 
 1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
 2. Create an additional publications of a job
