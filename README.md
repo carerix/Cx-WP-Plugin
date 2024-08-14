@@ -542,17 +542,12 @@ Define your own values for the taxonomies creating for each languge a different 
 
 ## Job Alert Subscription
 You can create a standalone Job Alert Subscription page, using the the [cx_job_alert_subscription] shortcode.
-Job alerts
-## Job Alert Subscription
-You can create a standalone Job Alert Subscription page, using the the [cx_job_alert_subscription] shortcode.
 
 In WordPress you can use this shortcode to show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
 See the example in
 
 The following fields will be displayed in the form:
-
-
 
 * Email address
 * First name
@@ -566,16 +561,12 @@ The following fields will be displayed in the form:
 
 The process for the candidate is as follows:
 
-
-
 1. Candidate selects the criteria to receive job opportunities for and submits the form
 2. Candidate receives an opt-in activation mail and clicks on the activation link
 3. Candidate starts receiving mail with (new) vacancies on a daily basis that match the selected criteria
 4. To cancel, the candidate can use the unsubscribe link in the job alert mails
 
-<h4>Parameters</h4>
-
-
+#### Parameters
 
 <table>
   <tr>
