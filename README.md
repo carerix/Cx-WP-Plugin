@@ -272,7 +272,7 @@ If you check the Allow the plugin to report its location, the plugin will period
 
 
 1. Automatically every 10 minutes
-2. Manually hit the Button: **Synchronize new/changed items from Carerix **
+2. Manually hit the Button: **Synchronize new/changed items from Carerix**
 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
 4. Go to the external link [https://website.com/?carerix_sync](https://website.com/?carerix_sync) that is available without logging in. After syncing you will see a log file of that last sync.
 
