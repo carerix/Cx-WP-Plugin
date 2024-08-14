@@ -147,14 +147,14 @@ This will result in a standard RSS page containing all posts from category publi
 
 ## Applicant Source Tracking
 
-The apply page supports 2 new GET parameters cx**applysource and cx**applytags as of version 2.14.36
+The apply page supports 2 new GET parameters cx_applysource and cx_applytags as of version 2.14.36
 
 
 ## Usage example
 
 
 ```
-https://somecustomer.com/vacancy/1234/apply?cx**applysource=Google&cx**applytags=jobboard.nl,paid,regionA
+https://somecustomer.com/vacancy/1234/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA
 ```
 
 
@@ -290,7 +290,7 @@ The data that exists in WordPress is periodically updated (every 10 minutes) to 
 4. You can reorder fields with drag and drop and you can drag & drop whole sections (on the right side)
 5. Copy paste the shortcode of the form to the page where you want to use it as an 'Open Application form', for example: \
  \
-`[cx**open**application openFormID="2"]`
+`[cx_open_application openFormID="2"]`
 \
 \
 also see [Open Application](#heading=h.tglj98aziw6l) for more parameters
@@ -364,55 +364,55 @@ If you want to display details in the footer or the header, use the following sh
 <table>
   <tr>
    <td>
-[cx**rss**for**category]
+[cx_rss_for_category]
    </td>
    <td>display the rss for the publication category
    </td>
   </tr>
   <tr>
-   <td>[cx**rss**for**all]
+   <td>[cx_rss_for_all]
    </td>
    <td>display the rss for all the publications
    </td>
   </tr>
   <tr>
-   <td>[cx**print**link]
+   <td>[cx_print_link]
    </td>
    <td>display the print link
    </td>
   </tr>
   <tr>
-   <td>[cx**function**group]
+   <td>[cx_function_group]
    </td>
    <td>display the function group
    </td>
   </tr>
   <tr>
-   <td>[cx**vacancy**number]
+   <td>[cx_vacancy_number]
    </td>
-   <td>display the vacancy number, as auto-generated in Carerix. However, consider using [cx**vacancy**code] instead
+   <td>display the vacancy number, as auto-generated in Carerix. However, consider using [cx_vacancy_code] instead
    </td>
   </tr>
   <tr>
-   <td>[cx**vacancy**code]
+   <td>[cx_vacancy_code]
    </td>
    <td>display the vacancy reference code. By default the reference code is equal to the auto-generated vacancy number in Carerix. But if you have changed the reference code in Carerix→Files→Job orders→General, this new entry is displayed
    </td>
   </tr>
   <tr>
-   <td>[cx**apply**button]
+   <td>[cx_apply_button]
    </td>
    <td>display the apply button
    </td>
   </tr>
   <tr>
-   <td>[cx**apply**form]
+   <td>[cx_apply_form]
    </td>
    <td>display the apply form
    </td>
   </tr>
   <tr>
-   <td>[cx**job**alert**subscription**link] (discontinuing in upcoming releases)
+   <td>[cx_job_alert_subscription_link] (discontinuing in upcoming releases)
    </td>
    <td>display the job alert subscription link
    </td>
@@ -424,7 +424,7 @@ Here you can use an alternative/better teaser (summary text) which will be used 
 
 
 **Publication Details Body**
-You can use shortcodes like [cx**intro**information], [cx**offer**information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
+You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
 
 
 
@@ -437,7 +437,7 @@ You have a website entirely in Dutch but you want to display one or more jobs in
 1. If an extra medium for language is not already active: Create a medium with the desired code (i.e. 'web-en') for use of publications in the different language of the website.
 2. Create publications in this medium in the extra language that you need to publish
 
-**In the WordPress plugin** ( under Sources)
+**In the WordPress plugin** (under Sources)
 
 
 
@@ -484,9 +484,6 @@ Google for Jobs is an enhanced search widget that aggregates listings from job b
 To have your jobs included you need to add “structured job posting data” to your job pages. This information is invisible, so your job pages are still looking the same. When Google is indexing your site, the structured data is recognized and added to Google for Jobs.
 
 **Enabling and testing Google for Jobs**
-
-
-
 * Carerix → Settings → Tab 'Google for jobs'
 * Enable 'Google for Jobs support' and click on save changes
 * Navigate to a vacancy information page of your choice at the front-end of your site
@@ -506,7 +503,6 @@ The hiring organization is also included in Google for Jobs. If you don't mark y
 Custom (javascript) code can be applied to the following webpage sections:
 
 
-
 * General (basically  to all pages)
 * Job description page
 * Job application page
@@ -515,7 +511,6 @@ Custom (javascript) code can be applied to the following webpage sections:
 Additionally custom information (apply source and apply tags) can be set which will be stored in the “Candidate Match file”.
 
 Configuring custom conversion/tracking code
-
 
 
 * Note: understanding of/some skills in JavaScript is required
@@ -530,8 +525,6 @@ Configuring custom conversion/tracking code
 The plugin is generating Taxonomies for Jobs posts. The current taxonomies and the corresponding Carerix tables are
 
 **Jobs**
-
-
 
 * Countries - Country
 * Regions - Region
