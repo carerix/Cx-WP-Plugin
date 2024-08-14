@@ -670,8 +670,7 @@ Follow the steps in the following help article:
 
 1. Follow the steps in the following help article: [https://help.carerix.com/en/articles/1954170](https://help.carerix.com/en/articles/1954170)
 2. Make sure the email template called “Vacature abonnement bevestiging” (Vacancy subscription confirmation) is also installed. It has the \
-code web-subscribe and it's not described in the help article. \
-Step
+code `web-subscribe` and it's not described in the help article.
 
 
 ### Jobalert Step 2: Preparation in Wordpress
