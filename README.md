@@ -54,7 +54,7 @@ See Demo & Tips at[ https://plugin.carerix.com/](https://plugin.carerix.com/)
 * 256 MB (for regular sites)
 * 512 MB or higher (for sites with heavyweight themes/ many plugins)
 
-_May 2023_
+**May 2023**
 The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up to 6.2
 
 
@@ -77,23 +77,23 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 * Deactivate
     * Go to Plugins section
     * Find the plugin,
-    * Click on _Deactivate_
+    * Click on **Deactivate**
 * Remove the plugin
     * Go to Plugins section
     * Find the plugin,
-    * Click on _Deactivate_, if the plugin is active
-    * Click on _Delete_
+    * Click on **Deactivate**, if the plugin is active
+    * Click on **Delete**
 
 **Installation Steps**
 
 
 
 * Make sure the hosting environment meets the technical requirements
-* Go to Plugins » Add New » Upload
+* Go to Plugins → Add New → Upload
     * Locate the archive you have just saved
     * Click Install
 * When the upload is completed, click on the “Activate Plugin” link
-* Go to the Settings > Permalinks panel and choose any of the options listed.
+* Go to the Settings → Permalinks panel and choose any of the options listed.
 * Do NOT put your site url in the permalinks slot. You must use one of the structure tags, or a combination of tags only.
     * Make sure you don't cache the Vacancy Posts with caching plugins like W3 total cache, Comet cache, Rocket cache.
 * Check your Administration Panels or WordPress blog to see if the Plugin is working.
@@ -103,10 +103,10 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 ### Settings Carerix
 
 * **Change ApplyURL**
-* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings » Attributes and fields » Apply_url)
+* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website (Settings → Attributes and fields → Apply**url)
 
     ```
-    http://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
+    http://www.domainname.com/?pub**id=<cx:write value="$publication.publicationID"/>
     ```
 
     This will link to the according Vacancy publication on the website
@@ -115,7 +115,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 
 ### Modified URLs
 * Create links to jobs in your emails, alerts and newsletters?
-* Add to the link in your template: pub_id = xxx, where xxx is the Publication ID
+* Add to the link in your template: pub**id = xxx, where xxx is the Publication ID
 * For example
 * Create link to a template with the website URL:[ website.com/pubid/xxx](http://website.com/pubid/xxx), where xxx is the pubID
 * For example[ http://www.website.com/pubid/123](http://www.website.com/pubid/123)
@@ -138,7 +138,7 @@ The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up 
 
 Build an RSS feed for all your jobs as posts in WordPress or build a Feed for each Category or any tag. Use the built-in feature of WordPress for generating feeds.
 
-Ex: Build the feed for _category = publications_ on website
+Ex: Build the feed for **category = publications** on website
 
 like this:
 
@@ -153,14 +153,14 @@ This will result in a standard RSS page containing all posts from category publi
 
 ## Applicant Source Tracking
 
-The apply page supports 2 new GET parameters cx_applysource and cx_applytags as of version 2.14.36
+The apply page supports 2 new GET parameters cx**applysource and cx**applytags as of version 2.14.36
 
 
 ## Usage example
 
 
 ```
-https://somecustomer.com/vacancy/1234/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA
+https://somecustomer.com/vacancy/1234/apply?cx**applysource=Google&cx**applytags=jobboard.nl,paid,regionA
 ```
 
 
@@ -244,11 +244,11 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 
 ## Change ApplyURL to website
 
-Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (Settings →  Attributes and fields →  Apply_url)
+Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (Settings →  Attributes and fields →  Apply**url)
 
 
 ```
-http://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
+http://www.domainname.com/?pub**id=<cx:write value="$publication.publicationID"/>
 ```
 
 
@@ -274,7 +274,7 @@ If you check the Allow the plugin to report its location, the plugin will period
 1. Automatically every 10 minutes
 2. Manually hit the Button: **Synchronize new/changed items from Carerix**
 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
-4. Go to the external link [https://website.com/?carerix_sync](https://website.com/?carerix_sync) that is available without logging in. After syncing you will see a log file of that last sync.
+4. Go to the external link [https://website.com/?carerix**sync](https://website.com/?carerix**sync) that is available without logging in. After syncing you will see a log file of that last sync.
 
  \
 The data that exists in WordPress is periodically updated (every 10 minutes) to reflect the actual data in the system. You can use the Synchronize Now button to manually initiate the synchronize mechanism, if you want to see the changes immediately.
@@ -300,7 +300,7 @@ The data that exists in WordPress is periodically updated (every 10 minutes) to 
 4. You can reorder fields with drag and drop and you can drag & drop whole sections (on the right side)
 5. Copy paste the shortcode of the form to the page where you want to use it as an 'Open Application form', for example: \
  \
-`[cx_open_application openFormID="2"]`
+`[cx**open**application openFormID="2"]`
 \
 \
 also see [Open Application](#heading=h.tglj98aziw6l) for more parameters
@@ -374,55 +374,55 @@ If you want to display details in the footer or the header, use the following sh
 <table>
   <tr>
    <td>
-[cx_rss_for_category]
+[cx**rss**for**category]
    </td>
    <td>display the rss for the publication category
    </td>
   </tr>
   <tr>
-   <td>[cx_rss_for_all]
+   <td>[cx**rss**for**all]
    </td>
    <td>display the rss for all the publications
    </td>
   </tr>
   <tr>
-   <td>[cx_print_link]
+   <td>[cx**print**link]
    </td>
    <td>display the print link
    </td>
   </tr>
   <tr>
-   <td>[cx_function_group]
+   <td>[cx**function**group]
    </td>
    <td>display the function group
    </td>
   </tr>
   <tr>
-   <td>[cx_vacancy_number]
+   <td>[cx**vacancy**number]
    </td>
-   <td>display the vacancy number, as auto-generated in Carerix. However, consider using [cx_vacancy_code] instead
+   <td>display the vacancy number, as auto-generated in Carerix. However, consider using [cx**vacancy**code] instead
    </td>
   </tr>
   <tr>
-   <td>[cx_vacancy_code]
+   <td>[cx**vacancy**code]
    </td>
    <td>display the vacancy reference code. By default the reference code is equal to the auto-generated vacancy number in Carerix. But if you have changed the reference code in Carerix→Files→Job orders→General, this new entry is displayed
    </td>
   </tr>
   <tr>
-   <td>[cx_apply_button]
+   <td>[cx**apply**button]
    </td>
    <td>display the apply button
    </td>
   </tr>
   <tr>
-   <td>[cx_apply_form]
+   <td>[cx**apply**form]
    </td>
    <td>display the apply form
    </td>
   </tr>
   <tr>
-   <td>[cx_job_alert_subscription_link] (discontinuing in upcoming releases)
+   <td>[cx**job**alert**subscription**link] (discontinuing in upcoming releases)
    </td>
    <td>display the job alert subscription link
    </td>
@@ -434,7 +434,7 @@ Here you can use an alternative/better teaser (summary text) which will be used 
 
 
 **Publication Details Body**
-You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
+You can use shortcodes like [cx**intro**information], [cx**offer**information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
 
 
 
@@ -451,12 +451,12 @@ You have a website entirely in Dutch but you want to display one or more jobs in
 
 
 
-1. Create new source to generate your jobs page. _Eg. Page name: Mixed jobs_
-2. In the Set Feed Source Parameters section, after the default feed, in the input text insert _Eg. for English:_ medium=web|web-en
+1. Create new source to generate your jobs page. **Eg. Page name: Mixed jobs**
+2. In the Set Feed Source Parameters section, after the default feed, in the input text insert **Eg. for English:** medium=web|web-en
 3. If you want to mix the Vacancy posts from the different languages you can use medium=web|web-en. 
 4. Finish the rest of settings and save.
 
-_Result:_ Page named _Mixed Jobs_ is created. The page will display jobs from the 2 defined mediums.
+**Result:** Page named **Mixed Jobs** is created. The page will display jobs from the 2 defined mediums.
 
 For the posts for which value of parameter medium is found to be language codes, the resources will be generated in the language code corresponding to language code. 
 
