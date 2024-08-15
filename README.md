@@ -1,16 +1,14 @@
 Carerix WordPress Plugin
 ----------------
 
-See Demo & Tips at [plugin.carerix.com](https://plugin.carerix.com/)
+Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
 
 
 ## 1. Introduction
 
-
-* Carerix Wordpress Plugin v3.1.2.2
-* The Carerix WordPress Plugin converts vacancies and candidates from Carerix to WordPress Posts (posts), making use of the power of WordPress. 
-
-    This means more flexibility and a big performance boost. The plugin therefore works ideally for responsive websites, and also ensures search engine optimized vacancies on your website.
+The Carerix WordPress Plugin converts vacancies and candidates from Carerix to WordPress Posts (posts), making use of the power of WordPress.
+Applications for each Vacancy are automatically processed in Carerix.
+This means more flexibility and a big performance boost. The plugin therefore works ideally for responsive websites, and also ensures search engine optimized vacancies on your website.
 
 
 ### Features
