@@ -49,9 +49,7 @@ See Demo & Tips at [plugin.carerix.com](https://plugin.carerix.com/)
 
 ## Latest release
 
-**May 2023**
-The (latest) Carerix Wordpress Plugin has been tested for Wordpress versions up to 6.2
-
+See https://github.com/carerix/Cx-WP-Plugin/releases
 
 
 ## **Updating the Plugin**
