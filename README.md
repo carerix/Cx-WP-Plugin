@@ -757,10 +757,10 @@ _____________
 
 _____________
 
-<div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0;">
+<div style="background-color:green; text-align:center; vertical-align: middle; padding:40px 0;">
 <a target="new" href="https://plugin.carerix.com/">plugin.carerix.com</a>
 </div>
 
-<div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0; margin-top:30px">
+<div style="background-color:#FF00FF; text-align:center; vertical-align: middle; padding:40px 0; margin-top:30px">
 <a target="blank" href="https://plugin.carerix.com/">plugin.carerix.com</a>
 </div>
