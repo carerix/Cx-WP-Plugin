@@ -758,9 +758,9 @@ _____________
 _____________
 
 <div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0;">
-<a target="new" href="/donate">DONATE</a>
+<a target="new" href="https://plugin.carerix.com/">plugin.carerix.com</a>
 </div>
 
 <div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0; margin-top:30px">
-<a target="blank" href="/blog">VIEW THE BLOG</a>
+<a target="blank" href="https://plugin.carerix.com/">plugin.carerix.com</a>
 </div>
