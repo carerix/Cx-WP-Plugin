@@ -73,7 +73,7 @@ For example [https://www.website.com/pubid/123](https://www.website.com/pubid/12
 
 # Technical Information WordPress plugin
 
-See Demo & Tips at [plugin.carerix.com/](https://plugin.carerix.com/)
+See Demo & Tips at [plugin.carerix.com](https://plugin.carerix.com/)
 
 
 ## Carerix WordPress plugin - Technical information
