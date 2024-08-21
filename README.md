@@ -148,6 +148,11 @@ Carerix will not be able to provide you the Application token directly, as this 
 \
 also see [Open Application](#heading=h.tglj98aziw6l) for more parameters
 
+### Open Application form
+<table><thead><tr><th>[cx_open_application]</th><th>Use this shortcode in the contents of a page</th></tr></thead><tbody><tr><td>[cx_open_application openFormID="XX"]</td><td>Use for a specific application form. Replace 'XX' by the application form ID. You can find the ID in the application forms list (Wordpress → Dashboard → Carerix → Application Forms).</td></tr><tr><td>[cx_open_application openpubid="XX"]</td><td>"If you have multiple open vacancies in your Carerix system, you can add the Carerix publication-ID of the specific open vacancy as a parameter:</td></tr><tr><td>Replace 'XX' by the ID of the publication of the open vacancy job order"</td></tr><tr><td>[cx_open_application openFormID="3" openpubid="312"]</td><td>You can combine the two parameters like this</td></tr></tbody></table>
+
+
+
 ### Configuring a custom Form
 Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
 Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
