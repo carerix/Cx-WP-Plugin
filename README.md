@@ -87,9 +87,8 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (Settings →  Attributes and fields →  Apply_url)
 
 ```
-https://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
+https://domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
 ```
-
 
 This will link to the according Vacancy publication on the website
 
@@ -98,7 +97,7 @@ This will link to the according Vacancy publication on the website
 Settings → Attributes and fields → Apply_url
 
     ```
-    https://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
+    https://domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
     ```
 
     This will link to the according Vacancy publication on the website
@@ -107,8 +106,8 @@ Settings → Attributes and fields → Apply_url
 * Use above this cx-script code in your Carerix email templates to create urls to the jobs in your emails, alerts and newsletters:
 ```<cx:write value="$publication.publicationID"/>```
 
-That will generate a link with the correct vacancy page URL: [https://website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID \
-For example [https://www.website.com/pubid/123](https://www.website.com/pubid/123)
+That will generate a link with the correct vacancy page URL: [https://domainname.com/pubid/xxx](https://domainname.com/pubid/xxx), where xxx is the pubID \
+For example [https://domainname.com/pubid/123](https://domainnamee.com/pubid/123)
 
 > [!NOTE]
 > ## Synchronizing Vacancies (Publications) from Carerix to your site
