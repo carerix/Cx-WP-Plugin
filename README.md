@@ -36,6 +36,7 @@ Getting Started: A basic guide to using the plugin's core functionalities.
 🔴 Add links to Table of Contents
 =================
 
+  * Installation
   * [Dockerfile.vim](#dockerfilevim)
   * [Screenshot](#screenshot)
   * [Installation](#installation)
@@ -126,7 +127,9 @@ By default a form named Form 1 is ready for use. This default form can not be ch
 3. Set each fields to Visible of Required
 4. You can reorder fields with drag and drop and you can drag & drop whole sections (on the right side)
 5. Copy paste the shortcode of the form to the page where you want to use it as an 'Open Application form', for example:
-```[cx_open_application openFormID="2"]```
+```
+[cx_open_application openFormID="2"]
+```
 
 See the parameters for Open Application below
 
@@ -187,7 +190,6 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 Helps you to identify the configured source.
 
 * **Publications Details Options** \
-* IMAGE
 Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source.
 🔴IMAGE
 
