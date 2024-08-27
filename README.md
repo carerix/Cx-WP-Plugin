@@ -23,12 +23,13 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Google for Jobs
 * Diagnostic tools
 
-* Getting Started: A basic guide to using the plugin's core functionalities.
-** Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin) )
-** Setting Source with correct Carerix 'medium'
-** Sync
-** Ready to Rumble
+Getting Started: A basic guide to using the plugin's core functionalities.
+* Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin) )
+* Setting Source with correct Carerix 'medium'
+* Sync
+* Ready to Rumble
 
+🔴 TO DO
 * Configuration Options: Explain any settings or configuration options available for the plugin.
 * Shortcodes or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
 
