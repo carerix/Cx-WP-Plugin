@@ -23,6 +23,16 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Google for Jobs
 * Diagnostic tools
 
+* Getting Started: A basic guide to using the plugin's core functionalities.
+	** Setting Application Token (See ## Authorisation of the Plugin
+	** Setting Source with correct Carerix 'medium'
+	** Sync
+	** Ready to Rumble
+
+* Configuration Options: Explain any settings or configuration options available for the plugin.
+* Shortcodes or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
+
+
 
 🔴 Add links to Table of Contents
 =================
@@ -40,43 +50,9 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 See https://github.com/carerix/Cx-WP-Plugin/releases
 
 ## 3. Usage
-
-* Getting Started: A basic guide to using the plugin's core functionalities.
-	** Setting Application Token
-	** Setting Source with correct Carerix 'medium'
-	** Sync
-	** Ready to Rumble
-
-* Configuration Options: Explain any settings or configuration options available for the plugin.
-* Shortcodes or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
-
 ### 3.1 Settings Carerix
 
-* Change ApplyURL
-* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website
-Settings → Attributes and fields → Apply_url
-
-    ```
-    https://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
-    ```
-
-    This will link to the according Vacancy publication on the website
-
-### Create links in your emails, alerts and newsletters
-* Use above this cx-script code in your Carerix email templates to create urls to the jobs in your emails, alerts and newsletters:
-```<cx:write value="$publication.publicationID"/>```
-
-That will generate a link with the correct vacancy page URL: [https://website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID \
-For example [https://www.website.com/pubid/123](https://www.website.com/pubid/123)
-
-
-
-# Technical Information WordPress plugin
-
-See Demo & Tips at [plugin.carerix.com](https://plugin.carerix.com/)
-
-
-## Carerix WordPress plugin - Technical information
+....
 
 
 # Installation
@@ -102,6 +78,15 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 * CxpResetPwd - email used to reset the password for a candidate That can no longer access the original email account
 * JobAlert - Mandatory for sending job alert subscription emails.
 
+> [!IMPORTANT]
+> ## Authorisation of the Plugin
+> 
+> The plugin needs to be authenticated with the Carerix application. Therefor you need the Application name (which can be derived from applicationname.carerix.net) and the Application Token. 
+> 
+> The Admin of a Carerix application can generate an Application Token. If you don't have access to the Carerix application you can ask an admin. He can provide you the Application token using the email template 'Application Token'.
+> Or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
+> Carerix will not be able to provide you the Application token directly, as this is part of the authorization procedure.
+
 
 ## Change ApplyURL to website
 
@@ -115,14 +100,22 @@ https://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/
 
 This will link to the according Vacancy publication on the website
 
+* Change ApplyURL
+* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website
+Settings → Attributes and fields → Apply_url
 
-## Authorisation of the Plugin
+    ```
+    https://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
+    ```
 
-The plugin needs to be authenticated with the Carerix application. Therefor you need the Application name (which can be derived from applicationname.carerix.net) and the Application Token. 
+    This will link to the according Vacancy publication on the website
 
-The Admin of a Carerix application can generate an Application Token. If you don't have access to the Carerix application you can ask an admin. He can provide you the Application token using the email template 'Application Token'.
-Or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
-Carerix will not be able to provide you the Application token directly, as this is part of the authorization procedure.
+### Create links in your emails, alerts and newsletters
+* Use above this cx-script code in your Carerix email templates to create urls to the jobs in your emails, alerts and newsletters:
+```<cx:write value="$publication.publicationID"/>```
+
+That will generate a link with the correct vacancy page URL: [https://website.com/pubid/xxx](https://website.com/pubid/xxx), where xxx is the pubID \
+For example [https://www.website.com/pubid/123](https://www.website.com/pubid/123)
 
 > [!NOTE]
 > ## Synchronizing Vacancies (Publications) from Carerix to your site
