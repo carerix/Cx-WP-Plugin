@@ -38,13 +38,9 @@ Getting Started: A basic guide to using the plugin's core functionalities.
 
   * [Installation](#installation)
   * [Change ApplyURL](#change-applyurl-to-website)
-  * [Dockerfile.vim](#dockerfilevim)
-  * [Screenshot](#screenshot)
-  * [Installation](#installation)
-        * [OR using Pathogen:](#or-using-pathogen)
-        * [OR using Vundle:](#or-using-vundle)
-  * [License](#license)
-
+  * [Forms [(#forms)
+  * [Sources](#sources)
+  * [Job Alert](#job-alert-subscription)
 
 ## Latest release
 
