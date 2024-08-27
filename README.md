@@ -36,7 +36,8 @@ Getting Started: A basic guide to using the plugin's core functionalities.
 🔴 Add links to Table of Contents
 =================
 
-  * Installation
+  * [Installation](#installation)
+  * [Change ApplyURL](#change-applyurl-to-website)
   * [Dockerfile.vim](#dockerfilevim)
   * [Screenshot](#screenshot)
   * [Installation](#installation)
