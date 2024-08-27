@@ -38,7 +38,7 @@ Getting Started: A basic guide to using the plugin's core functionalities.
 
   * [Installation](#installation)
   * [Change ApplyURL](#change-applyurl-to-website)
-  * [Forms [(#forms)
+  * [Forms](#forms)
   * [Sources](#sources)
   * [Job Alert](#job-alert-subscription)
 
