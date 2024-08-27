@@ -26,14 +26,13 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 Getting Started: A basic guide to using the plugin's core functionalities.
 * Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin))
 * Setting Source with correct Carerix 'medium'
-* Sync
-* Ready to Rumble
+* First time Sync
+* See the Publications that are created frontend [https://website.com/vacatures](https://website.com/vacatures)
 
 🔴 TO DO
 * Configuration Options: Explain any settings or configuration options available for the plugin.
 * Shortcodes or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
-
-
+* 
 
 🔴 Add links to Table of Contents
 =================
@@ -59,9 +58,6 @@ See https://github.com/carerix/Cx-WP-Plugin/releases
 # Installation
 
 To create a new website based on WordPress and connect it to the Carerix System, follow this steps:
-
-
-
 1. Download the latest Carerix WordPress plugin
 2. Install and configure your WordPress
 3. Download the stable version of the CxWordPress plugin
