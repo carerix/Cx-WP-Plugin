@@ -41,6 +41,8 @@ Getting Started: A basic guide to using the plugin's core functionalities.
   * [Forms](#forms)
   * [Sources](#sources)
   * [Job Alert](#job-alert-subscription)
+  * [Advanced Features](#-advanced-features)
+  * 
 
 ## Latest release
 
