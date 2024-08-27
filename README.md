@@ -120,16 +120,14 @@ For example [https://domainname.com/pubid/123](https://domainnamee.com/pubid/123
 
 ## Forms
 
-* By default a form named Form 1 is ready for use. This default form can not be changed. Create your a new form if you want to customize your application form:
-* Each apply form can also be used for different kind of publications (see settings under [Sources](#sources --> Apply Form) )
-* The **Synchronize with Carerix button** checks if fields that use values from the Carerix System are available. For example, if it can not find any values for the Nationality field, that field will be disabled.
+By default a form named Form 1 is ready for use. This default form can not be changed. Create your a new form if you want to customize your application form:
+1. Each apply form can also be used for different kind of publications (see settings under [Sources](#sources --> Apply Form) )
+2. The **Synchronize with Carerix button** checks if fields that use values from the Carerix System are available. For example, if it can not find any values for the Nationality field, that field will be disabled.
 3. Set each fields to Visible of Required
 4. You can reorder fields with drag and drop and you can drag & drop whole sections (on the right side)
 5. Copy paste the shortcode of the form to the page where you want to use it as an 'Open Application form', for example:
- \
-`[cx_open_application openFormID="2"]`
-\
-\
+```[cx_open_application openFormID="2"]```
+
 See the parameters for Open Application below
 
 ### Open Application form
