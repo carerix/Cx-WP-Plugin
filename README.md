@@ -64,11 +64,10 @@ To create a new website based on WordPress and connect it to the Carerix System,
 
 ## Installing Email templates
 
+🔴 KLOPT DIT NOG?
 You need to have these email templates installed to make full use of the plugin: Email codes (System, CxWordPress)
 
 Make sure that this e-mail templates are installed in the library of the Carerix application:
-
-
 
 * CxpeForgotPwd - e-mail sent to the candidate to resend the login details
 * CxpResetPwd - email used to reset the password for a candidate That can no longer access the original email account
@@ -87,7 +86,6 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 ## Change ApplyURL to website
 
 Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (Settings →  Attributes and fields →  Apply_url)
-
 
 ```
 https://www.domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
