@@ -58,10 +58,9 @@ See https://github.com/carerix/Cx-WP-Plugin/releases
 # Installation
 
 To create a new website based on WordPress and connect it to the Carerix System, follow this steps:
-1. Download the latest Carerix WordPress plugin
-2. Install and configure your WordPress
-3. Download the stable version of the CxWordPress plugin
-
+1. Download the [latest Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases)
+2. Install plugin
+3. Authenticate the plugin for the specified Carerix application by setting the Application Token
 
 ## Installing Email templates
 
@@ -76,7 +75,7 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 * JobAlert - Mandatory for sending job alert subscription emails.
 
 > [!IMPORTANT]
-> ## Authorisation of the Plugin
+> ## Authorisation of the Plugin for the specified Carerix application
 > 
 > The plugin needs to be authenticated with the Carerix application. Therefor you need the Application name (which can be derived from applicationname.carerix.net) and the Application Token. 
 > 
