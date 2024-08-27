@@ -13,7 +13,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 
 ### Features
 
-* Show Carerix Vacancies as WordPress Posts
+* Show Carerix Vacancies (Publications) as WordPress Posts
 * Create your own (custom) layout for Vacancy posts (with shortcodes and Html)
 * Create your own (custom) Application Form (select and reorder form fields)
 * Show multiple overviews of Vacancy posts from different sources
