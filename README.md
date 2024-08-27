@@ -2,7 +2,7 @@ Carerix WordPress Plugin
 ----------------
 
 Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
-
+After installation [Authorisation of the Plugin](#authorisation-of-the-plugin)
 
 ## 1. Introduction
 
@@ -24,10 +24,10 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Diagnostic tools
 
 * Getting Started: A basic guide to using the plugin's core functionalities.
-	** Setting Application Token (See [Authorisation of the Plugin]{#authorisation-of-the-plugin}
-	** Setting Source with correct Carerix 'medium'
-	** Sync
-	** Ready to Rumble
+** Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin) )
+** Setting Source with correct Carerix 'medium'
+** Sync
+** Ready to Rumble
 
 * Configuration Options: Explain any settings or configuration options available for the plugin.
 * Shortcodes or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
