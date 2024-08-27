@@ -27,7 +27,7 @@ Getting Started: A basic guide to using the plugin's core functionalities.
 * Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin))
 * Setting Source with correct Carerix 'medium'
 * First time Sync
-* See the Publications that are created frontend [https://website.com/vacatures](https://website.com/vacatures)
+* See the Publications that are created frontend [/vacatures](https://plugin.carerix.com/vacatures/) or [/en/vacancies/](https://plugin.carerix.com/en/vacancies/)
 
 🔴 TO DO
 * Configuration Options: Explain any settings or configuration options available for the plugin.
