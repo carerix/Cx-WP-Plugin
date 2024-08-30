@@ -529,7 +529,15 @@ Default resources are used to generate the names of the taxonomies. The language
 Define your own values for the taxonomies creating for each languge a different / new value to overwrite the default ones filled from resources.
 
 
-## 🔴 CHECKEN: New method
+## 🔴 CHECKEN: How to use the 'cxwordpress_post_updated' hook?
+Required skill: Wordpress theme/frontend designer with PHP knowledge
+With this hook you can apply changes to a vacancy-post upon (creation/update) to have it better fit into your site/theme. It's useful to apply changes in text formatting or post-statuses.
+Example, edit the file 'functions.php' in your activated child theme. Add the following:
+function my_cx_post_preparation(array $postids, array $data, array $cxfields ) { $post_id = (int) $postids[0]; // First item is the WP post ID $post_data_v1 = $data[0]; // The original data that the CX WP plugin has saved/updated $_post = get_post( $post_id ); // Another way to access the post data $post_cxfields = $cxfields[0]; // First item holds an associative array of retrieved (raw) CX fields $pub_id = get_post_meta($post_id, 'guid', true); // CX publication ID // Example to retrieve some specific CX fields $cx_requirements = get_post_meta($post_id, 'requirementsInformation', true); $cx_function_group = get_the_terms($post_id, "functiongroups")[0]->name ?? ""; $cx_function_name = get_the_terms($post_id, "functions")[0]->name ?? ""; $cx_min_salary = $post_cxfields['minSalary'] + 0; $cx_max_salary = $post_cxfields['maxSalary'] + 0; $cx_period_salary = $post_cxfields['salaryPeriodClassification']; // MonthTag = per hour, HourTag = per month, etc. // Example to update the post content $_post ->post_content = "<h1>Hook `cxwordpress_post_updated` altered this post contents!</h1>" . $_post ->post_content; wp_update_post( $_post ); // Update post // Example to set post meta info. This is specifically for posts in the Divi theme. Note "_et" is an abbreviation for Elegant Themes. update_post_meta( $post_id, '_et_pb_page_layout', 'et_full_width_page'); // force Divi post as a full width page update_post_meta( $post_id, '_et_pb_show_title', 'off'); // turn Divi post titles off // Clean cache wp_cache_delete( $post_id, 'posts' ); } // Add the hook with prio 3 (default) and accepting 3 arguments
+add_action( 'cxwordpress_post_updated', 'my_cx_post_preparation', 10, 3);
+
+
+## 🔴 CHECKEN: New method for language edits
 You need (s)FTP credentials for the WordPress website to do this. The idea is to override portions of the plugin's language file within your own child theme. That way you are sure the language modifications aren't reverted when a new plugin version is released.
 In this example we will change the heading text “Introductie” (introduction) which appears in the vacancy texts. We assume you've set the Wordpress site language to Dutch and have the site running in a child theme.
 
@@ -677,19 +685,23 @@ After a few hours the files are automatically removed by the plugin and will onl
 > [!WARNING]
 > Make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
 
-### Why not Custom Post Types instead of regular posts for vacancies?
-**Pro's** \
+### 🔴 CHECKEN: I see tailstocks without text
+Perhaps there is a space in your publication text. Because the field contains the text shown on the website, including the head. Check the according publication text in the Carerix application, as in the example above:
+You can also clean the publication text by clicking on the button 'Code' and ing the code. In this case some HTML knowledge would be handy. In this case you have to remove the code `<p>&#160;</p>`
+
+
+### Why does the plugin not use Custom Post Types instead of regular posts for vacancies?
+**Pro's**
 * Templates: Web builder can use a custom template specifically for job post types.
 * Filters: 3rd Party filters specifically for Custom post types are set
 * Consistency: Difference between news and jobs is clearly in the admin area.
 
-**Cons** \
+**Cons**
 * Blog post listings: It is not possible to show vacancies in major blog listing.
 * Compatibility: Switch between regular and post types Custom post types can cause synchronization problems.
 
 
 Currently we have chosen to jobs not offering as Custom Post Types because many of our customers use the standard features like blog listing.
-
 
 
 🔴 [TO DO LATER: FAQs]
