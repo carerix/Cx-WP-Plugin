@@ -492,7 +492,7 @@ Google for Jobs is an enhanced search widget that aggregates listings from job b
 To have your jobs included you need to add “structured job posting data” to your job pages. This information is invisible, so your job pages are still looking the same. When Google is indexing your site, the structured data is recognized and added to Google for Jobs.
 
 **Enabling and testing Google for Jobs**
-* Carerix → Settings → Tab 'Google for jobs'
+* **Carerix** → **Settings** → Tab '**Google for jobs**'
 * Enable 'Google for Jobs support' and click on save changes
 * Navigate to a vacancy information page of your choice at the front-end of your site
 * Copy/paste the URL of the former step in the Google Structured Data testing tool:
