@@ -650,7 +650,7 @@ Yes, you can use standard WordPress RSS feeds. The URLs for this example:
 * /category-name/publications/feed /
 * /tag/utrecht/feed/
 
-For example https://plugin.carerix.com/category/vacancies/feed/
+For example https://plugin.carerix.com/category/vacatures/techniek-engineering/feed/
 
 ### Can I submit a sitemap to Google Search Console?
 Yes, use the following URL:
