@@ -666,13 +666,15 @@ We can continue to make the plugin better and better with the necessary feedback
 ### How to enable logging and where is the logfile?
 You can enable the logging in Wordpress → Dashboard → Carerix → Settings → Tab Settings. The logfile is created in
 {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/tmp/logs/
-> [!WARNING] The logfile directory can grow fast in size which may lead to your site running out of disk space. So make sure you **only** enable it if you experience problems.
+> [!WARNING] 
+> The logfile directory can grow fast in size which may lead to your site running out of disk space. So make sure you **only** enable it if you experience problems.
 
 ### Where are the uploaded documents?
 Candidate documents (e.g. a CV because of a job application) are submitted to the Carerix system, but temporarily uploaded to the following folder to process it:
 {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/tmp/uploads/
 After a few hours the files are automatically removed by the plugin and will only reside in the Carerix system.
-> [!WARNING] Make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
+> [!WARNING]
+> Make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
 
 🔴 [TO DO LATER: FAQs]
 
