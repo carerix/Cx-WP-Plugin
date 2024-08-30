@@ -23,7 +23,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Google for Jobs
 * Diagnostic tools
 
-Getting Started: A basic guide to using the plugin's core functionalities.
+## Getting Started: A basic guide to using the plugin's core functionalities.
 * Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin))
 * Setting Source with correct Carerix 'medium'
 * First time Sync
@@ -38,11 +38,11 @@ Getting Started: A basic guide to using the plugin's core functionalities.
 
   * [Installation](#installation)
   * [Change ApplyURL](#change-applyurl-to-website)
-  * [Forms](#forms)
+  * [Application Forms](#application-forms)
   * [Sources](#sources)
   * [Job Alert](#job-alert-subscription)
+  * [Multilingual Websites](#multilingual-websites)
   * [Advanced Features](#-advanced-features)
-  * 
 
 ## Latest release
 
