@@ -555,6 +555,26 @@ You can always verify if which publications have been synced during the last syn
 Yes and No: You can manually add a Featured Image (open the job post and add Featured image). But be aware that manual changes in the job posts texts are overridden by the next vacancy sync, but as the featured image is not part of vacancy syncs it won't be removed)
 You can check by forcing a manual sync: Located in **Wordpress → Dashboard → Carerix → Settings → Tab Settings → Button** '**Synchronize new/changed items from Carerix**'.
 
+### Can I show a featured image in a vacancy post?
+Yes, you can manually add a Featured Image. Simply open the job post and add Featured image. You need editing rights in WordPress. 
+Be aware that manual changes in the job posts texts are overridden by the next vacancy sync, but as the featured image is not part of vacancy syncs it won't be removed.
+
+### Can I show the application form below the vacancy texts?
+Yes, go to **Wordpress Dashboard** → **Carerix** → **Sources**
+In the 'Publication Details Header/Body/Footer' (or in the Header or Boday) of a source, you can use HTML and Shortcodes to build your own template. 
+For example use the shortcode `[cx_apply_form]` (instead of `[cx_apply_form]` which generates a button) in the Publication Details Footer.
+
+### Can I add an image within the paragraphs of the vacancy texts?
+Yes, you can add HTML in the publication text, so you can add a Youtube video or an image as you would in a WordPress post. 
+Be aware that the Carerix user would need a little bit of Html experience to add this to the publication text.
+1. In the Carerix application open the publication text where you want to add the image
+2. Switch the editor to HTML mode
+3. Insert the HTML-image-tag in the HTML source code. For example:
+``<img src="https://carerix.com/.../carerix-logo.png" alt="ALT Text" />``
+4. Save the changes
+5. Sync the WordPress plugin on the website
+
+
 
 🔴 [TO DO LATER: FAQs]
 
