@@ -394,6 +394,8 @@ The Carerix WordPress plugin supports multilingualism. To do this, you use a mul
 6. Go to the Carerix settings and synchronize all items Carerix
 7. In the list of all messages (posts) you can see which posts have been published in any language
 
+Use the medium code 'web-XX', where 'XX' is the ICU Locale language.
+
 The Carerix plugin works perfectly with WPML, one of the best WordPress plugins multilingual. The price WPML is worth it, see [WPML](https://wpml.org/)
 
 
