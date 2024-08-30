@@ -33,6 +33,12 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * [Configuration Options](#3-settings--usage): Explain any settings or configuration options available for the plugin.
 * [Shortcodes](#shortcodes) or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
 
+> [!NOTE]### Roles & rights
+> The Carerix WordPress plugin is the connection between the Carerix application and the WordPress website. Therefor there are certain roles/rights for different tasks:
+> * **Carerix administrator**: Has the administrator user role and is able to manage the Carerix data-tables (e.g. Country table), mediums and email templates.
+> * **Wordpress administrator**: Webbuilder with rights to manage the settings of Wordpress, can install/configure plugins and knows how to create/edit pages (with sidebars). HTML skills are useful
+
+
 🔴 Add links to Table of Contents
 =================
 
