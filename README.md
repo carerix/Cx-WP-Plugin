@@ -219,7 +219,7 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 
 ### Shortcodes in Job source 
 🔴 Kloppen deze nog allemaal? \
-🔴 Waar hoort dit? In de Publication Detail body?
+🔴 Waar gebruik je dit? In de Publication Detail body?
 
 <table>
   <tr>
@@ -643,7 +643,6 @@ Yes, the plugin has minimal styling so it basically follows the theme used. Addi
 ### Can I change the text of the headings, labels, buttons for vacancy texts and application forms?
 Yes you can! You can build a template with the use of shortcodes in combination with HTML.
 (see [Sources](#sources))
-
 
 ### Can I offer an RSS feed of all job vacancies or by function?
 Yes, you can use standard WordPress RSS feeds. The URLs for this example:
