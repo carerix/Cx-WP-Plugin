@@ -636,13 +636,14 @@ Yes, the plugin has minimal styling so it basically follows the theme used. Addi
 
 ### Can I change the text of the headings, labels, buttons for vacancy texts and application forms?
 Yes you can! You can build a template with the use of shortcodes in combination with HTML.
-(see Sources)
+(see [Sources](#sources))
 
 
 ### Can I offer an RSS feed of all job vacancies or by function?
 Yes, you can use standard WordPress RSS feeds. The URLs for this example:
 * /Category/publications/feed /
 * /Tag/Utrecht/feed/
+
 For example https://plugin.carerix.com/category/vacancies/feed/
 
 ### Can I submit a sitemap to Google Search Console?
