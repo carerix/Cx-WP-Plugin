@@ -284,13 +284,14 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 Medium 'web' is default, but you can show a different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
 You can do this by publishing to a different medium. You use this medium as follows:
 
+Additional Job sources with a different medium
 1. In the Carerix application: Create a new medium, for example web2 (only admins can create a medium)
-2. Publish least one job created for this additional medium
+2. Publish least one job created for this different medium
 3. In WordPress, go to the Carerix WordPress plugin settings
 4. Create a new job flow to (a new ‘Source‘)
 5. Fill the medium behind http://appname.carerix.com/cxtools/wp_feed.php? as follows: medium=web2 and save
-6. During synchronization, created an additional WordPress main category, it is given the name of this additional media.
-7. You can show you the various job listings through blog lists or list of tags.
+6. During synchronization, created an additional WordPress main category, it is given the name of this additional media
+7. You can show you the various job listings through blog lists or tags.
 
 > [!NOTE]
 > In Carerix publish your default to the medium 'web'. You do this in the settings of the Carerix WordPress plugin to fill out and you therefore blank.
