@@ -666,13 +666,13 @@ We can continue to make the plugin better and better with the necessary feedback
 ### How to enable logging and where is the logfile?
 You can enable the logging in Wordpress → Dashboard → Carerix → Settings → Tab Settings. The logfile is created in
 {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/tmp/logs/
-The logfile directory can grow fast in size which may lead to your site running out of disk space. So make sure you **only** enable it if you experience problems.
+> [!WARNING] The logfile directory can grow fast in size which may lead to your site running out of disk space. So make sure you **only** enable it if you experience problems.
 
 ### Where are the uploaded documents?
 Candidate documents (e.g. a CV because of a job application) are submitted to the Carerix system, but temporarily uploaded to the following folder to process it:
 {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/tmp/uploads/
 After a few hours the files are automatically removed by the plugin and will only reside in the Carerix system.
-> [!Note]: make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
+> [!WARNING] Make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
 
 🔴 [TO DO LATER: FAQs]
 
@@ -690,29 +690,6 @@ Additional Tips:
 * Use screenshots and visuals to enhance clarity.
 * Include clear code snippets for developers (in a separate section if needed).
 * Maintain a consistent tone and style throughout the documentation.
-
-
-
-_____________
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
-_____________
-
-VAN ALLES
 
 _____________
 
@@ -815,3 +792,21 @@ https://example.com/vacancy/9876/apply
 The resulting match will be created with previous tracking values.
 
 
+_____________
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+_____________
