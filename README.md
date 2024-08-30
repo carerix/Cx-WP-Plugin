@@ -614,13 +614,13 @@ Perhaps you have moved jobs to the trash. Remove them permanently from the trash
 Make sure to do a full jobs sync by clicking on the “**Enforce full sync of all items from Carerix**” button.
 
 ### Can I create a custom text confirmation or confirmation page?
-Yes
+Yes, follow these steps:
 1. Go to **Wordpress Dashboard** → **Carerix** → **Applicaton Forms** and open the desired form
 2. At the of the form select 'Confirmation message' if you want a standard confirmation text. 
 3. If you want to refer to a specific WordPress page. You can choose to enter a URL.
 
 ### Can I monitor conversions with Google Analytics?
-Yes, absolutely
+Yes, absolutely:
 * Make sure the Google Analytics (page) tracker code is already present for all site pages
 * Create a specific Wordpress page as confirmation page
 * In Google Analytics you can track the statistics of this page
