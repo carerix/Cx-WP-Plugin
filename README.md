@@ -221,38 +221,12 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 🔴 Waar gebruik je dit? In de Publication Detail body?
 
 <table>
-  <tr>
-   <td>
-[cx_rss_for_category]
-   </td>
-   <td>display the rss for the publication category
-   </td>
-  </tr>
-  <tr>
-   <td>[cx_rss_for_all]
-   </td>
-   <td>display the rss for all the publications
-   </td>
-  </tr>
-  <tr>
-   <td>[cx_print_link]
-   </td>
-   <td>display the print link
-   </td>
-  </tr>
-  <tr>
+    <tr>
    <td>[cx_function_group]
    </td>
    <td>display the function group
    </td>
   </tr>
-  <tr>
-   <td>[cx_vacancy_number]
-   </td>
-   <td>display the vacancy number, as auto-generated in Carerix. However, consider using [cx_vacancy_code] instead
-   </td>
-  </tr>
-  <tr>
    <td>[cx_vacancy_code]
    </td>
    <td>display the vacancy reference code. By default the reference code is equal to the auto-generated vacancy number in Carerix. But if you have changed the reference code in Carerix → Files → Job orders → General, this new entry is displayed
@@ -269,13 +243,6 @@ Under the Sources section you can create one or more Jobs sources. You can use t
    </td>
    <td>display the apply form
    </td>
-  </tr>
-  <tr>
-   <td> 🔴 [cx_job_alert_subscription_link] (discontinuing in upcoming releases)
-   </td>
-   <td>display the job alert subscription link
-   </td>
-  </tr>
 </table>
 
 * **Publication Excerpt**
