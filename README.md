@@ -30,8 +30,8 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * See the WordPress posts that are created
 
 🔴 TO DO
-* Configuration Options: Explain any settings or configuration options available for the plugin.
-* Shortcodes or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
+* [Configuration Options](#3-settings--usage): Explain any settings or configuration options available for the plugin.
+* [Shortcodes](#shortcodes) or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
 
 🔴 Add links to Table of Contents
 =================
