@@ -209,7 +209,7 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 
 ### Shortcodes in Job source 
 🔴 Kloppen deze nog allemaal? \
-🔴 Hoort dit in de Publication Detail body?
+🔴 Waar hoort dit? In de Publication Detail body?
 
 <table>
   <tr>
