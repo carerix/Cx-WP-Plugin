@@ -394,14 +394,10 @@ The Carerix WordPress plugin supports multilingualism. To do this, you use a mul
 6. Go to the Carerix settings and synchronize all items Carerix
 7. In the list of all messages (posts) you can see which posts have been published in any language
 
-NB: Please note that the 'Translation Options' of WPML are good.
+The Carerix plugin works perfectly with WPML, one of the best WordPress plugins multilingual. The price WPML is worth it, see [WPML](https://wpml.org/)
 
-1. WPML → Translate Options
-2. Optionally sync again
 
 ## Without multilingual plugin
-
-
 IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
 
 You can also show jobs from different languages ​​(different mediums) without multilingual plugin:
@@ -555,7 +551,8 @@ apply = "Versturen (formerly Solliciteren)"
 * Our new file nl-NL.resources.php is based on {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/assets/resources/nl-NL.resources.php. You can copy all desired elements from there to your own resource file.
 * Each section of language elements starts with a section heading [xxxxxxx] (recognized by the brackets).
 
-
+### How do I show the vacancies in other languages ​​on a multilingual website?
+See [Multilingual Websites](#multilingual-websites)
 
 # 5. FAQ (Frequently Asked Questions)
 
