@@ -639,6 +639,41 @@ Yes you can! You can build a template with the use of shortcodes in combination 
 (see Sources)
 
 
+### Can I offer an RSS feed of all job vacancies or by function?
+Yes, you can use standard WordPress RSS feeds. The URLs for this example:
+* /Category/publications/feed /
+* /Tag/Utrecht/feed/
+For example https://plugin.carerix.com/category/vacancies/feed/
+
+### Can I submit a sitemap to Google Search Console?
+Yes, use the following URL:
+https://domain.com/?carerix_sitemap
+
+### When I enable 'Google For Jobs' why do I get warnings from a (structured data) testing tool?
+These are warnings and not blocking errors.
+
+Google recommends you to provide detailed information about the vacancies. At the moment it's not possible to fully map the Carerix vacancy information to the Google For Jobs structure. But the most important data is covered.
+
+Also, Google For Jobs wants to know the address location of the jobs. Most clients of Carerix don't want to reveal this because it's sensitive business information. So this high level of detail is left out.
+
+### Can I customize the labels in the URL (such as ../category/, ../publications/ etc)?
+No, this is not possible
+
+### Why should I enable this: 'Reporting its location'?
+We can continue to make the plugin better and better with the necessary feedback that we receive from the plugin. No vacancy or candidate data is send, so there is no privacy issue, and it gives no performance issues.
+
+
+### How to enable logging and where is the logfile?
+You can enable the logging in Wordpress → Dashboard → Carerix → Settings → Tab Settings. The logfile is created in
+{WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/tmp/logs/
+The logfile directory can grow fast in size which may lead to your site running out of disk space. So make sure you **only** enable it if you experience problems.
+
+### Where are the uploaded documents?
+Candidate documents (e.g. a CV because of a job application) are submitted to the Carerix system, but temporarily uploaded to the following folder to process it:
+{WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/tmp/uploads/
+After a few hours the files are automatically removed by the plugin and will only reside in the Carerix system.
+> [!Note]: make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
+
 🔴 [TO DO LATER: FAQs]
 
 
