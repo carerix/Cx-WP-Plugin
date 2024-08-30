@@ -654,7 +654,7 @@ These are warnings and not blocking errors.
 
 Google recommends you to provide detailed information about the vacancies. At the moment it's not possible to fully map the Carerix vacancy information to the Google For Jobs structure. But the most important data is covered.
 
-Also, Google For Jobs wants to know the address location of the jobs. Most clients of Carerix don't want to reveal this because it's sensitive business information. So this high level of detail is left out.
+Also, Google For Jobs wants to know the address location of the jobs. Not all customers want to reveal this because it's sensitive business information. So this high level of detail is left out.
 
 ### Can I customize the labels in the URL (such as ../category/, ../publications/ etc)?
 No, this is not possible
