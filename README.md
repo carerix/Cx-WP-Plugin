@@ -574,6 +574,9 @@ Be aware that the Carerix user would need a little bit of Html experience to add
 4. Save the changes
 5. Sync the WordPress plugin on the website
 
+### Can I add a youtube video into the vacancy text?
+Yes, you can add HTML in the publication text, so you can add a Youtube video as you would in a WordPress post, using the Html or a shortcode:
+for example: ``https://www.youtube.com/watch?v=4bUS0k5L6v8`` or `[embed width="600px" ]https://www.youtube.com/watch?v=4bUS0k5L6v8[/embed]`
 
 
 🔴 [TO DO LATER: FAQs]
