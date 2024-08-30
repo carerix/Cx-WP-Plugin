@@ -158,6 +158,9 @@ See the parameters for Open Application below
 </table>
 
 ### Settings of a (custom) Application Form
+You can create a new form and link it to the desired Job feed source. For each form you can synchronize the fields from Carerix.
+Note that you must first save the title of the form before you can synchronize. You can compose each form yourself by or (un)checking the appropriate (and/or required) fields.
+
 🔴 KLOPT DIT NOG (is nu toch een shortcode?): 
 * Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
 * Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
@@ -170,14 +173,12 @@ See the parameters for Open Application below
 
 
 ## Sources
-
 Under the Sources section you can create one or more Jobs sources. You can use the Default jobs source or you can create a custom form:
 
 * Use a different other settings or a different template lay out for your vacancy posts
 * Use a different Carerix  'medium'-code (like 'web' or 'web2' or 'web-en')
 
 ### Configuring a Job source
-
 1. Add a new Jobs source click via Add New button.
 2. When you Add or edit a Source you need to synchronize to see changes
 3. Deleting a source will not delete the generated posts from wordpress but only that specific source
