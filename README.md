@@ -84,7 +84,7 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 
 ## Change ApplyURL to website
 
-Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (Settings →  Attributes and fields →  Apply_url)
+Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (**Settings** →  **Attributes and fields** →  **Apply_url**)
 
 ```
 https://domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
