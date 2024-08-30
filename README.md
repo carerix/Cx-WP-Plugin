@@ -296,7 +296,7 @@ You can do this by publishing to a different medium. You use this medium as foll
 2. Publish least one job created for this different medium
 3. In WordPress, go to the Carerix WordPress plugin settings
 4. Create a new job flow to (a new ‘Source‘)
-5. Fill the medium behind https://appname.carerix.com/cxtools/wp_feed.php? as follows: `medium=web2  and save
+5. Fill the medium behind https://appname.carerix.com/cxtools/wp_feed.php? as follows: `medium=web2` and save
 6. During synchronization, created an additional WordPress main category, it is given the name of this additional media
 7. You can show you the various job listings through blog lists or tags.
 
