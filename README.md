@@ -707,17 +707,14 @@ Currently we have chosen to jobs not offering as Custom Post Types because many 
 
 # 6. Support
 
-
-
-* Provide information on where users can get help, such as a support forum, email address, or ticketing system.
- \
-Additional Tips:
-
-
-
+* Give a clear description of the issue 
+* 🔴 [Github issues](https://github.com/carerix/Cx-WP-Plugin/issues)? Provide information on where users can get help, such as a support forum, email address, or ticketing system.
 * Use screenshots and visuals to enhance clarity.
-* Include clear code snippets for developers (in a separate section if needed).
-* Maintain a consistent tone and style throughout the documentation.
+* Include clear code snippets if necessary.
+
+## Disclaimer
+**Altering the plugin**
+If someone alters (the code of) the plugin this will invalidate any form of support. Carerix can not support customizations. Also customizations will be lost at each update of the plugin!
 
 _____________
 
@@ -773,9 +770,6 @@ _____________
 
 _____________
 
-## Location Reporting
-
-If you check the Allow the plugin to report its location, the plugin will periodically send data about the location of where the plugin was installed back to Carerix.
 
 ## Create RSS feeds per category
 
