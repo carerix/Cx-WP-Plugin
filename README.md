@@ -547,10 +547,9 @@ in {WORDPRESS-ROOT}/wp-content/themes/your-child-theme/CxWordpress/assets/resour
 **2. Edit the new file**
 
 'nl-NL.resources.php as follows'
-
-;<?php die()?> [CxPortal.message.field] introduction = "Intro (formerly Introductie)" requirements = "Wat neem jij mee? (formerly Functie-eisen)" offer = "Wat bieden wij? (formerly Aanbod)" organization = "Over deze werkgever (formerly Organisatie)" function = "Wat ga je doen? (formerly Functie)" information = "Meer informatie (formerly Inlichtingen)" application = "Solliciteren bij (formerly Sollicitatie)" closingDate = "Sluitingsdatum (formerly Sluitdatum)" [general.button]
-apply = "Versturen (formerly Solliciteren)"
-
+```
+;<?php die()?> [CxPortal.message.field] introduction = "Intro (formerly Introductie)" requirements = "Wat neem jij mee? (formerly Functie-eisen)" offer = "Wat bieden wij? (formerly Aanbod)" organization = "Over deze werkgever (formerly Organisatie)" function = "Wat ga je doen? (formerly Functie)" information = "Meer informatie (formerly Inlichtingen)" application = "Solliciteren bij (formerly Sollicitatie)" closingDate = "Sluitingsdatum (formerly Sluitdatum)" [general.button] apply = "Versturen (formerly Solliciteren)"
+```
 **3. Do a full sync from Carerix to regenerate the job posts**
 (Wordpress→Dashboard → Carerix → Settings → Button “Enforce full sync of all items from Carerix” or “Synchronize new/changed items from Carerix”)
 
