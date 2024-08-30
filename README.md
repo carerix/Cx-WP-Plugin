@@ -306,7 +306,7 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 
 ______________________________________________________________
 
-| Shortcode                               | Deprecated |
+| Deprecated Shortcodes                               |  |
 | ---------------------------------------------------- | ---------- |
 | [cx_rss_for_all ]<br>                                | Deprecated |
 | [cx_print_link ]<br>                                 | Deprecated |
