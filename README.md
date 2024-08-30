@@ -48,11 +48,7 @@ Getting Started: A basic guide to using the plugin's core functionalities.
 
 See https://github.com/carerix/Cx-WP-Plugin/releases
 
-## 3. Usage
-### 3.1 Settings Carerix
-
 ....
-
 
 # Installation
 
@@ -118,7 +114,8 @@ For example [https://domainname.com/pubid/123](https://domainnamee.com/pubid/123
 > 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
 > 4. Go to the external link [https://website.com/?carerix_sync](https://website.com/?carerix_sync) that is available without logging in. After syncing a log of that last sync will be displayed.
 
-## Forms
+# 3. Settings & Usage
+## Application Forms
 
 By default a form named Form 1 is ready for use. This default form can not be changed. Create your a new form if you want to customize your application form:
 1. Each apply form can also be used for different kind of publications (see settings under [Sources](#sources --> Apply Form) )
@@ -157,8 +154,6 @@ See the parameters for Open Application below
    </tbody>
 </table>
 
-
-
 ### Configuring a custom Form
 Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
 Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
@@ -173,7 +168,7 @@ Agreement link:
 
 ## Sources
 
-Under the Sources section you can create one or more Jobs sources. You can use the Default jobs source or you can create new ones. Create a different source if you want to:
+Under the Sources section you can create one or more Jobs sources. You can use the Default jobs source or you can create a custom form:
 
 * Use a different other settings or a different template lay out for your vacancy posts
 * Use a different Carerix  'medium'-code (like 'web' or 'web2' or 'web-en')
@@ -213,6 +208,9 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 </table>
 
 ### Shortcodes in Job source 
+🔴 Kloppen deze nog allemaal?
+🔴 Hoort dit in de Publication Detail body?
+
 <table>
   <tr>
    <td>
@@ -264,7 +262,7 @@ Under the Sources section you can create one or more Jobs sources. You can use t
    </td>
   </tr>
   <tr>
-   <td>[cx_job_alert_subscription_link] (discontinuing in upcoming releases)
+   <td> 🔴 [cx_job_alert_subscription_link] (discontinuing in upcoming releases)
    </td>
    <td>display the job alert subscription link
    </td>
@@ -360,6 +358,38 @@ Disable 'not for web' and enable each desired business-line you want to connect 
 
 ---
 
+# Multilingual Websites
+
+The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
+
+1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
+2. Create an additional publications of a job
+3. One publication (1st language) already has the medium `web`. Make an extra publication of the same job and web (2nd language) with it. Please note that this publication contains the texts in the 2nd language.
+4. Go to the WordPress Website
+5. Install WPML and adjust it as desired
+6. Go to the Carerix settings and synchronize all items Carerix
+7. In the list of all messages (posts) you can see which posts have been published in any language
+
+NB: Please note that the 'Translation Options' of WPML are good.
+
+1. WPML → Translate Options
+2. Optionally sync again
+
+## Without multilingual plugin
+
+
+IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
+
+You can also show jobs from different languages ​​(different mediums) without multilingual plugin:
+
+1. Create a medium (per language) a separate job to feed source,
+2. On Set Feed Source Parameters Add `medium=web` and as parameter behind `/cxtools/wp_feed.php?`
+3. You now have several job feeds, jobs are created as separate jobs in the'd really rather know categories. The page is created only displays the jobs with the medium 'and web.
+
+
+_____________
+
+
 
 ## Diagnostics (since v3.0.0)
 
@@ -372,11 +402,7 @@ You can review the 'active job publications' but also the available 'medium code
 
 
 _____________
-# 🔴 Advanced FEATURES
-
-___________
-
-## 4. Advanced Features (Optional)
+# 🔴 4. Advanced Features (Optional)
 
 * For developers or experienced users, this section can cover:
     * Hooks and filters used by the plugin.
@@ -483,39 +509,8 @@ Default resources are used to generate the names of the taxonomies. The language
 
 Define your own values for the taxonomies creating for each languge a different / new value to overwrite the default ones filled from resources.
 
-# Multilingual Websites
 
-The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
-
-1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
-2. Create an additional publications of a job
-3. One publication (1st language) already has the medium `web`. Make an extra publication of the same job and web (2nd language) with it. Please note that this publication contains the texts in the 2nd language.
-4. Go to the WordPress Website
-5. Install WPML and adjust it as desired
-6. Go to the Carerix settings and synchronize all items Carerix
-7. In the list of all messages (posts) you can see which posts have been published in any language
-
-NB: Please note that the 'Translation Options' of WPML are good.
-
-1. WPML → Translate Options
-2. Optionally sync again
-
-## Without multilingual plugin
-
-
-IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
-
-You can also show jobs from different languages ​​(different mediums) without multilingual plugin:
-
-1. Create a medium (per language) a separate job to feed source,
-2. On Set Feed Source Parameters Add `medium=web` and as parameter behind `/cxtools/wp_feed.php?`
-3. You now have several job feeds, jobs are created as separate jobs in the'd really rather know categories. The page is created only displays the jobs with the medium 'and web.
-
-
-_____________
-
-
-## 5. FAQ (Frequently Asked Questions)
+# 5. FAQ (Frequently Asked Questions)
 
 
 
@@ -524,7 +519,7 @@ _____________
 🔴 [TO DO LATER: FAQs]
 
 
-## 6. Support
+# 6. Support
 
 
 
