@@ -282,7 +282,7 @@ In WordPress you can use this shortcode to show a form for job alerts (vacancy s
 You can create a standalone Job Alert Subscription page, using this shortcode:
 
 ````
-[cx_job_alert_subscription frequency="*daily*|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
+[cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
 confirmation_message="Thank you for subscribing. Shortly you will receive an email with an activation link.
 After activation you will start receiving new job opportunities in your mailbox on a daily basis!"
 confirmation_url="/jobalert_thank_you/"]
