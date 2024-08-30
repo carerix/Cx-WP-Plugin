@@ -520,7 +520,7 @@ Configuring custom conversion/tracking code
 
 
 * Note: understanding of/some skills in JavaScript is required
-* As an administrator from your Wordpress Dashboard, navigate to Carerix → Settings → Tab 'Conversion tracking'
+* As an administrator from your Wordpress Dashboard, navigate to **Carerix** → *Settings* → Tab '**Conversion tracking**'
 * Enter valid javascript code including &lt;script>-tags in the corresponding text-boxes
 * You can access special global variables holding information like publication-ID, vacancy-ID and job title. The available variables names are displayed in the blue information box. Tip: you can also dump this information in your browser debug console by entering console.log(cx); at a vacancy description page.
 * Finally you can use the methods cx.setApplySource() and cx.setApplyTags() to add extra information to the application (retrievable in the Carerix system under 'Matches')
