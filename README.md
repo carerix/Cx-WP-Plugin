@@ -631,7 +631,7 @@ Yes, absolutely:
 ### How to search / filter by taxonomy?
 Jobs include taxonomy by Country and Region, Function and Training. Use those taxonomies in your  Search & Filter widgets of plugins.
 
-🔴 CHECKEN: ### Can I use a search radius from a postal code area?
+### 🔴 CHECKEN: Can I use a search radius from a postal code area?
 With the 'Carerix Search widget' it is possible to search by radius. These can be found under Wordpress → Dashboard → View → Widgets. You need WordPress editing rights. However, if you use a third party search-plugin (like Search & Filter or Jet SmartFilters) you cannot use this radius function because of technical limitations.
 See the example in https://demo.carerix.com/plugin/zoeken-filteren/
 
