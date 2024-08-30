@@ -167,7 +167,7 @@ See the parameters for Open Application below
 You can create a new form and link it to the desired Job feed source. For each form you can synchronize the fields from Carerix.
 Note that you must first save the title of the form before you can synchronize. You can compose each form yourself by or (un)checking the appropriate (and/or required) fields.
 
-* 🔴 KLOPT DIT NOG (is nu toch een shortcode?): Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
+* 🔴 KLOPT DIT NOG (Dit is nu toch een shortcode?): Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
 * Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
 * Address format: International / Dutch. For Dutch each field is split on it's own form field while for International the entire addres can be inserted in one textarea.
 * Agreement link (No agreement link by default):
@@ -528,10 +528,12 @@ Configuring custom conversion/tracking code
 
 
 ## 🔴 CHECKEN: How to use the 'cxwordpress_post_updated' hook?
+```
 With this hook you can apply changes to a vacancy-post upon (creation/update) to have it better fit into your site/theme. It's useful to apply changes in text formatting or post-statuses.
 Example, edit the file 'functions.php' in your activated child theme. Add the following:
 function my_cx_post_preparation(array $postids, array $data, array $cxfields ) { $post_id = (int) $postids[0]; // First item is the WP post ID $post_data_v1 = $data[0]; // The original data that the CX WP plugin has saved/updated $_post = get_post( $post_id ); // Another way to access the post data $post_cxfields = $cxfields[0]; // First item holds an associative array of retrieved (raw) CX fields $pub_id = get_post_meta($post_id, 'guid', true); // CX publication ID // Example to retrieve some specific CX fields $cx_requirements = get_post_meta($post_id, 'requirementsInformation', true); $cx_function_group = get_the_terms($post_id, "functiongroups")[0]->name ?? ""; $cx_function_name = get_the_terms($post_id, "functions")[0]->name ?? ""; $cx_min_salary = $post_cxfields['minSalary'] + 0; $cx_max_salary = $post_cxfields['maxSalary'] + 0; $cx_period_salary = $post_cxfields['salaryPeriodClassification']; // MonthTag = per hour, HourTag = per month, etc. // Example to update the post content $_post ->post_content = "< h1 >Hook `cxwordpress_post_updated` altered this post contents!</ h1 >" . $_post ->post_content; wp_update_post( $_post ); // Update post // Example to set post meta info. This is specifically for posts in the Divi theme. Note "_et" is an abbreviation for Elegant Themes. update_post_meta( $post_id, '_et_pb_page_layout', 'et_full_width_page'); // force Divi post as a full width page update_post_meta( $post_id, '_et_pb_show_title', 'off'); // turn Divi post titles off // Clean cache wp_cache_delete( $post_id, 'posts' ); } // Add the hook with prio 3 (default) and accepting 3 arguments
 add_action( 'cxwordpress_post_updated', 'my_cx_post_preparation', 10, 3);
+```
 
 
 ## 🔴 CHECKEN: New method for language edits
