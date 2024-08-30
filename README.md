@@ -677,6 +677,21 @@ After a few hours the files are automatically removed by the plugin and will onl
 > [!WARNING]
 > Make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
 
+### Why not Custom Post Types instead of regular posts for vacancies?
+**Pro's** \
+* Templates: Web builder can use a custom template specifically for job post types.
+* Filters: 3rd Party filters specifically for Custom post types are set
+* Consistency: Difference between news and jobs is clearly in the admin area.
+
+**Cons** \
+* Blog post listings: It is not possible to show vacancies in major blog listing.
+* Compatibility: Switch between regular and post types Custom post types can cause synchronization problems.
+
+
+Currently we have chosen to jobs not offering as Custom Post Types because many of our customers use the standard features like blog listing.
+
+
+
 🔴 [TO DO LATER: FAQs]
 
 
