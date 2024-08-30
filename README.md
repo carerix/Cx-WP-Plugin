@@ -707,10 +707,11 @@ Currently we have chosen to jobs not offering as Custom Post Types because many 
 
 # 6. Support
 
-* Give a clear description of the issue 
 * 🔴 [Github issues](https://github.com/carerix/Cx-WP-Plugin/issues)? Provide information on where users can get help, such as a support forum, email address, or ticketing system.
+* Give a clear description of the issue 
 * Use screenshots and visuals to enhance clarity.
 * Include clear code snippets if necessary.
+* Make sure not to send confidential information
 
 ## Disclaimer
 **Altering the plugin**
