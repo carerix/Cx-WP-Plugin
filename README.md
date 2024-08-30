@@ -293,7 +293,6 @@ You can do this by publishing to a different medium. You use this medium as foll
 7. You can show you the various job listings through blog lists or list of tags.
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
 > In Carerix publish your default to the medium 'web'. You do this in the settings of the Carerix WordPress plugin to fill out and you therefore blank.
 
 
