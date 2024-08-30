@@ -535,9 +535,26 @@ Define your own values for the taxonomies creating for each languge a different 
 
 # 5. FAQ (Frequently Asked Questions)
 
+### How do I get the Application Name and Token?
+* Application name is the first part of the customers application: `applicationname.carerix.net`
+* For the Application Token see: [Application Token](#authorisation-of-the-plugin-for-the-specified-carerix-application)
+
+### Why don't I see any vacancies?
+Jobs are displayed under the following conditions (You need Carerix administrator):
+* In Carerix, the medium-code of publications have to be set to web
+(or intentionally match a custom medium-code which is used in the plugin)
+* Last publication date is on or after today. Please note, check if necessary in the Carerix application:
+    * Publication Basic tab: Last publication date
+    * Publication Admin tab: Closing date
+    * Job: Start Date
+
+You can always verify if which publications have been synced during the last sync via the diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**)
 
 
-* Address common questions users might have about the plugin's functionality or troubleshooting.
+### Can I edit the job posts?
+Yes and No: You can manually add a Featured Image (open the job post and add Featured image). But be aware that manual changes in the job posts texts are overridden by the next vacancy sync, but as the featured image is not part of vacancy syncs it won't be removed)
+You can check by forcing a manual sync: Located in Wordpress → Dashboard → Carerix → Settings → Tab Settings → Button 'Synchronize new/changed items from Carerix'.
+
 
 🔴 [TO DO LATER: FAQs]
 
