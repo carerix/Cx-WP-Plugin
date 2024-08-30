@@ -360,6 +360,9 @@ Disable 'not for web' and enable each desired business-line you want to connect 
 The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
 
 You can review the 'active job publications' but also the available 'medium codes'.
+* General plugin (version) information (Active mediums, Open application found, etc)
+* Active job publications (synced from Carerix, with Pub ID, Title, start date, Visibility sensitive data)
+* Available mediums (in Carerix)
 
 
 _____________
