@@ -167,8 +167,7 @@ See the parameters for Open Application below
 You can create a new form and link it to the desired Job feed source. For each form you can synchronize the fields from Carerix.
 Note that you must first save the title of the form before you can synchronize. You can compose each form yourself by or (un)checking the appropriate (and/or required) fields.
 
-🔴 KLOPT DIT NOG (is nu toch een shortcode?): 
-* Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
+* 🔴 KLOPT DIT NOG (is nu toch een shortcode?): Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
 * Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
 * Address format: International / Dutch. For Dutch each field is split on it's own form field while for International the entire addres can be inserted in one textarea.
 * Agreement link (No agreement link by default):
