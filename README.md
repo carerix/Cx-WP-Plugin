@@ -14,7 +14,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 ### Features
 
 * Show Carerix Vacancies (Publications) as WordPress Posts
-* Create your own (custom) layout for Vacancy posts (with shortcodes and Html)
+* Create your own (custom) layout for Vacancy posts (with shortcodes and HTML)
 * Create your own (custom) Application Form (select and reorder form fields)
 * Show multiple overviews of Vacancy posts from different sources
 * Job Alert
@@ -514,11 +514,9 @@ Configuring custom conversion/tracking code
 
 
 ## Taxonomies
-
 The plugin is generating Taxonomies for Jobs posts:
 
 **Jobs**
-
 * Countries - Country
 * Regions - Region
 * Educations - Education 0
@@ -532,6 +530,27 @@ Default resources are used to generate the names of the taxonomies. The language
 
 Define your own values for the taxonomies creating for each languge a different / new value to overwrite the default ones filled from resources.
 
+
+## 🔴 CHECKEN: New method
+You need (s)FTP credentials for the WordPress website to do this. The idea is to override portions of the plugin's language file within your own child theme. That way you are sure the language modifications aren't reverted when a new plugin version is released.
+In this example we will change the heading text “Introductie” (introduction) which appears in the vacancy texts. We assume you've set the Wordpress site language to Dutch and have the site running in a child theme.
+
+**1. Create a blank PHP-file called**
+nl-NL.resources.php in {WORDPRESS-ROOT}/wp-content/themes/your-child-theme/CxWordpress/assets/resources/ Change your-child-theme to your child theme directory name and create the subdirectories (CxWordpress/assets/resources) if needed.
+
+**2. Edit the new file**
+'nl-NL.resources.php as follows'
+;<?php die()?> [CxPortal.message.field] introduction = "Intro (formerly Introductie)" requirements = "Wat neem jij mee? (formerly Functie-eisen)" offer = "Wat bieden wij? (formerly Aanbod)" organization = "Over deze werkgever (formerly Organisatie)" function = "Wat ga je doen? (formerly Functie)" information = "Meer informatie (formerly Inlichtingen)" application = "Solliciteren bij (formerly Sollicitatie)" closingDate = "Sluitingsdatum (formerly Sluitdatum)" [general.button]
+apply = "Versturen (formerly Solliciteren)"
+
+3. Do a full sync from Carerix to regenerate the job posts (Wordpress→Dashboard → Carerix → Settings → Button “Enforce full sync of all items from Carerix” or “Synchronize new/changed items from Carerix”)
+
+**Notes**:
+* Our new file nl-NL.resources.php is based on {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/assets/resources/nl-NL.resources.php. You can copy all desired elements from there to your own resource file.
+* Each section of language elements starts with a section heading [xxxxxxx] (recognized by the brackets).
+
+### Alternative method
+To change the default titles or lyrics of the plugin, you could use this plugin: Real-time Find and Replace allows you to change text or HTML code (client-side), eg. You could modify the HTML code like in the example below:
 
 # 5. FAQ (Frequently Asked Questions)
 
@@ -566,7 +585,7 @@ For example use the shortcode `[cx_apply_form]` (instead of `[cx_apply_form]` wh
 
 ### Can I add an image within the paragraphs of the vacancy texts?
 Yes, you can add HTML or a shortcode in the publication text in the Carerix application. 
-Be aware that the Carerix user would need a little bit of Html experience to add this to the publication text.
+Be aware that the Carerix user would need a little bit of HTML experience to add this to the publication text.
 1. In the Carerix application open the publication text where you want to add the image
 2. Switch the editor to HTML mode
 3. Insert the HTML-image-tag in the HTML source code. For example:
@@ -584,6 +603,36 @@ use for example:
 Perhaps you have moved jobs to the trash. Remove them permanently from the trash. After synchronization, they are recreated again and are visible.
 
 Make sure to do a full jobs sync by clicking on the “**Enforce full sync of all items from Carerix**” button.
+
+### Can I create a custom text confirmation or confirmation page?
+Yes
+1. Go to **Wordpress Dashboard** → **Carerix** → **Applicaton Forms** and open the desired form
+2. At the of the form select 'Confirmation message' if you want a standard confirmation text. 
+3. If you want to refer to a specific WordPress page. You can choose to enter a URL.
+
+### Can I monitor conversions with Google Analytics?
+Yes, absolutely
+* Make sure the Google Analytics (page) tracker code is already present for all site pages
+* Create a specific Wordpress page as confirmation page
+* In Google Analytics you can track the statistics of this page
+* You could also add this confirmation page as one of your Goals
+
+🔴 CHECKEN: Also see [Applicant Source Tracking](#applicant-source-tracking) for tracking candidates in Carerix throughout their application process.
+
+### How to search / filter by taxonomy?
+Jobs include taxonomy by Country and Region, Function and Training. Use those taxonomies in your  Search & Filter widgets of plugins.
+
+🔴 CHECKEN: ### Can I use a search radius from a postal code area?
+With the 'Carerix Search widget' it is possible to search by radius. These can be found under Wordpress → Dashboard → View → Widgets. You need WordPress editing rights. However, if you use a third party search-plugin (like Search & Filter or Jet SmartFilters) you cannot use this radius function because of technical limitations.
+See the example in http://demo.carerix.com/plugin/zoeken-filteren/
+
+
+### Can I change the Layout or styling of the vacancies?
+Yes, the plugin has minimal styling so it basically follows the theme used. Additionally, you can build your own template layout with HTML and Shortcodes in 'Publication Details Header/Body/Footer within a source.
+
+### Can I change the text of the headings, labels, buttons for vacancy texts and application forms?
+Yes you can! You can build a template with the use of shortcodes in combination with HTML.
+(see Sources)
 
 
 🔴 [TO DO LATER: FAQs]
@@ -703,7 +752,7 @@ This will result in a standard RSS page containing all posts from category publi
 
 ## Applicant Source Tracking
 
-🔴 The apply page supports 2 new GET parameters cx_applysource and cx_applytags as of version 2.14.36
+🔴 CHECKEN: The apply page supports 2 new GET parameters cx_applysource and cx_applytags as of version 2.14.36
 
 
 ## Usage example
