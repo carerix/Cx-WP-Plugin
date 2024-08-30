@@ -310,8 +310,7 @@ The process for the candidate is as follows:
 3. Candidate is subscribed and starts receiving mail with (new) vacancies on a (daily) basis that match the selected criteria
 4. To cancel, the candidate can use the unsubscribe link in the job alert mails
 
-### Jobalert Preparation in Carerix
-
+### Jobalert Step 1: Preparation in Carerix
 Follow the steps in the following help article:
 1. Follow the steps in the following help article: [Helpdeks: Job alert](https://help.carerix.com/en/articles/1954170)
 2. Make sure the email template with code `web-subscribe` (“Vacancy subscription confirmation / Vacature abonnement bevestiging”) is also installed. 
@@ -321,7 +320,6 @@ Follow the steps in the following help article:
 
 ### Jobalert Step 3: Fine-tuning in Carerix
 In Carerix, you can fine-tune the following candidate criteria for the job alert form:
-
 * Country selection
 * Business-line selection
 * Function group selection
