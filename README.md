@@ -290,57 +290,53 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 
 <table>
 <tr>
-    <td>**Shortcode**
-
-   </td>
-   <td>
-   </td>
-   <td>[cx_apply_button]
-
-   </td>
-   <td>[cx_apply_button ]
-
-   </td>
-   <td>[cx_apply_form]
-
-   </td>
+   <td>Shortcode</td>
+   <td>Parameters</td>
+   </tr>
+   <tr>
+      <td>[cx_apply_button]</td>
+   <td>[cx_apply_button ]</td>
+   </tr>
+   <tr>
+   <td>[cx_apply_form]</td>
    <td>[cx_apply_form ]
-
    </td>
+   </tr>
+   <tr>
    <td>[cx_apply_until]
-
    </td>
    <td>[cx_apply_until ]
-
    </td>
+   </tr>
+   <tr>
    <td>[cx_campaign]
-
 Deprecated since v3.1.0, will be removed soon
-
    </td>
    <td>[cx_campaign* sendto="email@addre.ss" "campaignid="x" "codeinname="abc" ]
-
 Deprecated since v3.1.0, will be removed soon
-
    </td>
+   </tr>
+   <tr>
    <td>[cx_application_contact_information]
-
    </td>
    <td>[cx_application_contact_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
-
    </td>
+   </tr>
+   <tr>
    <td>[cx_company_information]
-
    </td>
    <td>[cx_company_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
-
    </td>
+   </tr>
+   <tr>
    <td>[cx_country]
 
    </td>
    <td>[cx_countryseparator=", " "container="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
+   </tr>
+   <tr>
    <td>[cx_education]
 
    </td>
@@ -603,6 +599,7 @@ Deprecated since v3.1.0, will be removed soon
    <td>[cx_workplace_type ]
 
    </td>
+
 </tr>
 </table>
 
