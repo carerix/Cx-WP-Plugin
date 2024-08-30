@@ -525,8 +525,6 @@ Configuring custom conversion/tracking code
 * You can access special global variables holding information like publication-ID, vacancy-ID and job title. The available variables names are displayed in the blue information box. Tip: you can also dump this information in your browser debug console by entering console.log(cx); at a vacancy description page.
 * Finally you can use the methods cx.setApplySource() and cx.setApplyTags() to add extra information to the application (retrievable in the Carerix system under 'Matches')
 
-
-
 ## 🔴 CHECKEN: How to use the 'cxwordpress_post_updated' hook?
 ```
 With this hook you can apply changes to a vacancy-post upon (creation/update) to have it better fit into your site/theme. It's useful to apply changes in text formatting or post-statuses.
