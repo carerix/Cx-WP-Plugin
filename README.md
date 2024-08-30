@@ -24,10 +24,10 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Diagnostic tools
 
 ## Getting Started: A basic guide to using the plugin's core functionalities.
-* Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin))
-* Setting [Source](#sources) with correct Carerix 'medium'
-* First time Sync
-* See the WordPress posts that are created
+1. Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin))
+2.  Setting [Source](#sources) with correct Carerix 'medium'
+3. First time Sync
+4. See the WordPress posts that are created
 
 🔴 TO DO
 * [Configuration Options](#3-settings--usage): Explain any settings or configuration options available for the plugin.
