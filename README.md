@@ -107,12 +107,13 @@ For example [https://domainname.com/pubid/123](https://domainnamee.com/pubid/123
 
 > [!NOTE]
 > ## Synchronizing Vacancies (Publications) from Carerix to your site
-> The Carerix WordPress plugin updates the publications every 10 minutes. You can use the Synchronize Now button to manually initiate the synchronize mechanism, if you want to see the changes immediately. Or you can use the external link.
+> The Carerix WordPress plugin updates the publications every 10 minutes (you can not change this interval). You can use the Synchronize Now button to manually initiate the synchronize mechanism, if you want to see the changes immediately. Or you can use the external link.
 > 
 > 1. Automatically every 10 minutes
 > 2. Manually hit the Button: **Synchronize new/changed items from Carerix**
 > 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
 > 4. Go to the external link [https://website.com/?carerix_sync](https://website.com/?carerix_sync) that is available without logging in. After syncing a log of that last sync will be displayed.
+
 
 ---
 
@@ -156,15 +157,15 @@ See the parameters for Open Application below
    </tbody>
 </table>
 
-### Configuring a custom Application Form
-Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
-Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
-Address format: International / Dutch. For Dutch each field is split on it's own form field while for International the entire addres can be inserted in one textarea.
-Agreement link:
-* Default: no agreement link
-* Insert desired text in the “Agreement Label” and in “Agreement text” fields to generate and display the link.
-* Insert an URL to be associated with the agreement text url. If Agreement URL field is filled it takes precedent over the Agreement text.
-* Captcha: choose in which page to display the Captcha code
+### Settings of a (custom) Application Form
+🔴 KLOPT DIT NOG (is nu toch een shortcode?): 
+* Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
+* Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
+* Address format: International / Dutch. For Dutch each field is split on it's own form field while for International the entire addres can be inserted in one textarea.
+* Agreement link (No agreement link by default):
+    * Insert desired text in the “Agreement Label” and in “Agreement text” fields to display the link.
+    * Insert an URL to be associated with the agreement text url. If Agreement URL field is filled it takes precedent over the Agreement text.
+* Captcha: Choose to display the Captcha code
 * Advanced: Clear Datanodes Cache. If you made a change in the Carerix System to one of the DataNodes used here, you should clean the cache.
 
 
@@ -284,7 +285,7 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 Medium 'web' is default, but you can show a different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
 You can do this by publishing to a different medium. You use this medium as follows:
 
-Additional Job sources with a different medium
+### Additional Job sources with a different medium
 1. In the Carerix application: Create a new medium, for example web2 (only admins can create a medium)
 2. Publish least one job created for this different medium
 3. In WordPress, go to the Carerix WordPress plugin settings
