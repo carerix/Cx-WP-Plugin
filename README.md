@@ -313,7 +313,9 @@ The process for the candidate is as follows:
 ### Jobalert Step 1: Preparation in Carerix
 Follow the steps in the following help article:
 1. Follow the steps in the following help article: [Helpdeks: Job alert](https://help.carerix.com/en/articles/1954170)
-2. Make sure the email template with code `web-subscribe` (“Vacancy subscription confirmation / Vacature abonnement bevestiging”) is also installed. 
+2. Make sure these email template are installed
+* `web-subscribe` (“Vacancy subscription confirmation / Vacature abonnement bevestiging”)
+* `jobalert` (The daily/weekly mailing it self)
 
 ### Jobalert Step 2: Use the Shortcode in Wordpress
 1. Create a general page and use above shortcode in the content
