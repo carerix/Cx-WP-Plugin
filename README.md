@@ -553,7 +553,7 @@ You can always verify if which publications have been synced during the last syn
 
 ### Can I edit the job posts?
 Yes and No: You can manually add a Featured Image (open the job post and add Featured image). But be aware that manual changes in the job posts texts are overridden by the next vacancy sync, but as the featured image is not part of vacancy syncs it won't be removed)
-You can check by forcing a manual sync: Located in Wordpress → Dashboard → Carerix → Settings → Tab Settings → Button 'Synchronize new/changed items from Carerix'.
+You can check by forcing a manual sync: Located in **Wordpress → Dashboard → Carerix → Settings → Tab Settings → Button** '**Synchronize new/changed items from Carerix**'.
 
 
 🔴 [TO DO LATER: FAQs]
