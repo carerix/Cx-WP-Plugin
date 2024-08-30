@@ -48,7 +48,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 
 See https://github.com/carerix/Cx-WP-Plugin/releases
 
-....
+🔴 Embed latest release?
 
 # Installation
 

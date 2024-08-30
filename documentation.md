@@ -1,6 +1,5 @@
-WordPress Plugin
+# BACK UP WordPress Plugin
 ----------------
-BACK UP 
 Dit document bevat een backup van 2 Wiki pagina’s : 
 1. De Technical info
 2. Getting started guide 
