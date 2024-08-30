@@ -304,6 +304,17 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 | [cx_work_postal_codecontainer="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class=" "raw="yes\|no" quotes="double\|single" ]                    | Displays the postal code of the work location. It's empty if the job order is set to anonymous in the Carerix system.                                                                                                                                                                                    |
 | [cx_workplace_type ]                                                                                                                                                            | Displays the workplace type, e.g. Remote, On site or Hybrid                                                                                                                                                                                                                                              |
 
+______________________________________________________________
+
+| Shortcode                               | Deprecated |
+| ---------------------------------------------------- | ---------- |
+| [cx_rss_for_all ]<br>                                | Deprecated |
+| [cx_print_link ]<br>                                 | Deprecated |
+| [cx_login_form ]<br>                                 | Deprecated |
+| [cx_newsletter_subscription\* newsletterID="x" ]<br> | Deprecated |
+| [cx_social_icons ]<br>                               | Deprecated |
+| [cx_vacancy_number ]<br>                             | Deprecated |
+
 
 ### Medium
 
