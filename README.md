@@ -156,7 +156,7 @@ See the parameters for Open Application below
    </tbody>
 </table>
 
-### Configuring a custom Form
+### Configuring a custom Application Form
 Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
 Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
 Address format: International / Dutch. For Dutch each field is split on it's own form field while for International the entire addres can be inserted in one textarea.
@@ -281,6 +281,20 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 ### 🔴 Shortcodes for Publication body
 🔴 \[SHORTCODES\]
 
+Medium 'web' is default, but you can show a different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
+You can do this by publishing to a different medium. You use this medium as follows:
+
+1. In the Carerix application: Create a new medium, for example web2 (only admins can create a medium)
+2. Publish least one job created for this additional medium
+3. In WordPress, go to the Carerix WordPress plugin settings
+4. Create a new job flow to (a new ‘Source‘)
+5. Fill the medium behind http://appname.carerix.com/cxtools/wp_feed.php? as follows: medium=web2 and save
+6. During synchronization, created an additional WordPress main category, it is given the name of this additional media.
+7. You can show you the various job listings through blog lists or list of tags.
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+> In Carerix publish your default to the medium 'web'. You do this in the settings of the Carerix WordPress plugin to fill out and you therefore blank.
 
 
 ## Job Alert Subscription
