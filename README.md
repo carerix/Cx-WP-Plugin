@@ -114,6 +114,8 @@ For example [https://domainname.com/pubid/123](https://domainnamee.com/pubid/123
 > 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
 > 4. Go to the external link [https://website.com/?carerix_sync](https://website.com/?carerix_sync) that is available without logging in. After syncing a log of that last sync will be displayed.
 
+---
+
 # 3. Settings & Usage
 ## Application Forms
 
@@ -358,7 +360,7 @@ Disable 'not for web' and enable each desired business-line you want to connect 
 
 ---
 
-# Multilingual Websites
+## Multilingual Websites
 
 The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
 
@@ -400,8 +402,8 @@ You can review the 'active job publications' but also the available 'medium code
 * Active job publications (synced from Carerix, with Pub ID, Title, start date, Visibility sensitive data)
 * Available mediums (in Carerix)
 
+---
 
-_____________
 # 🔴 4. Advanced Features (Optional)
 
 * For developers or experienced users, this section can cover:
@@ -409,8 +411,7 @@ _____________
     * Custom functions available.
     * Integration with other plugins or WordPress APIs.
 
-_____________
-
+---
 
 ## Special jobs
 🔴 CHECKEN
