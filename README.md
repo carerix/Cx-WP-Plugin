@@ -555,8 +555,7 @@ apply = "Versturen (formerly Solliciteren)"
 * Our new file nl-NL.resources.php is based on {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/assets/resources/nl-NL.resources.php. You can copy all desired elements from there to your own resource file.
 * Each section of language elements starts with a section heading [xxxxxxx] (recognized by the brackets).
 
-### Alternative method
-To change the default titles or lyrics of the plugin, you could use this plugin: Real-time Find and Replace allows you to change text or HTML code (client-side), eg. You could modify the HTML code like in the example below:
+
 
 # 5. FAQ (Frequently Asked Questions)
 
