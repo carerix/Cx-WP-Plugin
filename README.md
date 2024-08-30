@@ -565,7 +565,7 @@ In the 'Publication Details Header/Body/Footer' (or in the Header or Boday) of a
 For example use the shortcode `[cx_apply_form]` (instead of `[cx_apply_form]` which generates a button) in the Publication Details Footer.
 
 ### Can I add an image within the paragraphs of the vacancy texts?
-Yes, you can add HTML in the publication text, so you can add a Youtube video or an image as you would in a WordPress post. 
+Yes, you can add HTML or a shortcode in the publication text in the Carerix application. 
 Be aware that the Carerix user would need a little bit of Html experience to add this to the publication text.
 1. In the Carerix application open the publication text where you want to add the image
 2. Switch the editor to HTML mode
@@ -574,11 +574,11 @@ Be aware that the Carerix user would need a little bit of Html experience to add
 4. Save the changes
 5. Sync the WordPress plugin on the website
 
-### Can I add a youtube video into the vacancy text?
+### Can I add a youtube video in the vacancy text?
 Yes, you can add HTML or a shortcode in the publication text in the Carerix application:
 use for example: 
 * ``https://www.youtube.com/watch?v=4bUS0k5L6v8`` 
-* or `[embed width="600px" ]https://www.youtube.com/watch?v=4bUS0k5L6v8[/embed]`
+* or ashortcode like `[embed width="600px" ]https://www.youtube.com/watch?v=4bUS0k5L6v8[/embed]`
 
 
 🔴 [TO DO LATER: FAQs]
