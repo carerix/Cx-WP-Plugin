@@ -287,8 +287,6 @@ confirmation_message="Thank you for subscribing. Shortly you will receive an ema
 After activation you will start receiving new job opportunities in your mailbox on a daily basis!"
 confirmation_url="/jobalert_thank_you/"]
 ````
-\
-
 
 The following fields will be displayed in the form:
 
@@ -307,9 +305,9 @@ The following fields will be displayed in the form:
 
 The process for the candidate is as follows:
 
-1. Candidate selects the criteria to receive job opportunities for and submits the form
+1. Candidate selects the criteria which job opportunities to receive and submits the form
 2. Candidate receives an opt-in activation mail and clicks on the activation link
-3. Candidate is subscribed adn starts receiving mail with (new) vacancies on a (daily) basis that match the selected criteria
+3. Candidate is subscribed and starts receiving mail with (new) vacancies on a (daily) basis that match the selected criteria
 4. To cancel, the candidate can use the unsubscribe link in the job alert mails
 
 ### Jobalert Preparation in Carerix
