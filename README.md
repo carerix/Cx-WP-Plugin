@@ -42,7 +42,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
   * [Sources](#sources)
   * [Job Alert](#job-alert-subscription)
   * [Multilingual Websites](#multilingual-websites)
-  * [Advanced Features](#-advanced-features)
+  * [Advanced Features](#-4-advanced-features-optional)
 
 ## Latest release
 
