@@ -185,28 +185,48 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 3. Deleting a source will not delete the generated posts from wordpress but only that specific source
 4. The following fields can be set:
 
-* **Source name** \
-Helps you to identify the configured source.
+<table>
+    <tr>
+        <td>Source name
+        </td>
+        <td>Helps you to identify the configured source.
+        </td>
+    </tr>
+    <tr>
+        <td>Publications Details Options
+        </td>
+        <td>Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source. 🔴IMAGE
+        </td>
+    </tr>
+    <tr>
+        <td>Apply Form
+        </td>
+        <td>Select the Application Form to be used for this specific Source
+        </td>
+    </tr>
+    <tr>
+        <td>Title - Location
+        </td>
+        <td>Select if you want to show the work location after the Title or not.
+        </td>
+    </tr>
+    <tr>
+        <td>Set Alternative Feed Source Parameters
+        </td>
+        <td>You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application. 🔴IMAGE
+        </td>
+    </tr>
+    <tr>
+        <td>Publication Details Header and Publication Details Footer
+        </td>
+        <td>If you want to display details in the footer or the header, use the following shortcodes: 🔴IMAGE
 
-* **Publications Details Options** \
-Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source.
-🔴IMAGE
+        </td>
 
-* **Apply Form** \
-Select the Application Form to be used for this specific Source
+    </tr>
+</table>
 
-* **Title - Location** \
-Select if you want to show the work location after the Title or not.
-
-* **Set Alternative Feed Source Parameters** \
-You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application.
-🔴IMAGE
-
-* **Publication Details Header and Publication Details Footer** \
-If you want to display details in the footer or the header, use the following shortcodes:
-🔴IMAGE
-
-
+### Shortcodes in Job source 
 <table>
   <tr>
    <td>
