@@ -609,7 +609,7 @@ use for example:
 * or ashortcode like `[embed width="600px"]https://www.youtube.com/watch?v=4bUS0k5L6v8[/embed]`
 
 ### It seems as if one or more jobs do not sync?
-Perhaps you have moved jobs to the trash. Remove them permanently from the trash. After synchronization, they are recreated again and are visible.
+Perhaps you have moved jobs to the trash. Remove them permanently from the trash. After synchronization, they are recreated again and will be visible.
 
 Make sure to do a full jobs sync by clicking on the “**Enforce full sync of all items from Carerix**” button.
 
