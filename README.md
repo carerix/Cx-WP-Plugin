@@ -647,8 +647,8 @@ Yes you can! You can build a template with the use of shortcodes in combination 
 
 ### Can I offer an RSS feed of all job vacancies or by function?
 Yes, you can use standard WordPress RSS feeds. The URLs for this example:
-* /Category/publications/feed /
-* /Tag/Utrecht/feed/
+* /category-name/publications/feed /
+* /tag/utrecht/feed/
 
 For example https://plugin.carerix.com/category/vacancies/feed/
 
