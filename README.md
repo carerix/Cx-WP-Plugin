@@ -278,11 +278,17 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 
 
 ## Job Alert Subscription
-You can create a standalone Job Alert Subscription page, using the the `[cx_job_alert_subscription]` shortcode.
-
 In WordPress you can use this shortcode to show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
+You can create a standalone Job Alert Subscription page, using this shortcode:
 
-`🔴 See the example in`
+````
+[cx_job_alert_subscription frequency="*daily*|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
+confirmation_message="Thank you for subscribing. Shortly you will receive an email with an activation link.
+After activation you will start receiving new job opportunities in your mailbox on a daily basis!"
+confirmation_url="/jobalert_thank_you/"]
+````
+\
+
 
 The following fields will be displayed in the form:
 
@@ -290,143 +296,32 @@ The following fields will be displayed in the form:
 * First name
 * Last name (and prefix)
 * Gender
-* Country selection preference (only if multiple countries are published in Carerix)
-* Three “sub region” selector preferences like provinces, counties and departments (only if these are published in Carerix)
-* Two function group preferences with an optional parent business-line selector (the business-line selector will only appear if multiple business-lines are published in Carerix)
+* Country selection preference \
+(only if multiple countries are published in Carerix)
+* Three “sub region” selector preferences like provinces, counties and departments \
+(only if these are published in Carerix)
+* Two function group preferences with an optional parent business-line selector \
+(the business-line selector will only appear if multiple business-lines are published in Carerix)
 * Agreement to terms checkbox (also enforces the storage term of the personal information to comply to GDPR)
-* Anti bot abuse system (by captcha)
+* Anti bot abuse system (by Captcha)
 
 The process for the candidate is as follows:
 
 1. Candidate selects the criteria to receive job opportunities for and submits the form
 2. Candidate receives an opt-in activation mail and clicks on the activation link
-3. Candidate starts receiving mail with (new) vacancies on a daily basis that match the selected criteria
+3. Candidate is subscribed adn starts receiving mail with (new) vacancies on a (daily) basis that match the selected criteria
 4. To cancel, the candidate can use the unsubscribe link in the job alert mails
 
-#### Parameters
-````
-[cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
-confirmation_message="Thank you!" confirmation_url="/jobalert_thank_you/"]
-````
-/
-
-
-<table>
-  <tr>
-   <td><strong>Parameter</strong>
-   </td>
-   <td><strong>Is Mandatory</strong>
-   </td>
-   <td><strong>Possible values</strong>
-   </td>
-   <td><strong>Details</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>frequency (supported since v3.0.0)
-   </td>
-   <td>NO
-   </td>
-   <td>daily, bidaily, tridaily, twiceweekly, weekly, biweekly or monthly (defaults to daily)
-   </td>
-   <td>sets the default mailing frequency for the subscription
-   </td>
-  </tr>
-  <tr>
-   <td>confirmation_message
-   </td>
-   <td>NO
-   </td>
-   <td>text/html string
-   </td>
-   <td>the actual message that appears after a successful user submission
-   </td>
-  </tr>
-  <tr>
-   <td>confirmation_url
-   </td>
-   <td>NO
-   </td>
-   <td>relative or full URL
-   </td>
-   <td>redirects the users' browser to the provided URL after a successful submission
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Usage example</strong>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Example
-   </td>
-   <td colspan="3" >Result
-   </td>
-  </tr>
-  <tr>
-   <td>[cx_job_alert_subscription confirmation_url=“/jobalert_thank_you/”]
-   </td>
-   <td colspan="3" >It will display a form for the user to choose on what kind of publications to subscribe. After a successful submission the browser redirects to the URL /jobalert_thank_you/
-   </td>
-  </tr>
-</table>
-
-### Jobalert Step 1: Preparation in Carerix
+### Jobalert Preparation in Carerix
 
 Follow the steps in the following help article:
-
-
 1. Follow the steps in the following help article: [Helpdeks: Job alert](https://help.carerix.com/en/articles/1954170)
-2. Make sure the email template called “Vacature abonnement bevestiging” (Vacancy subscription confirmation) is also installed. It has the \
-code `web-subscribe` and it's not described in the help article.
+2. Make sure the email template with code `web-subscribe` (“Vacancy subscription confirmation / Vacature abonnement bevestiging”) is also installed. 
 
-
-### Jobalert Step 2: Preparation in Wordpress
-
-Create a general page and paste the following shortcode in the content:
-
-
-```
-[cx_job_alert_subscription]
-```
-
-
-Optional attributes are can be added to control the confirmation message.
-
-Set a custom confirmation message:
-
-
-```
-[cx_job_alert_subscription confirmation_message="Thank you for subscribing. Shortly you will receive an email with an activation link. After activation you will start receiving new job opportunities in your mailbox on a daily basis!"]
-```
-
-
-Set a custom page/url for the confirmation message:
-
-
-```
-[cx_job_alert_subscription confirmation_url="/jobalert_thank_you/"]
-```
-
-
+### Jobalert Step 2: Use the Shortcode in Wordpress
+1. Create a general page and use above shortcode in the content
 
 ### Jobalert Step 3: Fine-tuning in Carerix
-
 In Carerix, you can fine-tune the following candidate criteria for the job alert form:
 
 * Country selection
@@ -442,33 +337,30 @@ The following table items are used:
 * For function groups the table 'functie0'
 
 #### Shorten the country selection
-
-If your working area is a single country (or a few) you can shorten the dropdown box of countries.
-
-For each country you want to disable in the job alert form, edit the item, and uncheck the box “not for web”. \
+If your working area is a single country (or a few) you can shorten the dropdown box of countries. For each country you do not want show in the job alert form, 
+1. In Carerix 
+2. Go to Tables 
+3. Edit the item, and uncheck the box “**not for web**”.
 Note: if you only enable one country, the country selection is disabled on the job alert form.
 
 #### Shorten the business-line selection
-
 In Carerix every function group can be connected to a business-line. If one or more function groups are connected to a business-line the business-line dropdown box on the jobalert form will appear. So if you don't work with multiple business-lines, you need to configure the business-lines as follows:
 
-1. Edit each business-line item in the table “vakgebied” (business-line) and enable the checkbox “not for web”
+1. Edit each business-line item in the table “vakgebied” (business-line) and enable the checkbox “**not for web**”
 2. Locate the business-line “Standard” (default) and disable the checkbox “not for web”. This leaves you with one mandatory business-line which will NOT appear for candidates on the job alert form
-3. Finally, in Wordpress, go to Dashboard → Carerix → Application Forms → Tab: Settings, and click on “Clear DataNodes cache”
+3. In Wordpress, go to **Dashboard** → **Carerix** → **Application Forms** → Tab: **Settings**, and click on “**Clear DataNodes cache**”
 
 #### Configure/shorten function group selection
-
-1. Edit each function group item (table: functie0) you want to include in the group selection for the candidates. Disable 'not for web' and enable each desired business-line you want to connect the function group to. You need at least connect it to one business-line
-2. Finally, in Wordpress, go to Dashboard → Carerix → Application Forms → Tab: Settings, and click on “Clear DataNodes cache”
-
-
+1. Edit each function group item (table: functie0) you want to include in the group selection for the candidates.
+Disable 'not for web' and enable each desired business-line you want to connect the function group to. You need at least connect it to one business-line
+2. In Wordpress, go to **Dashboard** → **Carerix** → **Application Forms** → Tab: **Settings**, and click on “**Clear DataNodes cache**”
 
 ---
 
 
 ## Diagnostics (since v3.0.0)
 
-The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (Wordpress Dashboard → Carerix → Settings → Tab Diagnostics) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
+The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
 
 You can review the 'active job publications' but also the available 'medium codes'.
 
