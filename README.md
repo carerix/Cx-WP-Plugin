@@ -757,7 +757,7 @@ _____________
 **Installation Steps**
 
 * Make sure the hosting environment meets the technical requirements
-* Go to Plugins → Add New → **Upload**
+* Go to **Plugins** → **Add New** → **Upload**
     * Locate the archive you have just saved
     * Click **Install**
 * When the upload is completed, click on the **Activate Plugin** link
