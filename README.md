@@ -25,7 +25,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 
 ## Getting Started: A basic guide to using the plugin's core functionalities.
 * Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin))
-* Setting Source with correct Carerix 'medium'
+* Setting [Source](#sources) with correct Carerix 'medium'
 * First time Sync
 * See the WordPress posts that are created
 
