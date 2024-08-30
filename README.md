@@ -634,11 +634,11 @@ Jobs include taxonomy by Country and Region, Function and Training. Use those ta
 
 🔴 CHECKEN: ### Can I use a search radius from a postal code area?
 With the 'Carerix Search widget' it is possible to search by radius. These can be found under Wordpress → Dashboard → View → Widgets. You need WordPress editing rights. However, if you use a third party search-plugin (like Search & Filter or Jet SmartFilters) you cannot use this radius function because of technical limitations.
-See the example in http://demo.carerix.com/plugin/zoeken-filteren/
+See the example in https://demo.carerix.com/plugin/zoeken-filteren/
 
 
 ### Can I change the Layout or styling of the vacancies?
-Yes, the plugin has minimal styling so it basically follows the theme used. Additionally, you can build your own template layout with HTML and Shortcodes in 'Publication Details Header/Body/Footer within a source.
+Yes, the plugin has minimal styling so it basically follows the theme used. Additionally, you can build your own template layout of the vacancies with HTML and Shortcodes in 'Publication Details Header/Body/Footer within the source.
 
 ### Can I change the text of the headings, labels, buttons for vacancy texts and application forms?
 Yes you can! You can build a template with the use of shortcodes in combination with HTML.
