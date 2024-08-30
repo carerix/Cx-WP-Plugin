@@ -290,50 +290,29 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 
 <table>
 <tr>
-   <td>**Shortcode**
+    <td>**Shortcode**
 
    </td>
    <td>
    </td>
-   <td>**Description**
-
-   </td>
-  <tr>
    <td>[cx_apply_button]
 
    </td>
    <td>[cx_apply_button ]
 
    </td>
-   <td>Displays the apply button which links to the application form on a separate URL. Typically, this shortcode is used under the vacancy information.
-
-To display the applicaton form and avoid a separate application form page, use [cx_apply_form] instead.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_apply_form]
 
    </td>
    <td>[cx_apply_form ]
 
    </td>
-   <td>Displays the application form for the current vacancy post. Typically use this to display both the vacancy information and application form at the same page.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_apply_until]
 
    </td>
    <td>[cx_apply_until ]
 
    </td>
-   <td>Displays the final apply date in the date format configured in the general WordPress settings.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_campaign]
 
 Deprecated since v3.1.0, will be removed soon
@@ -344,227 +323,114 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays a Carerix campaign signup form. Only active campaigns (end-date not expired) are listed.
-
-Note: the intended functionality may no longer work due to functional changes in the Carerix system.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_application_contact_information]
 
    </td>
    <td>[cx_application_contact_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the person at the client who serves as the first point of contact.
-
-This is part of the vacancy publication text.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_company_information]
 
    </td>
    <td>[cx_company_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the description of the organization and/or department where the vacancy is located.
-
-This is part of the vacancy publication text.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_country]
 
    </td>
    <td>[cx_countryseparator=", " "container="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the country or countries of the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_education]
 
    </td>
    <td>[cx_educationseparator=", " "container="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the educational requirements of the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_employment]
 
    </td>
    <td>[cx_employmentcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the contract type of employment, e.g. Temporarily contract.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_end_date]
 
    </td>
    <td>[cx_end_datecontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the publication end date. Please consider using [cx_apply_until] if you want to show the date of the final day applicants can apply.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_extra]
 
    </td>
    <td>[cx_extra* field="yourcarerixfieldcode" "separator=", " "type="string|date" ]
 
    </td>
-   <td>Displays an extra/additional field that is activated in joborders or publications in the Carerix system.
-
-Notes:
-
-1) This is an advanced feature. Prepared configuration in the Carerix system is required.
-
-2) In the settings of this plugin extra/additional field support must be enabled.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_field]
 
    </td>
    <td>[cx_fieldcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the field (area of expertise) of the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_function_contact_information]
 
    </td>
    <td>[cx_function_contact_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the contact details for the applicant to obtain more information about the position and the organization.
-
-This is part of the vacancy publication text.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_function_group]
 
    </td>
    <td>[cx_function_groupcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Function group of the vacancy, for example "ICT professionals."
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_function_position]
 
    </td>
    <td>[cx_function_positioncontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>The position within the function group to which the vacancy belongs, for example "Network administrator" from the group "ICT professionals".
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_google_for_jobs]
 
    </td>
    <td>[cx_google_for_jobs ]
 
    </td>
-   <td>Forcefully generates JobPosting structured data as application/ld+json script. Only use this shortcode if you are completely overriding WordPress single-post templates. This may be the case when using page builders like Elementor or Divi to display the vacancy information pages.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_hours_per_week]
 
    </td>
    <td>[cx_hours_per_weekcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the working hours per week.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_industry]
 
    </td>
    <td>[cx_industrycontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the industry of the vacancy, e.g. Accountancy (as part of the sector Business services).
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_intro_information]
 
    </td>
    <td>[cx_intro_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the vacancy introduction information.
-
-This is part of the vacancy publication text.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_job_alert_subscription]
 
    </td>
    <td>[cx_job_alert_subscriptionconfirmation_message="abc" "confirmation_url="abc" "frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly" ]
 
    </td>
-   <td>Displays the job alert signup form.
-
-After filling in, the subscriber will first receive an email (sent from the Carerix system) with a mandatory confirmation link before the subscription becomes active.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_job_group]
 
    </td>
    <td>[cx_job_groupseparator=", " "container="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the group(s) the vacancy is appointed to. Don't confuse this one with [cx_function_group]. Groups are free to be defined in the Carerix system. A useful group for website purposes is top vacancies to use for a vacancy carousel.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_job_title]
 
    </td>
    <td>[cx_job_titlecontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the job title of the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_login_form]
 
 Deprecated since v3.1.0, will be removed soon
@@ -575,24 +441,12 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays a login form for Carerix candidates.
-
-Note: the intended functionality may no longer work due to functional changes in the Carerix system.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_medium]
 
    </td>
    <td>[cx_mediumtype="code" ]
 
    </td>
-   <td>Displays medium-code of the Carerix publication of the job post.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_newsletter_subscription]
 
 Deprecated since v3.1.0, will be removed soon
@@ -603,62 +457,30 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays a newsletter signup form for existing newsletters in the Carerix system.
-
-
-Note: the intended functionality may no longer work due to functional changes in the Carerix system.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_offer_information]
 
    </td>
    <td>[cx_offer_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays what the client or intermediary offers the applicant (e.g. salary, bonus, training opportunities).
-
-This is part of the vacancy publication text.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_office_name]
 
    </td>
    <td>[cx_office_namecontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the office name which is connected to the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_open_application]
 
    </td>
    <td>[cx_open_application* openformid="x" "openpubid="y" ]
 
    </td>
-   <td>Displays the application form for an open applicaton. In Dashboard->Carerix->Application Forms you can find the form ID.
-
-For this functionality to work, in the Carerix system, a published job order marked as an "open application" must be present.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_organization]
 
    </td>
    <td>[cx_organizationcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the organization/company name of the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_print_link]
 
 Deprecated since v3.1.0, will be removed soon
@@ -669,68 +491,36 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays a link to physically print the current page.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_procedure]
 
    </td>
    <td>[cx_procedurecontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the prodecure of the vacancy, e.g. Secondment or Recruitment.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_professional_level]
 
    </td>
    <td>[cx_professional_levelcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the required professional level.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_publication_id]
 
    </td>
    <td>[cx_publication_id ]
 
    </td>
-   <td>Displays the Carerix publicaton ID of the current job post.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_region]
 
    </td>
    <td>[cx_regionseparator=", " "container="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the region or regions of the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_requirements_information]
 
    </td>
    <td>[cx_requirements_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the description of the requirements for the position.
-
-This is part of the vacancy publication text.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_rss_for_all]
 
 Deprecated since v3.1.0, will be removed soon
@@ -741,13 +531,6 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays a link to the RSS feed of all the content.
-
-Instead, use https://plugin.carerix.com/?carerix_sitemap as a vacancy sitemap.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_rss_for_category]
 
 Deprecated since v3.1.0, will be removed soon
@@ -758,35 +541,18 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays a link to the RSS feed of the current posts-category.
-
-Instead, use https://plugin.carerix.com/?carerix_sitemap as a vacancy sitemap.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_salary]
 
    </td>
    <td>[cx_salaryshow="csu" "raw="yes|no" ]
 
    </td>
-   <td>Displays the salary range. In the Carerix system the "publish salary" checkbox must be checked.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_sector]
 
    </td>
    <td>[cx_sectorcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the sector of the vacancy, e.g. Health care.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_social_icons]
 
 Deprecated since v3.1.0, will be removed soon
@@ -797,35 +563,18 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays share this page buttons (Facebook, X and LinkedIn) generated by sharethis.com. It's better to use social share-options from your WordPress theme.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_vacancy_code]
 
    </td>
    <td>[cx_vacancy_codetype="code|id" ]
 
    </td>
-   <td>Displays either the vacancy reference code or the vacancy ID. The reference code can be manually set in the Carerix system, but defaults to the (autogenerated) vacancy ID aka "vacancy number".
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_vacancy_information]
 
    </td>
    <td>[cx_vacancy_informationcontainer="div|span" "label="yes|no" "heading="h1..h4..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the description of the position.
-
-This is part of the vacancy publication text.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_vacancy_number]
 
 Deprecated since v3.1.0, will be removed soon
@@ -836,44 +585,24 @@ Deprecated since v3.1.0, will be removed soon
 Deprecated since v3.1.0, will be removed soon
 
    </td>
-   <td>Displays the vacancy ID. Please use [vacancy_code] instead.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_work_location]
 
    </td>
    <td>[cx_work_locationcontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the work location of the vacancy.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_work_postal_code]
 
    </td>
    <td>[cx_work_postal_codecontainer="div|span" "label="yes|no" "heading="h1..h6|div|span|no" "content="yes|no" "class=" ""raw="yes|no" "quotes="double|single" ]
 
    </td>
-   <td>Displays the postal code of the work location. It's empty if the job order is set to anonymous in the Carerix system.
-
-   </td>
-  </tr>
-  <tr>
    <td>[cx_workplace_type]
 
    </td>
    <td>[cx_workplace_type ]
 
    </td>
-   <td>Displays the workplace type, e.g. Remote, On site or Hybrid
-
-   </td>
-  </tr>
-
 </tr>
 </table>
 
