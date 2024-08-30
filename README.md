@@ -208,7 +208,7 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 </table>
 
 ### Shortcodes in Job source 
-🔴 Kloppen deze nog allemaal?
+🔴 Kloppen deze nog allemaal? \
 🔴 Hoort dit in de Publication Detail body?
 
 <table>
@@ -246,7 +246,7 @@ Under the Sources section you can create one or more Jobs sources. You can use t
   <tr>
    <td>[cx_vacancy_code]
    </td>
-   <td>display the vacancy reference code. By default the reference code is equal to the auto-generated vacancy number in Carerix. But if you have changed the reference code in Carerix→Files→Job orders→General, this new entry is displayed
+   <td>display the vacancy reference code. By default the reference code is equal to the auto-generated vacancy number in Carerix. But if you have changed the reference code in Carerix → Files → Job orders → General, this new entry is displayed
    </td>
   </tr>
   <tr>
