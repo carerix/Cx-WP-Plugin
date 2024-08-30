@@ -305,7 +305,8 @@ The process for the candidate is as follows:
 
 #### Parameters
 ````
-[cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly" confirmation_message="Thank you!" confirmation_url="/jobalert_thank_you/"]
+[cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
+confirmation_message="Thank you!" confirmation_url="/jobalert_thank_you/"]
 ````
 /
 
