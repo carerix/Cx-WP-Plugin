@@ -74,9 +74,12 @@ Make sure that this e-mail templates are installed in the library of the Carerix
 * CxpResetPwd - email used to reset the password for a candidate That can no longer access the original email account
 * JobAlert - Mandatory for sending job alert subscription emails.
 
+| E-mail templates | Description  |
+| ---------- | ------- |
 | CxpeForgotPwd |  e-mail sent to the candidate to resend the login details |
 | CxpResetPwd |  email used to reset the password for a candidate That can no longer access the original email account |
 | JobAlert |  Mandatory for sending job alert subscription emails |
+
 
 > [!IMPORTANT]
 > ## Authorisation of the Plugin for the specified Carerix application
