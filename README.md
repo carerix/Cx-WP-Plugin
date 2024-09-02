@@ -2,7 +2,7 @@ Carerix WordPress Plugin
 ----------------
 
 Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
-After installation [Authorisation of the Plugin](#authorisation-of-the-plugin)
+After installation [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
 
 ## 1. Introduction
 
@@ -24,7 +24,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Diagnostic tools
 
 ## Getting Started: A basic guide to using the plugin's core functionalities.
-1. Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin))
+1. Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application))
 2.  Setting [Source](#sources) with correct Carerix 'medium'
 3. First time Sync
 4. See the WordPress posts that are created
