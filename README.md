@@ -256,7 +256,11 @@ You can use shortcodes like [cx_intro_information], [cx_offer_information] and m
 🔴IMAGE
 
 ### 🔴 Shortcodes for Publication body
-🔴 \[SHORTCODES\]
+🔴 \[SHORTCODES\] \
+🔴 You can use these parameters for certain  shortcodes
+````
+container="div|span" label="yes|no" heading="h1..h6|div|span|no" content="yes|no" class="..." raw="yes|no" quotes="double|single"
+````
 
 | Shortcode with parameters                                                                                                                                                       | Description                                                                                                                                                                                                                                                                                              |
 |	Shortcode with parameters	|	Description	|
@@ -267,10 +271,6 @@ To display the applicaton form and avoid a separate application form page, use [
 |	[cx_apply_until ]	|	Displays the final apply date in the date format configured in the general WordPress settings.	|
 |	[cx_campaign sendto="email@address.com" campaignid="x" codeinname="abc" ]	|	"Displays a Carerix campaign signup form. Only active campaigns (end-date not expired) are listed.
 Note: the intended functionality may no longer work due to functional changes in the Carerix system."	|
-|	[cx_country separator=", " container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the country or countries of the vacancy.	|
-|	[cx_education separator=", " container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the educational requirements of the vacancy.	|
-|	[cx_employment container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the contract type of employment, e.g. Temporarily contract.	|
-|	[cx_end_date container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the publication end date. Please consider using [cx_apply_until] if you want to show the date of the final day applicants can apply.	|
 |	[cx_campaign* sendto="email@address.com" campaignid="x" codeinname="abc" ]	|	"Displays a Carerix campaign signup form. Only active campaigns (end-date not expired) are listed.
 Note: the intended functionality may no longer work due to functional changes in the Carerix system."	|
 |	[cx_country separator=", " container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the country or countries of the vacancy.	|
