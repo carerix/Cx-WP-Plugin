@@ -53,7 +53,8 @@ The Carerix WordPress plugin is the connection between the Carerix application a
 ## Latest release
 
 > [!Tip]
-> See https://github.com/carerix/Cx-WP-Plugin/releases \
+> See [Latest Release](https://github.com/carerix/Cx-WP-Plugin/releases/latest)
+> https://github.com/carerix/Cx-WP-Plugin/releases/latest
 > 🔴 Embed latest release?
 
 # Installation
