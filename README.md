@@ -492,7 +492,7 @@ You can review the 'active job publications' but also the available 'medium code
 ---
 
 ## Special jobs
-🔴 CHECKEN
+🔴 CHECKEN \
 Website in one language but do you want multiple languages used for publication texts?
 If you have a website entirely in Dutch but you want to display one or more jobs in a different language? By default, your publications will receive all header sections in Dutch. take the following steps in order to have the labels in the correct language.
 
