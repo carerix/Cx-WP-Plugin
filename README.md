@@ -457,11 +457,11 @@ Daarnaast ondersteunt de CX WP Plugin de WPML plugin voor multilingal sites + va
 - Dutch + German: `medium=web|web-de`
 - All: `medium=web|web-en|web-de`
 
-### ⚠️ Notes
-- Headers auto-generate in medium's language
-- Use dashes (-) only for language codes
-- Correct: `webagency2`
-- Incorrect: `web-agency2`
+> [!NOTE]
+> - Headers auto-generate in medium's language
+> - Use dashes (-) only for language codes
+> - Correct: `webagency2`
+> - Incorrect: `web-agency2`
 
 Medium codes with dashes will be interpreted as language indicators, resulting in language-specific formatting.
 
