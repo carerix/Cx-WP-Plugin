@@ -90,15 +90,7 @@ Table of Contents
    | JobAlert | Job alert emails |
    | web-subscribe | Job alert signup confirmation |
 
-4. Configure ApplyURL in Carerix:
-Settings → Attributes and fields → *Apply_url*
-   ```
-   https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
-   ```
-This will generate a link to the according Vacancy publication on the website. So that links in emailtemplates are directed the correct vacancy on the website 
-
-
-5. Authorize the plugin with your Application Token
+4. Authorize the plugin with your Application Token
 
 > [!IMPORTANT]
 > ## Authorisation of the Plugin for the specified Carerix application
@@ -108,6 +100,33 @@ This will generate a link to the according Vacancy publication on the website. S
 > The Admin of a Carerix application can generate an Application Token. If you don't have access to the Carerix application you can ask an admin. He can provide you the Application token using the email template 'Application Token'.
 > Or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
 > Carerix will not be able to provide you the Application token directly, as this is part of the authorization procedure.
+
+5. Configure ApplyURL in Carerix:
+
+
+> [!IMPORTANT]  
+> ## Configure ApplyURL
+> The ApplyURL setting ensures candidates can apply to vacancies directly from emails, job alerts and newsletters. Without proper configuration, application links won't work correctly.
+
+In Carerix, configure the ApplyURL setting:
+1. Go to **Settings** → **Attributes and fields** → **Apply_url**
+2. Set the URL format:
+   ```
+   https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
+   ```
+
+### Usage in Email Templates
+To create links to vacancies in your Carerix email templates, use:
+```
+<cx:write value="$publication.publicationID"/>
+```
+This generates URLs like: `https://yoursite.com/pubid/123`
+
+Common use cases:
+- Job alert emails
+- Application confirmation emails
+- Recruiter newsletters
+- Social media sharing
 
 
 # 3. Settings & Usage
