@@ -176,22 +176,11 @@ Configure how vacancies appear on your site:
 2. Configure settings
 3. Click `Synchronize` to update
 
-> [note] 
+> [!note] 
 > - Deleting sources keeps existing job posts
 > - Changes require synchronization to become effective
 
 ### Source Settings
-| Setting | Description |
-|---------|-------------|
-| Source name | Helps you to identify the configured source. |
-| Publications Details Options | Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source. 🔴IMAGE |
-| Apply Form | Select the Application Form to be used for this specific Source |
-| Title - Location | Select if you want to show the work location after the Title or not. |
-| Set Alternative Feed Source Parameters | You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application. 🔴IMAGE |
-| Publication Details Header and Footer | If you want to display details in the footer or the header, use the following shortcodes: 🔴IMAGE |
-| Publication Excerpt | Add a custom summary text to display in vacancy listings, social media previews and search results. This text serves as the primary description for your vacancies across all platforms. |
-| Publication Details Body | Use shortcodes such as [cx_intro_information] for job introductions and [cx_offer_information] to enhance the content for position details. Also see available [shortcodes](#shortcodes-reference) 🔴IMAGE |
-
 | Setting | Description |
 |-------|-------------|
 | Source name | Identifier for the source configuration |
