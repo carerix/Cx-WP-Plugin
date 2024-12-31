@@ -298,8 +298,8 @@ Results in
 <h3 class="cx_h3 contact-info cx2_introduction">Introductie</h3>
 <div class="contact-info cx2_introduction">Introduction text...</div>
 ```
-`<h3 class="cx_h3 contact-info cx2_introduction">Introductie</h3>
-<div class="contact-info cx2_introduction">Introduction text...</div>`
+`<h3 class="cx_h3 contact-info cx2_introduction">Introductie</h3>`
+`<div class="contact-info cx2_introduction">Introduction text...</div>`
 
 
 
