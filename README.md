@@ -170,11 +170,17 @@ Configure how vacancies appear on your site:
 > Use different mediums (web, web2, etc.) to separate vacancy flows
 
 ### Configuring a Job source
-1. Add a new Jobs source click via Add New button.
-2. When you Add or edit a Source you need to synchronize to see changes
-3. Deleting a source will not delete the generated posts from wordpress but only that specific source
-4. The following fields can be set:
 
+### Adding New Source
+1. Click `Add New` button
+2. Configure settings
+3. Click `Synchronize` to update
+
+> [note] 
+> - Deleting sources keeps existing job posts
+> - Changes require synchronization to become effective
+
+### Source Settings
 | Setting | Description |
 |---------|-------------|
 | Source name | Helps you to identify the configured source. |
@@ -186,22 +192,38 @@ Configure how vacancies appear on your site:
 | Publication Excerpt | Add a custom summary text to display in vacancy listings, social media previews and search results. This text serves as the primary description for your vacancies across all platforms. |
 | Publication Details Body | Use shortcodes such as [cx_intro_information] for job introductions and [cx_offer_information] to enhance the content for position details. Also see available [shortcodes](#shortcodes-reference) 🔴IMAGE |
 
-## Medium
+| Setting | Description |
+|-------|-------------|
+| Source name | Identifier for the source configuration |
+| Publications Details Options | Settings for vacancy post display and interaction 🔴IMAGE |
+| Apply Form | Select application form for this source |
+| Title - Location | Toggle work location display in title |
+| Alternative Feed Parameters | Set custom medium code for different vacancy sets 🔴IMAGE  |
+| Header and Footer | Add content using shortcodes 🔴IMAGE |
+| Excerpt | Custom summary for listings and previews |
+| Details Body | Content structure using [shortcodes](#shortcodes-reference) like [cx_intro_information] 🔴IMAGE |
 
+## Medium
 Medium 'web' is default, but you can show a different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
 You can do this by publishing to a different medium. You use this medium as follows:
 
-### Additional Job sources with a different medium
-1. In the Carerix application: Create a new medium, for example web2 (only admins can create a medium)
-2. Publish least one job created for this different medium
-3. In WordPress, go to the Carerix WordPress plugin settings
-4. Create a new job flow to (a new ‘Source‘)
-5. Fill the medium behind https://appname.carerix.com/cxtools/wp_feed.php? as follows: `medium=web2` and save
-6. During synchronization, created an additional WordPress main category, it is given the name of this additional media
-7. You can show you the various job listings through blog lists or tags.
+### In Carerix
+1. Ask admin to create new medium (e.g., `web2`)
+2. Publish test job using new medium
+
+### In WordPress
+1. Go to: `Carerix Plugin → Settings → Sources`
+2. Add new source
+3. Set medium parameter: `medium=web2`
+4. Save changes
+
+### What Happens
+- Plugin creates new job category matching medium name
+- Jobs appear under new category
+- Use WordPress tags/categories to display jobs
 
 > [!NOTE]
-> In Carerix publish your default to the medium 'web'. You do this in the settings of the Carerix WordPress plugin to fill out and you therefore blank.
+> Leave main medium (`web`) blank in plugin settings
 
 
 ## Shortcodes Reference
@@ -296,15 +318,20 @@ The following shortcodes are no longer supported:
 - [cx_social_icons]
 - [cx_vacancy_number]
 
-## Taxonomies
-The plugin is generating Taxonomies for Jobs posts:
-* Countries - Country
-* Regions - Region
-* Educations - Education 0
-* Functiongroup - Function 0
-* Functions - Function 1
-* Work locations - Publication work location
 
+## Taxonomies
+The plugin automatically creates these job taxonomies in WordPress:
+
+| System Name     | Display Name         |
+|----------------|---------------------|
+| cx_country     | Country            |
+| cx_region      | Region             |
+| cx_education   | Education Level    |
+| cx_funcgroup   | Function Group     |
+| cx_function    | Function           |
+| cx_location    | Work Location      |
+
+🔴 Deze worden toch automatisch gegenereerd. Kun je hier nog iets mee instellen? Vanuit Carerix de naam bepalen bijv?
 In order to use the taxonomies as filters for the 2 types of posts, the names of the taxonomies must be distinct. Otherwise, if common, the values of the taxonomies will be displayed for both type of posts and the user will experience that after sellecting a taxonomy no result will be returned.
 
 Default resources are used to generate the names of the taxonomies. The language applied will follow the language of the plugin.
@@ -364,7 +391,7 @@ Access Carerix Tables to customize dropdown options for the Job Alert:
    - Enable "not for web" for unused business lines
    - Keep "Standard" business line with "not for web" disabled
    
-3. **Function Groups** (table: 'functie0/function0')
+3. **Function Groups** (table: 'functie 0 / function 0')
    - Enable desired groups and connect to business lines
    - Disable "not for web" for groups to display
 
@@ -441,36 +468,43 @@ Need to display job postings in multiple languages on your website? This guide e
 Medium codes with dashes will be interpreted as language indicators, resulting in language-specific formatting.
 
 
-## Extra/Additional Carerix fields support
+## Featured vacancies
+You can find the feature in **Carerix Dashboard→Carerix→Settings→ Technology previews**
 
-You can find the feature in Carerix Dashboard→Carerix→Settings→ tab Technology previews
-
-In the Carerix system extra/additional fields can be added to Job orders and Publications. The information from these custom fields can be displayed in your vacancies. You can also use it as options in a “vacancy-listing search&filter” widget.
+In the Carerix system extra/additional fields can be added to Job orders and Publications. The information from these custom fields can be displayed in your vacancies. You can also use it as options in a “vacancy-listing search & filter” widget.
 
 **Use case**
-
 A nice use case is a “featured/highlighted” vacancy widget to highlight some vacancies. Therefore in Carerix you need to create an additional field called “featured on website” (type single checkbox) and attach it to the “Publications entity”.
 In Carerix, recruiters can tag preferred publications as “Featured on website”.
 
-After that, the Wordpress developer can create a “Featured vacancies widget” based on a “vacancy post loop” restricted to the custom-field “featured on website”.
+The Wordpress developer can create a "Featured vacancies section" based on a “vacancy post loop” restricted to the custom-field “featured on website”.
 
 
 ## Google for Jobs
+Google for Jobs is an enhanced search functionality from Google. It aggregates listings from job boards and vacancy sites and displays them prominently in Google search.
 
-Google for Jobs is an enhanced search widget that aggregates listings from job boards and vacancy sites and displays them prominently in Google search.
+You need to add “structured job posting data” to have your jobs included to these listings. This information is invisible, so your job pages are still looking the same. When Google is indexing your site, the structured data is recognized and added to Google for Jobs.
 
-To have your jobs included you need to add “structured job posting data” to your job pages. This information is invisible, so your job pages are still looking the same. When Google is indexing your site, the structured data is recognized and added to Google for Jobs.
+### Overview
+Adds structured job data to your pages for Google Jobs search integration.
 
-**Enabling and testing Google for Jobs**
-* **Carerix** → **Settings** → Tab '**Google for jobs**'
-* Enable 'Google for Jobs support' and click on save changes
-* Navigate to a vacancy information page of your choice at the front-end of your site
-* Copy/paste the URL of the former step in the Google Structured Data testing tool:
-* You will see the JobPosting entity is detected. The tool might give some warnings about recommended fields. Currently this information is not available in the CX WP plugin.
+### Setup
+1. Enable Integration
+   - Navigate: `Carerix → Settings → Google for jobs`
+   - Check "Google for Jobs support"
+   - Save changes
 
-**Configuring yourself as hiring organization**
+2. Test Implementation
+   - Open any vacancy page
+   - Use [Google Structured Data Testing Tool](https://search.google.com/test/rich-results)
+   - Verify "JobPosting" entity appears
 
-The hiring organization is also included in Google for Jobs. If you don't mark your jobs as “anonymous”, your client (hiring organization) will be displayed. For jobs marked as anonymous you can put your own organization name as the hiring one. To do this fill in your own company name in the field “Hiring organization”. Optionally you can also add your company logo.
+### Hiring Organization Config
+- For anonymous jobs: Set your company as hiring org
+- Navigate: `Carerix → Settings → Google for jobs`
+- Configure:
+  - Company name
+  - Logo (optional)
 
 
 ## Web analytics
