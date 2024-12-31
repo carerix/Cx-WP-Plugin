@@ -73,14 +73,6 @@ Table of Contents
 
 # Installation & Configuration
 
-## System Requirements
-**Mandatory**:
-* Linux OS with Apache 2.x (NGINX not supported)
-* PHP 7.4 - 8.2 with cURL, OpenSSL, JSON
-* MySQL 5+ / MariaDB
-* PHP Memory: 256MB recommended (128MB min, 512MB+ for complex sites)
-
-## Installation Steps
 1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
 2. Configure permalinks in WordPress: **Settings → Permalinks** (choose any structure except plain)
 3. Set up required email templates in Carerix:
@@ -322,7 +314,7 @@ The plugin automatically creates these job taxonomies in WordPress:
 | cx_function    | Function           |
 | cx_location    | Work Location      |
 
-**🔴 Deze worden toch automatisch gegenereerd. Kun je hier nog iets mee instellen? Vanuit Carerix de naam bepalen bijv?** \
+**🔴 Deze worden toch automatisch gegenereerd. Kun je hier nog iets mee instellen? Vanuit Carerix de naam bepalen bijv?**
 
 In order to use the taxonomies as filters for the 2 types of posts, the names of the taxonomies must be distinct. Otherwise, if common, the values of the taxonomies will be displayed for both type of posts and the user will experience that after sellecting a taxonomy no result will be returned.
 
@@ -605,7 +597,7 @@ Jobs are displayed under the following conditions (You need Carerix administrato
     * Publication Admin tab: Closing date
     * Job: Start Date
 
-You can always verify if which publications have been synced during the last sync via the diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**)
+You can always verify if publications have been synced during the last sync via the diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**)
 
 
 ### Can I edit the job posts?
@@ -710,7 +702,7 @@ After a few hours the files are automatically removed by the plugin and will onl
 > Make sure you have disabled “developers logging” (see above), because candidate details (needed for debugging) are stored in the logfile too.
 
 
-### Why does the plugin not use Custom Post Types instead of regular posts for vacancies?
+### Why does the plugin not use Custom Post Types instead of regular posts for Vacancies?
 **Pro's**
 * Templates: Web builder can use a custom template specifically for job post types.
 * Filters: 3rd Party filters specifically for Custom post types are set
@@ -743,21 +735,13 @@ _____________
 
 ## 2. Required and recommended specifications
 
+## System Requirements
+
 **Mandatory**:
-
-* Linux OS
-* Apache 2.x (NGINX is not supported)
-* PHP 7.4 - 8.2
-    * cURL
-    * OpenSSL
-    * JSON
-* MySQL 5 or higher / MariaDB
-
-**Recommended PHP memory limit:**
-
-* 128 MB (for sites with lightweight themes / few plugins)
-* 256 MB (for regular sites)
-* 512 MB or higher (for sites with heavy weight themes/ many plugins)
+* Linux OS with Apache 2.x (NGINX not supported)
+* PHP 7.4 - 8.2 with cURL, OpenSSL, JSON
+* MySQL 5+ / MariaDB
+* PHP Memory: 256MB recommended (128MB min, 512MB+ for complex sites)
 
 ### **Updating the Plugin**
 
@@ -766,7 +750,6 @@ _____________
 3. If there's an update available you can click on the 'Update now' link
 
 ### **Install the Plugin**
-
 * Make sure the hosting environment meets the technical requirements
 * Go to **Plugins** → **Add New** → **Upload**
     * Upload the archive you have just saved
@@ -779,7 +762,6 @@ _____________
 * Follow the instructions in the Settings section to setup the plugin.
 
 ### **Uninstall the Plugin**
-
 * Deactivate
     * Go to Plugins section
     * Find the plugin,
