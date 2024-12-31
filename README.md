@@ -91,9 +91,12 @@ Table of Contents
    | web-subscribe | Job alert signup confirmation |
 
 4. Configure ApplyURL in Carerix:
+Settings → Attributes and fields → *Apply_url*
    ```
    https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
    ```
+This will generate a link to the according Vacancy publication on the website. So that links in emailtemplates are directed the correct vacancy on the website 
+
 
 5. Authorize the plugin with your Application Token
 
