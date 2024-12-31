@@ -141,7 +141,6 @@ See [Application Shortcodes](#application-shortcodes) for details
 You can create a new form and link it to the desired Job feed source. For each form you can synchronize the fields from Carerix.
 Note that you must first save the title of the form before you can synchronize. You can compose each form yourself by or (un)checking the appropriate (and/or required) fields.
 
-* 🔴 CHECKEN: KLOPT DIT NOG (Dit is nu toch een shortcode?): Show login link: set to Yes by default. If enabled, it generates the login link in the job details page.
 * Extra apply options: Set to no by default. If enabled it generates the Apply with Linkedin link
 * Address format: International / Dutch. For Dutch each field is split on it's own form field while for International the entire addres can be inserted in one textarea.
 * Agreement link (No agreement link by default):
@@ -392,9 +391,10 @@ After modifying tables, clear cache: **Dashboard → Carerix → Application For
 # 🔴 4. Advanced Features
 
 * 🔴 For developers or experienced users, this section can cover:
-    * Hooks and filters used by the plugin.
-    * Custom functions available.
-    * Integration with other plugins or WordPress APIs.
+    * Hooks and filters used by the plugin. 
+<!-- 
+Ruben zegt: ik zou graag in de volgende versie van de CX WP Plugin een nieuwe tab in WP dashboard → CX plugin → help&diagnostics willen aanmaken, genaamd "hooks & filters" met een beschrijving. Graag wil ik er ook een aantal aan toevoegen. Dus voor nu misschien dit onderdeel weglaten?
+-->
 
 ## Diagnostics
 
@@ -440,6 +440,13 @@ Need to display job postings in multiple languages on your website? This guide e
 1. Carerix:
    - Create/verify language-specific mediums (e.g., 'web-en' for English)
    - Create job publications using these mediums
+
+<!--
+RUBEN: Ik weet niet zeker of dit nog steeds zo werkt. Sinds een tijdje heeft WP een hoofdsetting “Site Language” (WP Dash → Settings → General). In principe volgen alle plugins (waaronder de CX WP Plugin) die setting. Mogelijk dat een mediumcode met een taal code (zoals “web-fr”) dan Frans afdwingt voor de desbetreffende publicaties (vacature-posts). Het gaat dan inderdaad om de vacature-labels (introductie, aanbod, solliciteren bij etc) en de labels van hete solliciattieformulier. Maar dat moet voor de zekerheid getest worden.
+
+Daarnaast ondersteunt de CX WP Plugin de WPML plugin voor multilingal sites + vacatures. Mediumcode medium=web|web-en is daarbij overbodig omdat de CX WP Plugin de mediumcode taalextensies baseert op de geconfigureerde talen in WPML.
+-->
+
 
 2. WordPress Plugin:
    - Add new source in plugin settings
@@ -554,37 +561,84 @@ This will result in a standard RSS page containing all posts from category ''mar
 
 
 ## 🔴 CHECKEN: How to use the 'cxwordpress_post_updated' hook?
-```
+<!-- waar hoort dit thuis? -->
+
 With this hook you can apply changes to a vacancy-post upon (creation/update) to have it better fit into your site/theme. It's useful to apply changes in text formatting or post-statuses.
-Example, edit the file 'functions.php' in your activated child theme. Add the following:
-function my_cx_post_preparation(array $postids, array $data, array $cxfields ) { $post_id = (int) $postids[0]; // First item is the WP post ID $post_data_v1 = $data[0]; // The original data that the CX WP plugin has saved/updated $_post = get_post( $post_id ); // Another way to access the post data $post_cxfields = $cxfields[0]; // First item holds an associative array of retrieved (raw) CX fields $pub_id = get_post_meta($post_id, 'guid', true); // CX publication ID // Example to retrieve some specific CX fields $cx_requirements = get_post_meta($post_id, 'requirementsInformation', true); $cx_function_group = get_the_terms($post_id, "functiongroups")[0]->name ?? ""; $cx_function_name = get_the_terms($post_id, "functions")[0]->name ?? ""; $cx_min_salary = $post_cxfields['minSalary'] + 0; $cx_max_salary = $post_cxfields['maxSalary'] + 0; $cx_period_salary = $post_cxfields['salaryPeriodClassification']; // MonthTag = per hour, HourTag = per month, etc. // Example to update the post content $_post ->post_content = "< h1 >Hook `cxwordpress_post_updated` altered this post contents!</ h1 >" . $_post ->post_content; wp_update_post( $_post ); // Update post // Example to set post meta info. This is specifically for posts in the Divi theme. Note "_et" is an abbreviation for Elegant Themes. update_post_meta( $post_id, '_et_pb_page_layout', 'et_full_width_page'); // force Divi post as a full width page update_post_meta( $post_id, '_et_pb_show_title', 'off'); // turn Divi post titles off // Clean cache wp_cache_delete( $post_id, 'posts' ); } // Add the hook with prio 3 (default) and accepting 3 arguments
+
+```
+function my_cx_post_preparation(array $postids, array $data, array $cxfields ) {
+  $post_id = (int) $postids[0]; // First item is the WP post ID
+  $post_data_v1 = $data[0]; // The original data that the CX WP plugin has saved/updated
+  $_post = get_post( $post_id ); // Another way to access the post data
+  $post_cxfields = $cxfields[0]; // First item holds an associative array of retrieved (raw) CX fields
+  $pub_id = get_post_meta($post_id, 'guid', true); // CX publication ID
+  
+  
+  // Example to retrieve some specific CX fields
+  $cx_requirements = get_post_meta($post_id, 'requirementsInformation', true);
+  $cx_function_group = get_the_terms($post_id, "functiongroups")[0]->name ?? "";
+  $cx_function_name = get_the_terms($post_id, "functions")[0]->name ?? "";
+  $cx_min_salary = $post_cxfields['minSalary'] + 0;
+  $cx_max_salary = $post_cxfields['maxSalary'] + 0;
+  $cx_period_salary = $post_cxfields['salaryPeriodClassification']; // MonthTag = per hour, HourTag = per month, etc.
+ 
+
+  // Example to update the post content
+  $_post ->post_content = "<h1>Hook `cxwordpress_post_updated` altered this post contents!</h1>" . $_post ->post_content;
+  wp_update_post( $_post ); // Update post
+
+  
+  // Example to set post meta info. This is specifically for posts in the Divi theme. Note "_et" is an abbreviation for Elegant Themes.
+  update_post_meta( $post_id, '_et_pb_page_layout', 'et_full_width_page'); // force Divi post as a full width page
+  update_post_meta( $post_id, '_et_pb_show_title', 'off'); // turn Divi post titles off
+ 
+
+  // Clean cache  
+  wp_cache_delete( $post_id, 'posts' );
+}
+
+// Add the hook with prio 3 (default) and accepting 3 arguments
 add_action( 'cxwordpress_post_updated', 'my_cx_post_preparation', 10, 3);
+
 ```
 
+## 🔴 DONE: New method for language edits
+The idea is to override portions of the plugin's language file within your own child theme. That way you are sure the language modifications aren't reverted when a new plugin version is released. You need webdevelopers skills to do this. 
 
-## 🔴 CHECKEN: New method for language edits
-You need (s)FTP credentials for the WordPress website to do this. The idea is to override portions of the plugin's language file within your own child theme. That way you are sure the language modifications aren't reverted when a new plugin version is released.
 In this example we will change the heading text “Introductie” (introduction) which appears in the vacancy texts. We assume you've set the Wordpress site language to Dutch and have the site running in a child theme.
 
 **1. Create a blank PHP-file called**
 
 `nl-NL.resources.php`
 
-in {WORDPRESS-ROOT}/wp-content/themes/your-child-theme/CxWordpress/assets/resources/ Change your-child-theme to your child theme directory name and create the subdirectories (CxWordpress/assets/resources) if needed.
+in `{WORDPRESS-ROOT}/wp-content/themes/your-child-theme/CxWordpress/assets/resources/` Change your-child-theme to your child theme directory name and create the subdirectories (CxWordpress/assets/resources) if needed.
 
 **2. Edit the new file**
 
 'nl-NL.resources.php as follows'
 ```
-;<?php die()?> [CxPortal.message.field] introduction = "Intro (formerly Introductie)" requirements = "Wat neem jij mee? (formerly Functie-eisen)" offer = "Wat bieden wij? (formerly Aanbod)" organization = "Over deze werkgever (formerly Organisatie)" function = "Wat ga je doen? (formerly Functie)" information = "Meer informatie (formerly Inlichtingen)" application = "Solliciteren bij (formerly Sollicitatie)" closingDate = "Sluitingsdatum (formerly Sluitdatum)" [general.button] apply = "Versturen (formerly Solliciteren)"
+;<?php die()?>
+
+[CxPortal.message.field]
+introduction = "Intro (formerly Introductie)"
+requirements = "Wat neem jij mee? (formerly Functie-eisen)"
+offer = "Wat bieden wij? (formerly Aanbod)"
+organization = "Over deze werkgever (formerly Organisatie)"
+function = "Wat ga je doen? (formerly Functie)"
+information = "Meer informatie (formerly Inlichtingen)"
+application = "Solliciteren bij (formerly Sollicitatie)"
+closingDate = "Sluitingsdatum (formerly Sluitdatum)"
+
+[general.button]
+apply = "Versturen (formerly Solliciteren)"
 ```
 **3. Do a full sync from Carerix to regenerate the job posts**
 
 **Wordpress Dashboard** → **Carerix** → **Settings** → **Button** “Enforce full sync of all items from Carerix” or “Synchronize new/changed items from Carerix”
 
-**Notes**:
-* Our new file nl-NL.resources.php is based on {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/assets/resources/nl-NL.resources.php. You can copy all desired elements from there to your own resource file.
-* Each section of language elements starts with a section heading [xxxxxxx] (recognized by the brackets).
+> [!Note]
+> Our new file nl-NL.resources.php is based on {WORDPRESS-ROOT}/wp-content/plugins/CxWordpress/assets/resources/nl-NL.resources.php. You can copy all desired elements from there to your own resource file.
+> Each section of language elements starts with a section heading [xxxxxxx] (recognized by the brackets).
 
 ### How do I show the vacancies in other languages ​​on a multilingual website?
 See [Multilingual Websites](#multilingual-websites)
@@ -618,7 +672,7 @@ Be aware that manual changes in the job posts texts are overridden by the next v
 ### Can I show the application form below the vacancy texts?
 Yes, go to **Wordpress Dashboard** → **Carerix** → **Sources**
 In the 'Publication Details Header/Body/Footer' (or in the Header or Boday) of a source, you can use HTML and Shortcodes to build your own template. 
-For example use the shortcode `[cx_apply_form]` (instead of `[cx_apply_form]` which generates a button) in the Publication Details Footer.
+For example use the shortcode `[cx_apply_form]` (instead of `[cx_apply_button]` which generates a button) in the Publication Details Footer.
 
 ### Can I add an image within the paragraphs of the vacancy texts?
 Yes, you can add HTML or a shortcode in the publication text in the Carerix application. 
@@ -660,12 +714,15 @@ Yes, absolutely:
 Jobs include taxonomy by Country and Region, Function and Training. Use those taxonomies in your  Search & Filter widgets of plugins.
 
 ### 🔴 CHECKEN: Can I use a search radius from a postal code area?
+<!--Volgens mij niet bedoeld voor mij. Opmerking: de search widget is verder een beperkte widget in functionaliteit. Aangeraden wordt om zoek&filter mogelijkheden met 3rd party plugins te bouwen. Helaas kun je dan niet gebruik maken van post code radius, tenzij ontwikkelaars zelf iets bouwen.
+-->
 With the 'Carerix Search widget' it is possible to search by radius. These can be found under Wordpress → Dashboard → View → Widgets. You need WordPress editing rights. However, if you use a third party search-plugin (like Search & Filter or Jet SmartFilters) you cannot use this radius function because of technical limitations.
 See the example in https://demo.carerix.com/plugin/zoeken-filteren/
 
-
 ### Can I change the Layout or styling of the vacancies?
 Yes, the plugin has minimal styling so it basically follows the theme used. Additionally, you can build your own template layout of the vacancies with HTML and Shortcodes in 'Publication Details Header/Body/Footer within the source.
+
+Or you can build your own Vacancy templates with themes/builders like Divi Builders / Elementor and the Carerix Vacancy Shortcodes.
 
 ### Can I change the text of the headings, labels, buttons for vacancy texts and application forms?
 Yes you can! You can build a template with the use of shortcodes in combination with HTML.
@@ -745,13 +802,15 @@ _____________
 ## System Requirements
 
 **Mandatory**:
-* Linux OS with Apache 2.x (NGINX not supported)
-* PHP 7.4 - 8.2 with cURL, OpenSSL, JSON
+* Linux OS with Apache 2.x and Beta support for NGINX
+* PHP 7.4 - 8.3 
+   * Curl
+   * OpenSSL
+   * JSON
 * MySQL 5+ / MariaDB
 * PHP Memory: 256MB recommended (128MB min, 512MB+ for complex sites)
 
 ### **Updating the Plugin**
-
 1. Make sure to make a backup of your website before updating the plugin which is good practice for updating WordPress plugins. Also check your Website after updating.
 2. In Wordpress dashboard → Plugins, locate the Carerix Wordpress Plugin
 3. If there's an update available you can click on the 'Update now' link
@@ -768,6 +827,13 @@ _____________
 * Check your Administration Panels or WordPress blog to see if the Plugin is working.
 * Follow the instructions in the Settings section to setup the plugin.
 
+### **Downgrading the Plugin**
+If an update is not satisfactory:
+* Download an old version from [Releases](https://github.com/carerix/Cx-WP-Plugin/releases)
+* Go to CX Dash → plugins → add new plugin
+* Upload the older version plugin
+* Confirm that you want to override the current and newer version
+
 ### **Uninstall the Plugin**
 * Deactivate
     * Go to Plugins section
@@ -778,7 +844,6 @@ _____________
     * Find the plugin,
     * Click on **Deactivate** (if the plugin is active)
     * Click on **Delete**
-
 
 _____________
 
