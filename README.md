@@ -313,12 +313,11 @@ Define your own values for the taxonomies creating for each languge a different 
 
 
 ## Job Alert Subscription
-In WordPress you can use this shortcode to show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
-You can create a standalone Job Alert Subscription page, using this shortcode:
+In WordPress you can show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
 1. Setup in Carerix: [See guide](https://help.carerix.com/en/articles/1954170)
 2. Required email templates: `web-subscribe`, `jobalert`
-3. Shortcode for a regular WordPress page:
+3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page:
 
 ```
 [cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
