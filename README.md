@@ -1,4 +1,3 @@
-DIT IS DE:
 Carerix WordPress Plugin
 ----------------
 
