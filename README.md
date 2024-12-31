@@ -68,31 +68,34 @@ Table of Contents
 ## Latest release
 
 > [!Tip]
-> Download the [Latest Release of the Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases/latest/download/Cx-WP-Plugin.zip)
+> Download the [Latest Release of the Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases)
 
-# Installation
+# Installation & Configuration
 
-To create a new website based on WordPress and connect it to the Carerix System, follow these steps:
-1. Download the [latest Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases/latest/download/Cx-WP-Plugin.zip)
-2. Install the plugin
-3. [Authorisation](#authorisation-of-the-plugin-for-the-specified-carerix-application) of the plugin for the specified Carerix application by setting the Application Token
-4. Setting [Source](#sources) with the correct Carerix '[Medium](#medium)'
-5. Sync Jobs
+## System Requirements
+**Mandatory**:
+* Linux OS with Apache 2.x (NGINX not supported)
+* PHP 7.4 - 8.2 with cURL, OpenSSL, JSON
+* MySQL 5+ / MariaDB
+* PHP Memory: 256MB recommended (128MB min, 512MB+ for complex sites)
 
+## Installation Steps
+1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
+2. Configure permalinks: Settings → Permalinks (choose any structure except plain)
+3. Set up required email templates in Carerix:
+   | Template | Purpose |
+   |----------|---------|
+   | CxpeForgotPwd | Password recovery |
+   | CxpResetPwd | Password reset |
+   | JobAlert | Job alert emails |
+   | web-subscribe | Job alert signup confirmation |
 
-## Installing Email templates
+4. Configure ApplyURL in Carerix:
+   ```
+   https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
+   ```
 
-🔴 CHECKEN: KLOPT DIT NOG?
-You need to have these email templates installed to make full use of the plugin: Email codes (System, CxWordPress)
-
-Make sure that these e-mail templates are installed in the library of the Carerix application:
-
-| E-mail templates | Description  |
-| --- | --- |
-| CxpeForgotPwd |  e-mail sent to the candidate to resend the login details |
-| CxpResetPwd |  email used to reset the password for a candidate That can no longer access the original email account |
-| JobAlert |  Mandatory for sending job alert subscription emails |
-
+5. Authorize the plugin with your Application Token
 
 > [!IMPORTANT]
 > ## Authorisation of the Plugin for the specified Carerix application
@@ -103,44 +106,6 @@ Make sure that these e-mail templates are installed in the library of the Careri
 > Or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
 > Carerix will not be able to provide you the Application token directly, as this is part of the authorization procedure.
 
-
-## Change ApplyURL to website
-
-Don't forget to change the ApplyURL, so that links in email templates are directed to the correct Vacancies on the website (**Settings** →  **Attributes and fields** →  **Apply_url**)
-
-```
-https://domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
-```
-
-This will link to the according Vacancy publication on the website
-
-* Change ApplyURL
-* Don't forget to change the ApplyURL, so that links in emailtemplates are directed to the website
-Settings → Attributes and fields → Apply_url
-
-    ```
-    https://domainname.com/?pub_id=<cx:write value="$publication.publicationID"/>
-    ```
-
-    This will link to the according Vacancy publication on the website
-
-### Create links in your emails, alerts and newsletters
-* Use above this cx-script code in your Carerix email templates to create urls to the jobs in your emails, alerts and newsletters:
-```<cx:write value="$publication.publicationID"/>```
-
-That will generate a link with the correct vacancy page URL: [https://domainname.com/pubid/xxx](https://domainname.com/pubid/xxx), where xxx is the pubID \
-For example [https://domainname.com/pubid/123](https://domainnamee.com/pubid/123)
-
-> [!NOTE]
-> ## Synchronizing Vacancies (Publications) from Carerix to your site
-> The Carerix WordPress plugin updates the publications every 10 minutes (you can not change this interval). You can use the Synchronize Now button to manually initiate the synchronize mechanism, if you want to see the changes immediately. Or you can use the external link.
-> 
-> 1. Automatically every 10 minutes
-> 2. Manually hit the Button: **Synchronize new/changed items from Carerix**
-> 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
-> 4. Add ?carerix_sync to your website domain name (like https://website.com/?carerix_sync. That url is available without logging in. After syncing the page will display a log of that last sync.
-
----
 
 # 3. Settings & Usage
 ## Application Forms
@@ -197,9 +162,9 @@ Note that you must first save the title of the form before you can synchronize. 
 
 
 ## Sources
-Under the Sources section you can create one or more Jobs sources. You can use the Default jobs source or you can create a custom form:
+Under the Sources section you can create one or more Jobs sources. You can use the Default jobs source or you can create a custom Source:
 
-* Use a different other settings or a different template lay out for your vacancy posts
+* Use other settings or a different template lay out for your vacancy posts
 * Use a different Carerix  'medium'-code (like 'web' or 'web2' or 'web-en')
 
 ### Configuring a Job source
@@ -334,7 +299,7 @@ Many shortcodes accept these standard parameters:
 | `quotes="double\|single"` | Quote style for attributes |
 
 
-For example you use a shortcode like this:
+For example you can use a shortcode like this:
 
 ````
 [cx_application_contact_information container="div" label="yes" 
