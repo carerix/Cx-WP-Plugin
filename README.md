@@ -1,7 +1,3 @@
-<a href="http://google.com/" target="_blank">Hello, google!</a>
-
-
-
 Carerix WordPress Plugin
 ----------------
 
@@ -319,7 +315,7 @@ Define your own values for the taxonomies creating for each languge a different 
 ## Job Alert Subscription
 In WordPress you can show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
-1. Setup in Carerix: <a href="https://help.carerix.com/en/articles/1954170" target="_blank" rel="noopener noreferrer">See guide</a>
+1. Setup in Carerix: [See guide](https://help.carerix.com/en/articles/1954170)
 2. Required email templates: `web-subscribe`, `jobalert`
 3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page:
 
@@ -330,11 +326,11 @@ After activation you will start receiving new job opportunities in your mailbox 
 confirmation_url="/jobalert_thank_you/"]
 ```
 
-For the following instructions you need to have Admin rights in Carerix and be familiar with <a href="https://help.carerix.com/en/articles/1810726" target="_blank" rel="noopener noreferrer">Carerix Table</a> editing.
+For the following instructions you need to have Admin rights in Carerix and be familiar with [Carerix Table](https://help.carerix.com/en/articles/1810726) editing.
 
 
 ### Prerequisites
-1. Configure Job Alerts in Carerix (<a href="https://help.carerix.com/en/articles/1954170" target="_blank" rel="noopener noreferrer">Setup guide</a>)
+1. Configure Job Alerts in Carerix ([Setup guide](https://help.carerix.com/en/articles/1954170))
 2. Required email templates:
    - `web-subscribe`: Subscription confirmation
    - `jobalert`: Daily/weekly job alert emails
@@ -381,7 +377,7 @@ After modifying tables, clear cache: **Dashboard → Carerix → Application For
     * Custom functions available.
     * Integration with other plugins or WordPress APIs.
 
-## Diagnostics (since v3.0.0)
+## Diagnostics
 
 The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
 
@@ -392,7 +388,7 @@ You can review the 'active job publications' but also the available 'medium code
 
 ## Multilingual Websites
 
-The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports <a href="https://wpml.org/" target="_blank" rel="noopener noreferrer">Multilingual Plugin WPML</a>, the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
+The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
 
 1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
 2. Create an additional publications of a job
@@ -404,7 +400,7 @@ The Carerix WordPress plugin supports multilingualism. To do this, you use a mul
 
 Use the medium code 'web-XX', where 'XX' is the ICU Locale language.
 
-The Carerix plugin works perfectly with WPML, one of the best WordPress plugins multilingual. The price WPML is worth it, see <a href="https://wpml.org/" target="_blank" rel="noopener noreferrer">WPML</a>
+The Carerix plugin works perfectly with WPML, one of the best WordPress plugins multilingual. The price WPML is worth it, see [WPML](https://wpml.org/)
 
 
 ## Without multilingual plugin
@@ -417,30 +413,34 @@ You can also show jobs from different languages ​​(different mediums) withou
 3. You now have several job feeds, jobs are created as separate jobs in the'd really rather know categories. The page is created only displays the jobs with the medium 'and web.
 
 
-## Special jobs
+## Special multilingual jobs
 🔴 CHECKEN \
-Website in one language but do you want multiple languages used for publication texts?
-If you have a website entirely in Dutch but you want to display one or more jobs in a different language? By default, your publications will receive all header sections in Dutch. take the following steps in order to have the labels in the correct language.
+Need to display job postings in multiple languages on your website? This guide explains how to configure multilingual job publications while keeping your main website in a single language.
 
-**In Carerix:**
-1. If an extra medium for language is not already active: Create a medium with the desired code (i.e. 'web-en') for use of publications in the different language of the website.
-2. Create publications in this medium in the extra language that you need to publish
+### Configuration 
+1. Carerix:
+   - Create/verify language-specific mediums (e.g., 'web-en' for English)
+   - Create job publications using these mediums
 
-**In the WordPress plugin** (under Sources)
+2. WordPress Plugin:
+   - Add new source in plugin settings
+   - Set feed parameter: `medium=web|web-en` (replace web-en with your language code)
 
-1. Create new source to generate your jobs page. **Eg. Page name: Mixed jobs**
-2. In the Set Feed Source Parameters section, after the default feed, in the input text insert **Eg. for English:** `medium=web|web-en`
-3. If you want to mix the Vacancy posts from the different languages you can use `medium=web|web-en`. 
-4. Finish the rest of settings and save.
+### Examples
+- Dutch + English: `medium=web|web-en`
+- Dutch + German: `medium=web|web-de`
+- All: `medium=web|web-en|web-de`
 
-**Result:** Page named **Mixed Jobs** is created. The page will display jobs from the 2 defined mediums.
+### ⚠️ Notes
+- Headers auto-generate in medium's language
+- Use dashes (-) only for language codes
+- Correct: `webagency2`
+- Incorrect: `web-agency2`
 
-For the posts for which value of parameter medium is found to be language codes, the resources will be generated in the language code corresponding to language code. 
-
-**NOTE**: If you do not want to use multilanguage-features, never use a mediumcode containing a dash. The Wordpress plugin will interpret it as a language resulting in English subtitles within your vacancies. So if you want to use a medium to separate vacancies for your second agency, use a mediumcode like “webagency2” instead of “web-agency2”
+Medium codes with dashes will be interpreted as language indicators, resulting in language-specific formatting.
 
 
-## Extra/Additional Carerix fields support (since v3.0.0)
+## Extra/Additional Carerix fields support
 
 You can find the feature in Carerix Dashboard→Carerix→Settings→ tab Technology previews
 
