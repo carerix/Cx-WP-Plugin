@@ -442,7 +442,7 @@ Need to display job postings in multiple languages on your website? This guide e
    - Create job publications using these mediums
 
 <!--
-RUBEN: Ik weet niet zeker of dit nog steeds zo werkt. Sinds een tijdje heeft WP een hoofdsetting “Site Language” (WP Dash → Settings → General). In principe volgen alle plugins (waaronder de CX WP Plugin) die setting. Mogelijk dat een mediumcode met een taal code (zoals “web-fr”) dan Frans afdwingt voor de desbetreffende publicaties (vacature-posts). Het gaat dan inderdaad om de vacature-labels (introductie, aanbod, solliciteren bij etc) en de labels van hete solliciattieformulier. Maar dat moet voor de zekerheid getest worden.
+RUBEN: Ik weet niet zeker of dit nog steeds zo werkt. Sinds een tijdje heeft WP een hoofdsetting “Site Language” (WP Dash → Settings → General). In principe volgen alle plugins (waaronder de CX WP Plugin) die setting. Mogelijk dat een mediumcode met een taal code (zoals “web-fr”) dan Frans afdwingt voor de desbetreffende publicaties (vacature-posts). Het gaat dan inderdaad om de vacature-labels (introductie, aanbod, solliciteren bij etc) en de labels van het solliciatieformulier. Maar dat moet voor de zekerheid getest worden.
 
 Daarnaast ondersteunt de CX WP Plugin de WPML plugin voor multilingal sites + vacatures. Mediumcode medium=web|web-en is daarbij overbodig omdat de CX WP Plugin de mediumcode taalextensies baseert op de geconfigureerde talen in WPML.
 -->
@@ -561,7 +561,7 @@ This will result in a standard RSS page containing all posts from category ''mar
 
 
 ## 🔴 CHECKEN: How to use the 'cxwordpress_post_updated' hook?
-<!-- waar hoort dit thuis? -->
+<!-- waar hoort dit thuis? Wanneer of voor wie is dit nuttig? -->
 
 With this hook you can apply changes to a vacancy-post upon (creation/update) to have it better fit into your site/theme. It's useful to apply changes in text formatting or post-statuses.
 
@@ -714,7 +714,7 @@ Yes, absolutely:
 Jobs include taxonomy by Country and Region, Function and Training. Use those taxonomies in your  Search & Filter widgets of plugins.
 
 ### 🔴 CHECKEN: Can I use a search radius from a postal code area?
-<!--Volgens mij niet bedoeld voor mij. Opmerking: de search widget is verder een beperkte widget in functionaliteit. Aangeraden wordt om zoek&filter mogelijkheden met 3rd party plugins te bouwen. Helaas kun je dan niet gebruik maken van post code radius, tenzij ontwikkelaars zelf iets bouwen.
+<!-- Opmerking: de search widget is verder een beperkte widget in functionaliteit. Aangeraden wordt om zoek & filter mogelijkheden met 3rd party plugins te bouwen. Helaas kun je dan niet gebruik maken van post code radius, tenzij ontwikkelaars zelf iets bouwen.
 -->
 With the 'Carerix Search widget' it is possible to search by radius. These can be found under Wordpress → Dashboard → View → Widgets. You need WordPress editing rights. However, if you use a third party search-plugin (like Search & Filter or Jet SmartFilters) you cannot use this radius function because of technical limitations.
 See the example in https://demo.carerix.com/plugin/zoeken-filteren/
