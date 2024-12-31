@@ -226,7 +226,7 @@ These shortcodes handle the application process.
 ### Shortcodes used in Sources
 Under 'Sources' you can use many shortcodes to built your Vacancy template.
 That means you can use them in the Excerpt, Header, Body or Footer of the Publication post.
-Also see the [#Common parameters](Common parameters) to use with these shortcodes.
+Also see the [Common parameters](#common-parameters) to use with these shortcodes.
 
 #### Basic shortcodes for Vacancy template
 These shortcodes are typically used in the main content sections of a vacancy.
