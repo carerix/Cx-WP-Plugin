@@ -289,9 +289,19 @@ Many shortcodes accept these standard parameters:
 For example you can use a shortcode like this:
 
 ```
-[cx_application_contact_information container="div" label="yes" 
-heading="h3" content="yes" class="contact-info" raw="no" quotes="double"]
+[cx_intro_information container="div" label="yes" heading="h3"
+ content="yes" class="contact-info" raw="no" quotes="double"]
 ```
+
+Results in
+```
+<h3 class="cx_h3 contact-info cx2_introduction">Introductie</h3>
+<div class="contact-info cx2_introduction">Introduction text...</div>
+```
+`<h3 class="cx_h3 contact-info cx2_introduction">Introductie</h3>
+<div class="contact-info cx2_introduction">Introduction text...</div>`
+
+
 
 ### Deprecated Shortcodes
 The following shortcodes are no longer supported:
