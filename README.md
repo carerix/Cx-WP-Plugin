@@ -462,8 +462,8 @@ Daarnaast ondersteunt de CX WP Plugin de WPML plugin voor multilingal sites + va
 > - Use dashes (-) only for language codes
 > - Correct: `webagency2`
 > - Incorrect: `web-agency2`
-
-Medium codes with dashes will be interpreted as language indicators, resulting in language-specific formatting.
+> 
+> Medium codes with dashes will be interpreted as language indicators, resulting in language-specific formatting.
 
 
 ## Featured vacancies
