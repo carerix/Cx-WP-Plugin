@@ -184,26 +184,28 @@ Configure how vacancies appear on your site:
 | Setting | Description |
 |-------|-------------|
 | Source name | Identifier for the source configuration |
-| Publications Details Options | Settings for vacancy post display and interaction 🔴IMAGE |
-| Apply Form | Select application form for this source |
+| Publications Details Options | Settings for vacancy post display and interaction |
+| Apply Form | Select the application form for this source |
 | Title - Location | Toggle work location display in title |
-| Alternative Feed Parameters | Set custom medium code for different vacancy sets 🔴IMAGE  |
-| Header and Footer | Add content using shortcodes 🔴IMAGE |
+| Alternative Feed Parameters | Set custom medium code for different vacancy sets |
+| Header and Footer | Add content using shortcodes |
 | Excerpt | Custom summary for listings and previews |
-| Details Body | Content structure using [shortcodes](#shortcodes-reference) like [cx_intro_information] 🔴IMAGE |
+| Details Body | Content structure using|
+
+Use [shortcodes](#shortcodes-reference) in combination with Html to create your own template.
 
 ## Medium
 Medium 'web' is default, but you can show a different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
 You can do this by publishing to a different medium. You use this medium as follows:
 
 ### In Carerix
-1. Ask admin to create new medium (e.g., `web2`)
+1. Create a new medium (e.g. `web2`)
 2. Publish test job using new medium
 
 ### In WordPress
 1. Go to: `Carerix Plugin → Settings → Sources`
 2. Add new source
-3. Set medium parameter: `medium=web2`
+3. Set as medium parameter: (e.g. `medium=web2`)
 4. Save changes
 
 ### What Happens
