@@ -24,14 +24,7 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Diagnostic tools
 
 ## Getting Started: A basic guide to using the plugin's core functionalities.
-1. Setting Application Token (See [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application))
-2.  Setting [Source](#sources) with correct Carerix 'medium'
-3. First time Sync
-4. See the WordPress posts that are created
-
-🔴 TO DO
-* [Configuration Options](#3-settings--usage): Explain any settings or configuration options available for the plugin.
-* [Shortcodes](#shortcodes) or Widgets (if applicable): Provide usage instructions and examples for any shortcodes or widgets included in the plugin.
+...
 
 ### Roles & rights
 The Carerix WordPress plugin is the connection between the Carerix application and the WordPress website. Therefor there are certain roles/rights for different tasks:
@@ -39,29 +32,53 @@ The Carerix WordPress plugin is the connection between the Carerix application a
 * **Wordpress administrator**: Webbuilder with rights to manage the settings of Wordpress, can install/configure plugins and knows how to create/edit pages (with sidebars). HTML skills are useful
 
 
-🔴 Add links to Table of Contents
+Table of Contents
 =================
 
-  * [Installation](#installation)
-  * [Change ApplyURL](#change-applyurl-to-website)
+* [1. Introduction](#1-introduction)
+  * [Features](#features)
+  * [Getting Started](#getting-started-a-basic-guide-to-using-the-plugins-core-functionalities)
+  * [Roles & rights](#roles--rights)
+* [Installation](#installation)
+  * [Installing Email templates](#installing-email-templates)
+  * [Change ApplyURL to website](#change-applyurl-to-website)
+* [3. Settings & Usage](#3-settings--usage)
   * [Application Forms](#application-forms)
   * [Sources](#sources)
-  * [Job Alert](#job-alert-subscription)
+  * [Shortcodes Reference](#shortcodes-reference)
+  * [Medium](#medium)
+  * [Taxonomies](#taxonomies)
+  * [Job Alert Subscription](#job-alert-subscription)
+* [4. Advanced Features](#-4-advanced-features)
+  * [Diagnostics](#diagnostics-since-v300)
   * [Multilingual Websites](#multilingual-websites)
-  * [Advanced Features](#-4-advanced-features-optional)
+  * [Without multilingual plugin](#without-multilingual-plugin)
+  * [Special jobs](#special-jobs)
+  * [Extra/Additional Carerix fields support](#extraadditional-carerix-fields-support-since-v300)
+  * [Google for Jobs](#google-for-jobs)
+  * [Job Conversion Tracking](#job-conversion-tracking-for-web-analytics)
+* [5. FAQ (Frequently Asked Questions)](#5-faq-frequently-asked-questions)
+* [6. Support](#6-support)
+  * [Required and recommended specifications](#2-required-and-recommended-specifications)
+  * [Updating the Plugin](#updating-the-plugin)
+  * [Uninstall the Plugin](#uninstall-the-plugin)
+  * [Create RSS feeds per category](#create-rss-feeds-per-category)
+  * [Applicant Source Tracking](#applicant-source-tracking)
 
 ## Latest release
 
 > [!Tip]
-> See [Latest Release of the Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases/latest) \
-> 🔴 Embed latest release?
+> Download the [Latest Release of the Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases/latest/download/Cx-WP-Plugin.zip)
 
 # Installation
 
-To create a new website based on WordPress and connect it to the Carerix System, follow this steps:
-1. Download the [latest Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases)
-2. Install plugin
-3. Authenticate the plugin for the specified Carerix application by setting the Application Token
+To create a new website based on WordPress and connect it to the Carerix System, follow these steps:
+1. Download the [latest Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases/latest/download/Cx-WP-Plugin.zip)
+2. Install the plugin
+3. [Authorisation](#authorisation-of-the-plugin-for-the-specified-carerix-application) of the plugin for the specified Carerix application by setting the Application Token
+4. Setting [Source](#sources) with the correct Carerix '[Medium](#medium)'
+5. Sync Jobs
+
 
 ## Installing Email templates
 
@@ -121,8 +138,7 @@ For example [https://domainname.com/pubid/123](https://domainnamee.com/pubid/123
 > 1. Automatically every 10 minutes
 > 2. Manually hit the Button: **Synchronize new/changed items from Carerix**
 > 3. Manually hit the Button: **Enforce full sync of all items from Carerix**
-> 4. Go to the external link [https://website.com/?carerix_sync](https://website.com/?carerix_sync) that is available without logging in. After syncing a log of that last sync will be displayed.
-
+> 4. Add ?carerix_sync to your website domain name (like https://website.com/?carerix_sync. That url is available without logging in. After syncing the page will display a log of that last sync.
 
 ---
 
@@ -219,34 +235,6 @@ Under the Sources section you can create one or more Jobs sources. You can use t
     </tr>
 </table>
 
-### Shortcodes in Job source 
-🔴 CHECKEN: Kloppen deze nog allemaal? \
-🔴 CHECKEN: Waar gebruik je dit? In de Publication Detail body?
-
-<table>
-    <tr>
-   <td>[cx_function_group]
-   </td>
-   <td>display the function group
-   </td>
-  </tr>
-   <td>[cx_vacancy_code]
-   </td>
-   <td>display the vacancy reference code. By default the reference code is equal to the auto-generated vacancy number in Carerix.
-   </td>
-  </tr>
-  <tr>
-   <td>[cx_apply_button]
-   </td>
-   <td>display the apply button
-   </td>
-  </tr>
-  <tr>
-   <td>[cx_apply_form]
-   </td>
-   <td>display the apply form
-   </td>
-</table>
 
 * **Publication Excerpt**
 Here you can use an alternative/better teaser (summary text) which will be used as a summary, specifically in vacancy overview/listing pages. This excerpt will also be used as intro/description text as preview text on Social Media etc.
@@ -254,80 +242,6 @@ Here you can use an alternative/better teaser (summary text) which will be used 
 * **Publication Details Body**
 You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
 🔴IMAGE
-
-### 🔴 Shortcodes for Publication body
-🔴 \[SHORTCODES\] \
-🔴 You can use these parameters for certain  shortcodes
-````
-container="div|span" label="yes|no" heading="h1..h6|div|span|no" content="yes|no" class="..." raw="yes|no" quotes="double|single"
-````
-
-| Shortcode with parameters                                                                                                                                                       | Description                                                                                                                                                                                                                                                                                              |
-|	Shortcode with parameters	|	Description	|
-|	---	|	---	|
-|	[cx_apply_button ]	|	"Displays the apply button which links to the application form on a separate URL. Typically, this shortcode is used under the vacancy information.
-To display the applicaton form and avoid a separate application form page, use [cx_apply_form] instead."	|
-|	[cx_apply_form ]	|	Displays the application form for the current vacancy post. Typically use this to display both the vacancy information and application form at the same page.	|
-|	[cx_apply_until ]	|	Displays the final apply date in the date format configured in the general WordPress settings.	|
-|	[cx_campaign sendto="email@address.com" campaignid="x" codeinname="abc" ]	|	"Displays a Carerix campaign signup form. Only active campaigns (end-date not expired) are listed.
-Note: the intended functionality may no longer work due to functional changes in the Carerix system."	|
-|	[cx_campaign* sendto="email@address.com" campaignid="x" codeinname="abc" ]	|	"Displays a Carerix campaign signup form. Only active campaigns (end-date not expired) are listed.
-Note: the intended functionality may no longer work due to functional changes in the Carerix system."	|
-|	[cx_country separator=", " container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the country or countries of the vacancy.	|
-|	[cx_education separator=", " container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the educational requirements of the vacancy.	|
-|	[cx_employment container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the contract type of employment, e.g. Temporarily contract.	|
-|	[cx_end_date container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the publication end date. Please consider using [cx_apply_until] if you want to show the date of the final day applicants can apply.	|
-|	[cx_extra* field="yourcarerixfieldcode"  separator=", " type="string\|date" ]	|	"Displays an extra/additional field that is activated in joborders or publications in the Carerix system. \ Notes: 1) This is an advanced feature. Prepared configuration in the Carerix system is required. \ 2) In the settings of this plugin extra/additional field support must be enabled."	|
-|	[cx_field container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the field (area of expertise) of the vacancy.	|
-|	[cx_function_group container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Function group of the vacancy, for example "ICT professionals."	|
-|	[cx_function_position container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	The position within the function group to which the vacancy belongs, for example "Network administrator" from the group "ICT professionals".	|
-|	[cx_google_for_jobs ]	|	Forcefully generates JobPosting structured data as application/ld+json script. Only use this shortcode if you are completely overriding WordPress single-post templates. This may be the case when using page builders like Elementor or Divi to display the vacancy information pages.	|
-|	[cx_hours_per_week container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the working hours per week.	|
-|	[cx_industry container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the industry of the vacancy, e.g. Accountancy (as part of the sector Business services).	|
-|	[cx_job_alert_subscription confirmation_message="abc" confirmation_url="abc" frequency="daily\|bidaily\|tridaily\|twiceweekly\|weekly\|biweekly\|monthly" ]	|	"Displays the job alert signup form.
-After filling in, the subscriber will first receive an email (sent from the Carerix system) with a mandatory confirmation link before the subscription becomes active."	|
-|	[cx_job_group  separator=", " container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the group(s) the vacancy is appointed to. Don't confuse this one with [cx_function_group]. Groups are free to be defined in the Carerix system. A useful group for website purposes is top vacancies to use for a vacancy carousel.	|
-|	[cx_job_title container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the job title of the vacancy.	|
-|	[cx_medium type="code" ]	|	Displays medium-code of the Carerix publication of the job post.	|
-|	[cx_office_name container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the office name which is connected to the vacancy.	|
-|	[cx_open_application openformid="x" openpubid="y" ]	|	"Displays the application form for an open applicaton. In Dashboard->Carerix->Application Forms you can find the form ID.
-For this functionality to work, in the Carerix system, a published job order marked as an ""open application"" must be present."	|
-|	[cx_organization container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the organization/company name of the vacancy.	|
-|	[cx_procedure container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the prodecure of the vacancy, e.g. Secondment or Recruitment.	|
-|	[cx_professional_level container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the required professional level.	|
-|	[cx_publication_id ]	|	Displays the Carerix publicaton ID of the current job post.	|
-|	[cx_region separator=", " container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the region or regions of the vacancy.	|
-|	[cx_salaryshow="csu" raw="yes\|no" ]	|	Displays the salary range. In the Carerix system the "publish salary" checkbox must be checked.	|
-|	[cx_sector container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the sector of the vacancy, e.g. Health care.	|
-|	[cx_vacancy_code type="code\|id" ]	|	Displays either the vacancy reference code or the vacancy ID. The reference code can be manually set in the Carerix system, but defaults to the (autogenerated) vacancy ID aka "vacancy number".	|
-|	[cx_work_location container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the work location of the vacancy.	|
-|	[cx_work_postal_code container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the postal code of the work location. It's empty if the job order is set to anonymous in the Carerix system.	|
-|	[cx_workplace_type ]	|	Displays the workplace type, e.g. Remote, On site or Hybrid	|
-|		|		|
-|	---	|	---	|
-|	Vacancy publication	|		|
-|	Shortcode with parameters	|	Description	|
-|	[cx_application_contact_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the person at the client who serves as the first point of contact.	|
-|	[cx_company_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the description of the organization and/or department where the vacancy is located.	|
-|	[cx_requirements_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the description of the requirements for the position.	|
-|	[cx_vacancy_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the description of the position.	|
-|	[cx_offer_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays what the client or intermediary offers the applicant (e.g. salary, bonus, training opportunities).	|
-|	[cx_intro_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the vacancy introduction information.	|
-|	[cx_function_contact_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the contact details for the applicant to obtain more information about the position and the organization.	|
-|	[cx_company_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the description of the organization and/or department where the vacancy is located.	|
-|	[cx_application_contact_information container="div\|span" label="yes\|no" heading="h1..h6\|div\|span\|no" content="yes\|no" class="..." raw="yes\|no" quotes="double\|single" ]	|	Displays the person at the client who serves as the first point of contact.	|
-
-______________________________________________________________
-
-| Deprecated Shortcodes                               |  |
-| ---------------------------------------------------- | ---------- |
-| [cx_rss_for_all ]<br>                                | Deprecated |
-| [cx_print_link ]<br>                                 | Deprecated |
-| [cx_login_form ]<br>                                 | Deprecated |
-| [cx_newsletter_subscription\* newsletterID="x" ]<br> | Deprecated |
-| [cx_social_icons ]<br>                               | Deprecated |
-| [cx_vacancy_number ]<br>                             | Deprecated |
-
 
 ### Medium
 
@@ -345,6 +259,96 @@ You can do this by publishing to a different medium. You use this medium as foll
 
 > [!NOTE]
 > In Carerix publish your default to the medium 'web'. You do this in the settings of the Carerix WordPress plugin to fill out and you therefore blank.
+
+
+## Shortcodes Reference
+
+### Application Shortcodes
+These shortcodes handle the application process.
+
+| Shortcode | Description | Parameters |
+|-----------|-------------|------------|
+| [cx_open_application] | [Open Application Forms](#application-forms) | `openformid="x" openpubid="y"` |
+| [cx_job_alert_subscription] | Job alert signup form | `frequency="daily\|weekly\|monthly" confirmation_message="..." confirmation_url="..."` |
+| [cx_google_for_jobs] | Structured data for Google Jobs | None |
+
+### Shortcodes used in Sources
+Under 'Sources' you can use many shortcodes to built your Vacancy template.
+That means you can use them in the Excerpt, Header, Body or Footer of the Publication post.
+Also see the [#Common parameters] to use with these shortcodes.
+
+#### Basic shortcodes for Vacancy template
+These shortcodes are typically used in the main content sections of a vacancy.
+
+| Shortcode | Description | Parameters |
+|-----------|-------------|------------|
+| [cx_intro_information] | Introduction text | Common parameters |
+| [cx_vacancy_information] | Position description | Common parameters  |
+| [cx_requirements_information] | Requirements description | Common parameters  |
+| [cx_offer_information] | What the employer offers | Common parameters  |
+| [cx_company_information] | Organization description | Common parameters  |
+| [cx_function_contact_information] | Contact info for questions | Common parameters  |
+| [cx_application_contact_information] | Application contact person | Common parameters  |
+| [cx_apply_button] | Apply button linking to form | - |
+| [cx_apply_form] | Embedded application form | - |
+
+Furthermore these shortcodes can be used in vacancy templates to display job details. Some have specific parameters besides the common parameters.
+
+| Shortcode | Description | Special Parameters |
+|-----------|-------------|-------------------|
+| [cx_job_title] | Job title | Common parameters |
+| [cx_organization] | Company/organization name | Common parameters |
+| [cx_country] | Country/countries | `separator=", "` |
+| [cx_region] | Region(s) | `separator=", "` |
+| [cx_work_location] | Work location | Common parameters |
+| [cx_work_postal_code] | Postal code | Common parameters |
+| [cx_workplace_type] | Workplace type (Remote/On site/Hybrid) | Common parameters |
+| [cx_employment] | Contract type | Common parameters |
+| [cx_hours_per_week] | Working hours | Common parameters |
+| [cx_education] | Educational requirements | `separator=", "` |
+| [cx_professional_level] | Required professional level | Common parameters |
+| [cx_function_group] | Function group | Common parameters |
+| [cx_function_position] | Position within function group | Common parameters |
+| [cx_field] | Area of expertise | Common parameters |
+| [cx_sector] | Business sector | Common parameters |
+| [cx_industry] | Industry | Common parameters |
+| [cx_salary] | Salary range | `show="csu"` |
+| [cx_publication_id] | Carerix publication ID | - |
+| [cx_vacancy_code] | Vacancy reference code | - |
+| [cx_medium] | Publication medium code | `type="code"` |
+| [cx_end_date] | Publication end date | Common parameters |
+| [cx_apply_until] | Final application date | Common parameters |
+| [cx_job_group] | Vacancy group(s) | `separator=", "` |
+| [cx_extra*] | Display custom Carerix fields | `field="fieldcode" separator=", " type="string\|date"` |
+
+### Common Parameters
+Many shortcodes accept these standard parameters:
+| Parameter | Description |
+|-----------|-------------|
+| `container="div\|span"` | Wrapper element type |
+| `label="yes\|no"` | Show/hide label | 
+| `heading="h1..h6\|div\|span\|no"` | Heading element type |
+| `content="yes\|no"` | Show/hide content |
+| `class="..."` | Custom CSS classes |
+| `raw="yes\|no"` | Output raw data |
+| `quotes="double\|single"` | Quote style for attributes |
+
+
+For example you use a shortcode like this:
+
+````
+[cx_application_contact_information container="div" label="yes" 
+heading="h3" content="yes" class="contact-info" raw="no" quotes="double"]
+````
+
+### Deprecated Shortcodes
+The following shortcodes are no longer supported:
+- [cx_rss_for_all]
+- [cx_print_link]
+- [cx_login_form]
+- [cx_newsletter_subscription]
+- [cx_social_icons]
+- [cx_vacancy_number]
 
 ## Taxonomies
 The plugin is generating Taxonomies for Jobs posts:
@@ -438,7 +442,21 @@ In Carerix every function group can be connected to a business-line. If one or m
 Disable 'not for web' and enable each desired business-line you want to connect the function group to. You need at least connect it to one business-line
 2. In Wordpress, go to **Dashboard** → **Carerix** → **Application Forms** → Tab: **Settings**, and click on “**Clear DataNodes cache**”
 
----
+# 🔴 4. Advanced Features
+
+* 🔴 For developers or experienced users, this section can cover:
+    * Hooks and filters used by the plugin.
+    * Custom functions available.
+    * Integration with other plugins or WordPress APIs.
+
+## Diagnostics (since v3.0.0)
+
+The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
+
+You can review the 'active job publications' but also the available 'medium codes'.
+* General plugin (version) information (Active mediums, Open application found, etc)
+* Active job publications (synced from Carerix, with Pub ID, Title, start date, Visibility sensitive data)
+* Available mediums (in Carerix)
 
 ## Multilingual Websites
 
@@ -466,30 +484,6 @@ You can also show jobs from different languages ​​(different mediums) withou
 2. On Set Feed Source Parameters Add `medium=web` and as parameter behind `/cxtools/wp_feed.php?`
 3. You now have several job feeds, jobs are created as separate jobs in the'd really rather know categories. The page is created only displays the jobs with the medium 'and web.
 
-
-_____________
-
-
-
-## Diagnostics (since v3.0.0)
-
-The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
-
-You can review the 'active job publications' but also the available 'medium codes'.
-* General plugin (version) information (Active mediums, Open application found, etc)
-* Active job publications (synced from Carerix, with Pub ID, Title, start date, Visibility sensitive data)
-* Available mediums (in Carerix)
-
----
-
-# 🔴 4. Advanced Features (Optional)
-
-* For developers or experienced users, this section can cover:
-    * Hooks and filters used by the plugin.
-    * Custom functions available.
-    * Integration with other plugins or WordPress APIs.
-
----
 
 ## Special jobs
 🔴 CHECKEN \
