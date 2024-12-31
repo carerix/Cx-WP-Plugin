@@ -39,9 +39,10 @@ Table of Contents
   * [Features](#features)
   * [Getting Started](#getting-started-a-basic-guide-to-using-the-plugins-core-functionalities)
   * [Roles & rights](#roles--rights)
-* [Installation](#installation)
-  * [Installing Email templates](#installing-email-templates)
-  * [Change ApplyURL to website](#change-applyurl-to-website)
+* [Installation & Configuration](#installation--configuration)
+  * [System Requirements](#system-requirements)
+  * [Installation Steps](#installation-steps)
+  * [Usage in Email Templates](#usage-in-email-templates)
 * [3. Settings & Usage](#3-settings--usage)
   * [Application Forms](#application-forms)
   * [Sources](#sources)
@@ -49,12 +50,12 @@ Table of Contents
   * [Medium](#medium)
   * [Taxonomies](#taxonomies)
   * [Job Alert Subscription](#job-alert-subscription)
-* [4. Advanced Features](#-4-advanced-features)
-  * [Diagnostics](#diagnostics-since-v300)
+* [4. Advanced Features](#4-advanced-features)
+  * [Diagnostics](#diagnostics)
   * [Multilingual Websites](#multilingual-websites)
   * [Without multilingual plugin](#without-multilingual-plugin)
-  * [Special jobs](#special-jobs)
-  * [Extra/Additional Carerix fields support](#extraadditional-carerix-fields-support-since-v300)
+  * [Special multilingual jobs](#special-multilingual-jobs)
+  * [Extra/Additional Carerix fields support](#extraadditional-carerix-fields-support)
   * [Google for Jobs](#google-for-jobs)
   * [Job Conversion Tracking](#job-conversion-tracking-for-web-analytics)
 * [5. FAQ (Frequently Asked Questions)](#5-faq-frequently-asked-questions)
@@ -448,9 +449,9 @@ In the Carerix system extra/additional fields can be added to Job orders and Pub
 
 **Use case**
 
-A nice use case is a “featured/highlighted” vacancy widget to highlight some vacancies. Therefore in Carerix you need to create an additional field called “featured on website” (type single checkbox) and attach it to the “Publications entity”.  \
-In Carerix, recruiters can tag preferred publications as “Featured on website”.  \
- \
+A nice use case is a “featured/highlighted” vacancy widget to highlight some vacancies. Therefore in Carerix you need to create an additional field called “featured on website” (type single checkbox) and attach it to the “Publications entity”.
+In Carerix, recruiters can tag preferred publications as “Featured on website”.
+
 After that, the Wordpress developer can create a “Featured vacancies widget” based on a “vacancy post loop” restricted to the custom-field “featured on website”.
 
 
@@ -472,27 +473,31 @@ To have your jobs included you need to add “structured job posting data” to 
 The hiring organization is also included in Google for Jobs. If you don't mark your jobs as “anonymous”, your client (hiring organization) will be displayed. For jobs marked as anonymous you can put your own organization name as the hiring one. To do this fill in your own company name in the field “Hiring organization”. Optionally you can also add your company logo.
 
 
-## Job Conversion Tracking for web analytics
+## Web analytics
+The plugin supports custom code snippets for extended web analytics usage (e.g. Facebook pixel, Google Analytics, etc.). Apply custom (javascript) code to the following webpage sections:
 
-The Cx WP plugin supports custom code snippets for extended web analytics usage (e.g. Facebook pixel, Google Analytics, etc.)
-Custom (javascript) code can be applied to the following webpage sections:
-
-
-* General (basically  to all pages)
+* General (basically to all pages)
 * Job description page
 * Job application page
 * Job application confirmation page
 
 Additionally custom information (apply source and apply tags) can be set which will be stored in the “Candidate Match file”.
 
-Configuring custom conversion/tracking code
+### Prerequisites
+- WordPress admin access
+- JavaScript knowledge
 
+### Configuration
+1. Go to: `WordPress Dashboard → Carerix → Settings → Conversion tracking`
+2. Add tracking code in script boxes
 
-* Note: understanding of/some skills in JavaScript is required
-* As an administrator from your Wordpress Dashboard, navigate to **Carerix** → **Settings** → Tab '**Conversion tracking**'
-* Enter valid javascript code including &lt;script>-tags in the corresponding text-boxes
-* You can access special global variables holding information like publication-ID, vacancy-ID and job title. The available variables names are displayed in the blue information box. Tip: you can also dump this information in your browser debug console by entering console.log(cx); at a vacancy description page.
-* Finally you can use the methods cx.setApplySource() and cx.setApplyTags() to add extra information to the application (retrievable in the Carerix system under 'Matches')
+### Available Features
+- Global `cx` object with vacancy data
+- Methods: `cx.setApplySource()`, `cx.setApplyTags()`
+
+> [!TIP]
+> You can also dump this information in your browser debug console by entering console.log(cx); at a vacancy description page.
+
 
 ## 🔴 CHECKEN: How to use the 'cxwordpress_post_updated' hook?
 ```
