@@ -106,19 +106,20 @@ Table of Contents
 >    https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
 >    ```
 
+🔴 CHECKEN: Ik weet nog steeds niet waar of waarom je een ApplyURL zou moeten instellen. En waar die vervolgens gebruikt wordt?? Is de link hieronder niet afdoende?
+
 ### Usage in Email Templates
 To create links to vacancies in your Carerix email templates, use:
 ```
-<cx:write value="$publication.publicationID"/>
+<a target="_blank" href="https://yoursite.com/pubid/<cx:write value='$publication.publicationID'/>"
 ```
 This generates URLs like: `https://yoursite.com/pubid/123`
 
 Common use cases:
 - Job alert emails
 - Application confirmation emails
-- Recruiter newsletters
-- Social media sharing
-
+- Newsletters
+- Social media posts
 
 # 3. Settings & Usage
 ## Application Forms
@@ -329,7 +330,7 @@ In WordPress you can show a form for job alerts (vacancy subscription). When can
 
 1. Setup in Carerix: [See guide](https://help.carerix.com/en/articles/1954170)
 2. Required email templates: `web-subscribe`, `jobalert`
-3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page:
+3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page (don't forget to edit the parameters):
 
 ```
 [cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
@@ -366,7 +367,7 @@ For the following instructions you need to have Admin rights in Carerix and be f
 
 ### Customizing Job Alert Selection Options
 Access Carerix Tables to customize dropdown options for the Job Alert:
-
+Wie dit leest is gek!
 1. **Countries** (table: 'Land')
    - Uncheck "not for web" to hide unwanted countries
    - Single enabled country removes dropdown entirely
