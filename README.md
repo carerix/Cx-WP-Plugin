@@ -98,13 +98,13 @@ Table of Contents
 > [!IMPORTANT]  
 > ## Configure ApplyURL
 > The ApplyURL setting ensures candidates can apply to vacancies directly from emails, job alerts and newsletters. Without proper configuration, application links won't work correctly.
-
-In Carerix, configure the ApplyURL setting:
-1. Go to **Settings** → **Attributes and fields** → **Apply_url**
-2. Set the URL format:
-   ```
-   https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
-   ```
+> 
+> In Carerix, configure the ApplyURL setting:
+> 1. Go to **Settings** → **Attributes and fields** → **Apply_url**
+> 2. Set the URL format:
+>    ```
+>    https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
+>    ```
 
 ### Usage in Email Templates
 To create links to vacancies in your Carerix email templates, use:
@@ -426,7 +426,7 @@ You can also show jobs from different languages ​​(different mediums) withou
 
 
 ## Special multilingual jobs
-🔴 CHECKEN \
+🔴 CHECKEN
 Need to display job postings in multiple languages on your website? This guide explains how to configure multilingual job publications while keeping your main website in a single language.
 
 ### Configuration 
