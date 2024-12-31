@@ -1,7 +1,7 @@
 Carerix WordPress Plugin
 ----------------
 
-Demo website at [plugin.carerix.com](https://plugin.carerix.com/){:target="_blank" rel="noopener noreferrer"}
+Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
 After installation [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
 
 ## 1. Introduction
@@ -68,7 +68,7 @@ Table of Contents
 ## Latest release
 
 > [!Tip]
-> Download the [Latest Release of the Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases){:target="_blank" rel="noopener noreferrer"}
+> Download the [Latest Release of the Carerix WordPress plugin](https://github.com/carerix/Cx-WP-Plugin/releases)
 
 # Installation & Configuration
 
@@ -80,7 +80,7 @@ Table of Contents
 * PHP Memory: 256MB recommended (128MB min, 512MB+ for complex sites)
 
 ## Installation Steps
-1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases){:target="_blank" rel="noopener noreferrer"}
+1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
 2. Configure permalinks in WordPress: **Settings → Permalinks** (choose any structure except plain)
 3. Set up required email templates in Carerix:
    | Template | Purpose |
@@ -315,7 +315,7 @@ Define your own values for the taxonomies creating for each languge a different 
 ## Job Alert Subscription
 In WordPress you can show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
-1. Setup in Carerix: [See guide](https://help.carerix.com/en/articles/1954170){:target="_blank" rel="noopener noreferrer"}
+1. Setup in Carerix: <a href="https://help.carerix.com/en/articles/1954170" target="_blank" rel="noopener noreferrer">See guide</a>
 2. Required email templates: `web-subscribe`, `jobalert`
 3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page:
 
@@ -326,11 +326,11 @@ After activation you will start receiving new job opportunities in your mailbox 
 confirmation_url="/jobalert_thank_you/"]
 ```
 
-For the following instructions you need to have Admin rights in Carerix and be familiar with [Carerix Table](https://help.carerix.com/en/articles/1810726){:target="_blank" rel="noopener noreferrer"} editing.
+For the following instructions you need to have Admin rights in Carerix and be familiar with <a href="https://help.carerix.com/en/articles/1810726" target="_blank" rel="noopener noreferrer">Carerix Table</a> editing.
 
 
 ### Prerequisites
-1. Configure Job Alerts in Carerix ([Setup guide](https://help.carerix.com/en/articles/1954170){:target="_blank" rel="noopener noreferrer"})
+1. Configure Job Alerts in Carerix (<a href="https://help.carerix.com/en/articles/1954170" target="_blank" rel="noopener noreferrer">Setup guide</a>)
 2. Required email templates:
    - `web-subscribe`: Subscription confirmation
    - `jobalert`: Daily/weekly job alert emails
@@ -388,7 +388,7 @@ You can review the 'active job publications' but also the available 'medium code
 
 ## Multilingual Websites
 
-The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/){:target="_blank" rel="noopener noreferrer"}, the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
+The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports <a href="https://wpml.org/" target="_blank" rel="noopener noreferrer">Multilingual Plugin WPML</a>, the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
 
 1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
 2. Create an additional publications of a job
@@ -400,7 +400,7 @@ The Carerix WordPress plugin supports multilingualism. To do this, you use a mul
 
 Use the medium code 'web-XX', where 'XX' is the ICU Locale language.
 
-The Carerix plugin works perfectly with WPML, one of the best WordPress plugins multilingual. The price WPML is worth it, see [WPML](https://wpml.org/){:target="_blank" rel="noopener noreferrer"}
+The Carerix plugin works perfectly with WPML, one of the best WordPress plugins multilingual. The price WPML is worth it, see <a href="https://wpml.org/" target="_blank" rel="noopener noreferrer">WPML</a>
 
 
 ## Without multilingual plugin
