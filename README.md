@@ -316,7 +316,7 @@ The plugin automatically creates these job taxonomies in WordPress:
 | cx_country     | Country            |
 | cx_region      | Region             |
 | cx_education   | Education Level    |
-| cx_funcgroup   | Function Group     |
+| cx_functiongroup   | Function Group     |
 | cx_function    | Function           |
 | cx_location    | Work Location      |
 
