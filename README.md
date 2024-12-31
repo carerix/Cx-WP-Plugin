@@ -23,9 +23,6 @@ This means more flexibility and a big performance boost. The plugin therefore wo
 * Google for Jobs
 * Diagnostic tools
 
-## Getting Started: A basic guide to using the plugin's core functionalities.
-...
-
 ### Roles & rights
 The Carerix WordPress plugin is the connection between the Carerix application and the WordPress website. Therefor there are certain roles/rights for different tasks:
 * **Carerix administrator**: Has the administrator user role and is able to manage the Carerix data-tables (e.g. Country table), mediums and email templates.
