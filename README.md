@@ -81,7 +81,7 @@ Table of Contents
 
 ## Installation Steps
 1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
-2. Configure permalinks: Settings → Permalinks (choose any structure except plain)
+2. Configure permalinks in WordPress: **Settings → Permalinks** (choose any structure except plain)
 3. Set up required email templates in Carerix:
    | Template | Purpose |
    |----------|---------|
@@ -95,15 +95,13 @@ Table of Contents
 > [!IMPORTANT]
 > ## Authorisation of the Plugin for the specified Carerix application
 > 
-> The plugin needs to be authenticated with the Carerix application. Therefor you need the Application name (which can be derived from applicationname.carerix.net) and the Application Token. 
+> The plugin needs to be authenticated with the Carerix application. Therefor you need the Application name (which can be derived from **applicationname**.carerix.net) and the Application Token. 
 > 
 > The Admin of a Carerix application can generate an Application Token. If you don't have access to the Carerix application you can ask an admin. He can provide you the Application token using the email template 'Application Token'.
 > Or request a token via our Helpdesk ([support@carerix.com](mailto:support@carerix.com)) \
 > Carerix will not be able to provide you the Application token directly, as this is part of the authorization procedure.
 
 5. Configure ApplyURL in Carerix:
-
-
 > [!IMPORTANT]  
 > ## Configure ApplyURL
 > The ApplyURL setting ensures candidates can apply to vacancies directly from emails, job alerts and newsletters. Without proper configuration, application links won't work correctly.
@@ -142,32 +140,8 @@ By default a form named Form 1 is ready for use. This default form can not be ch
 [cx_open_application openFormID="2"]
 ```
 
-See the parameters for Open Application below
+See [Application Shortcodes](#application-shortcodes) for details
 
-### Open Application form
-
-<table>
-   <tr>
-      <td>[cx_open_application]</th>
-      <td>Use this shortcode in the content of a page</td>
-   </tr>
-   <tr>
-      <td>[cx_open_application openFormID="XX"]</td>
-      <td>Use for a specific application form. Replace 'XX' by the application form ID. You can find the ID in the application forms list (Wordpress → Dashboard → Carerix → Application Forms).</td>
-   </tr>
-   <tr>
-      <td>[cx_open_application openpubid="XX"]</td>
-      <td>If you have multiple open vacancies in your Carerix system, you can add the Carerix publication-ID of the specific open vacancy as a parameter.
-	      <BR/>
-         Replace 'XX' by the ID of the publication of the open vacancy job order
-      </td>
-   </tr>
-   <tr>
-      <td>[cx_open_application openFormID="3" openpubid="312"]</td>
-      <td>You can combine the two parameters like this</td>
-   </tr>
-   </tbody>
-</table>
 
 ### Settings of a (custom) Application Form
 You can create a new form and link it to the desired Job feed source. For each form you can synchronize the fields from Carerix.
@@ -184,10 +158,15 @@ Note that you must first save the title of the form before you can synchronize. 
 
 
 ## Sources
-Under the Sources section you can create one or more Jobs sources. You can use the Default jobs source or you can create a custom Source:
 
-* Use other settings or a different template lay out for your vacancy posts
-* Use a different Carerix  'medium'-code (like 'web' or 'web2' or 'web-en')
+Configure how vacancies appear on your site:
+1. Template layout
+2. Apply form selection
+3. Medium settings
+4. Location display options
+
+> [!TIP]
+> Use different mediums (web, web2, etc.) to separate vacancy flows
 
 ### Configuring a Job source
 1. Add a new Jobs source click via Add New button.
@@ -195,42 +174,18 @@ Under the Sources section you can create one or more Jobs sources. You can use t
 3. Deleting a source will not delete the generated posts from wordpress but only that specific source
 4. The following fields can be set:
 
-<table>
-    <tr>
-        <td>Source name</td>
-        <td>Helps you to identify the configured source.</td>
-    </tr>
-    <tr>
-        <td>Publications Details Options</td>
-        <td>Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source. 🔴IMAGE</td>
-    </tr>
-    <tr>
-        <td>Apply Form</td>
-        <td>Select the Application Form to be used for this specific Source</td>
-    </tr>
-    <tr>
-        <td>Title - Location</td>
-        <td>Select if you want to show the work location after the Title or not.</td>
-    </tr>
-    <tr>
-        <td>Set Alternative Feed Source Parameters</td>
-        <td>You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application. 🔴IMAGE</td>
-    </tr>
-    <tr>
-        <td>Publication Details Header and Publication Details Footer</td>
-        <td>If you want to display details in the footer or the header, use the following shortcodes: 🔴IMAGE</td>
-    </tr>
-</table>
+| Setting | Description |
+|---------|-------------|
+| Source name | Helps you to identify the configured source. |
+| Publications Details Options | Here you can set options for how the applicant will see and interact with the vacancy posts generated from this source. 🔴IMAGE |
+| Apply Form | Select the Application Form to be used for this specific Source |
+| Title - Location | Select if you want to show the work location after the Title or not. |
+| Set Alternative Feed Source Parameters | You can specify a different 'medium'-code here. It's useful if you have multiple sites or brands with different sets of vacancies. Therefore these 'medium'-codes are active and in use in the Carerix application. 🔴IMAGE |
+| Publication Details Header and Footer | If you want to display details in the footer or the header, use the following shortcodes: 🔴IMAGE |
+| Publication Excerpt | Add a custom summary text to display in vacancy listings, social media previews and search results. This text serves as the primary description for your vacancies across all platforms. |
+| Publication Details Body | Use shortcodes such as [cx_intro_information] for job introductions and [cx_offer_information] to enhance the content for position details. Also see available [shortcodes](#shortcodes-reference) 🔴IMAGE |
 
-
-* **Publication Excerpt**
-Here you can use an alternative/better teaser (summary text) which will be used as a summary, specifically in vacancy overview/listing pages. This excerpt will also be used as intro/description text as preview text on Social Media etc.
-
-* **Publication Details Body**
-You can use shortcodes like [cx_intro_information], [cx_offer_information] and many more to setup your own vacancy layout template. See the shortcodes in the plugin for exact usage. Please read the accompanying usage explanation in the plugin as you are configuring the job source.
-🔴IMAGE
-
-### Medium
+## Medium
 
 Medium 'web' is default, but you can show a different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
 You can do this by publishing to a different medium. You use this medium as follows:
@@ -253,11 +208,14 @@ You can do this by publishing to a different medium. You use this medium as foll
 ### Application Shortcodes
 These shortcodes handle the application process.
 
-| Shortcode | Description | Parameters |
-|-----------|-------------|------------|
-| [cx_open_application] | [Open Application Forms](#application-forms) | `openformid="x" openpubid="y"` |
-| [cx_job_alert_subscription] | Job alert signup form | `frequency="daily\|weekly\|monthly" confirmation_message="..." confirmation_url="..."` |
-| [cx_google_for_jobs] | Structured data for Google Jobs | None |
+| Shortcode & Examples | Description |
+|---------------------|-------------|
+| `[cx_open_application]` | Basic usage: Insert in any page content |
+| `[cx_open_application openFormID="XX"]` | Use specific form - Replace XX with Form ID from Carerix → Application Forms |
+| `[cx_open_application openpubid="XX"]` | Link to specific vacancy - Replace XX with Publication ID |
+| `[cx_open_application openFormID="3" openpubid="312"]` | Combine parameters for specific form and vacancy |
+| `[cx_job_alert_subscription]` | Job alert signup form with parameters: `frequency="daily\|weekly\|monthly" confirmation_message="..." confirmation_url="..."` |
+| `[cx_google_for_jobs]` | Structured data for Google Jobs |
 
 ### Shortcodes used in Sources
 Under 'Sources' you can use many shortcodes to built your Vacancy template.
@@ -310,7 +268,7 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 
 ### Common Parameters
 Many shortcodes accept these standard parameters:
-| Parameter | Description |
+| Parameters | Description |
 |-----------|-------------|
 | `container="div\|span"` | Wrapper element type |
 | `label="yes\|no"` | Show/hide label | 
@@ -323,10 +281,10 @@ Many shortcodes accept these standard parameters:
 
 For example you can use a shortcode like this:
 
-````
+```
 [cx_application_contact_information container="div" label="yes" 
 heading="h3" content="yes" class="contact-info" raw="no" quotes="double"]
-````
+```
 
 ### Deprecated Shortcodes
 The following shortcodes are no longer supported:
@@ -358,76 +316,60 @@ Define your own values for the taxonomies creating for each languge a different 
 In WordPress you can use this shortcode to show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 You can create a standalone Job Alert Subscription page, using this shortcode:
 
-````
+1. Setup in Carerix: [See guide](https://help.carerix.com/en/articles/1954170)
+2. Required email templates: `web-subscribe`, `jobalert`
+3. Shortcode for a regular WordPress page:
+
+```
 [cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
 confirmation_message="Thank you for subscribing. Shortly you will receive an email with an activation link.
 After activation you will start receiving new job opportunities in your mailbox on a daily basis!"
 confirmation_url="/jobalert_thank_you/"]
-````
+```
 
-The following fields will be displayed in the form:
+For the following instructions you need to have Admin rights in Carerix and be familiar with [Carerix Table](https://help.carerix.com/en/articles/1810726) editing.
 
-* Email address
-* First name
-* Last name (and prefix)
-* Gender
-* Country selection preference \
-(only if multiple countries are published in Carerix)
-* Three “sub region” selector preferences like provinces, counties and departments \
-(only if these are published in Carerix)
-* Two function group preferences with an optional parent business-line selector \
-(the business-line selector will only appear if multiple business-lines are published in Carerix)
-* Agreement to terms checkbox (also enforces the storage term of the personal information to comply to GDPR)
-* Anti bot abuse system (by Captcha)
 
-The process for the candidate is as follows:
+### Prerequisites
+1. Configure Job Alerts in Carerix ([Setup guide](https://help.carerix.com/en/articles/1954170))
+2. Required email templates:
+   - `web-subscribe`: Subscription confirmation
+   - `jobalert`: Daily/weekly job alert emails
 
-1. Candidate selects the criteria which job opportunities to receive and submits the form
-2. Candidate receives an opt-in activation mail and clicks on the activation link
-3. Candidate is subscribed and starts receiving mail with (new) vacancies on a (daily) basis that match the selected criteria
-4. To cancel, the candidate can use the unsubscribe link in the job alert mails
+### Form Fields
+- Email address
+- First/Last name (with prefix)
+- Gender
+- Country preferences (if multiple available)
+- Three region preferences (provinces/counties/departments)
+- Two function group preferences with optional business-line selector
+- GDPR agreement checkbox
+- Captcha anti-abuse system
 
-### Jobalert Step 1: Preparation in Carerix
-Follow the steps in the following help article:
-1. Follow the steps in the following help article: [Job alert](https://help.carerix.com/en/articles/1954170)
-2. Make sure these email template are installed
-* `web-subscribe` (“Vacancy subscription confirmation / Vacature abonnement bevestiging”)
-* `jobalert` (The daily/weekly mailing it self)
+### Subscription Process
+1. Candidate submits form with job preferences
+2. Receives opt-in activation email
+3. Clicks activation link to confirm subscription
+4. Starts receiving job alerts matching their criteria
+5. Can unsubscribe via link in alert emails
 
-### Jobalert Step 2: Use the Shortcode in Wordpress
-1. Create a general page and use above shortcode in the content
+### Customizing Job Alert Selection Options
+Access Carerix Tables to customize dropdown options for the Job Alert:
 
-### Jobalert Step 3: Fine-tuning in Carerix
-In Carerix, you can fine-tune the following candidate criteria for the job alert form:
-* Country selection
-* Business-line selection
-* Function group selection
+1. **Countries** (table: 'Land')
+   - Uncheck "not for web" to hide unwanted countries
+   - Single enabled country removes dropdown entirely
 
-For the following instructions you need to be familiar with Carerix Tables editing. The principles explained in[ Table management](https://help.carerix.com/en/articles/1810726) are used to edit the tables.
+2. **Business Lines** (table: 'Vakgebied/Business line') 
+   - Enable "not for web" for unused business lines
+   - Keep "Standard" business line with "not for web" disabled
+   
+3. **Function Groups** (table: 'functie0/function0')
+   - Enable desired groups and connect to business lines
+   - Disable "not for web" for groups to display
 
-The following table items are used:
+After modifying tables, clear cache: **Dashboard → Carerix → Application Forms → Settings → Clear DataNodes cache**
 
-* For countries the table 'Land' (country)
-* For business-lines the table 'Vakgebied' (business-line)
-* For function groups the table 'functie0'
-
-#### Shorten the country selection
-If your working area is a single country (or a few) you can shorten the dropdown box of countries. For each country you do not want show in the job alert form, 
-1. In Carerix go to Tables 
-3. Edit the item, and uncheck the box “**not for web**”.
-Note: if you only enable one country, the country selection is disabled on the job alert form.
-
-#### Shorten the business-line selection
-In Carerix every function group can be connected to a business-line. If one or more function groups are connected to a business-line the business-line dropdown box on the jobalert form will appear. So if you don't work with multiple business-lines, you need to configure the business-lines as follows:
-
-1. In Carerix Edit each business-line item in the table “**vakgebied**” (business-line) and enable the checkbox “**not for web**”
-2. Locate the business-line “Standard” (default) and disable the checkbox “not for web”. This leaves you with one mandatory business-line which will NOT appear for candidates on the job alert form
-3. In Wordpress, go to **Dashboard** → **Carerix** → **Application Forms** → Tab: **Settings**, and click on “**Clear DataNodes cache**”
-
-#### Configure/shorten function group selection
-1. In Carerix Edit each function group item (table: **functie0**) you want to include in the group selection for the candidates.
-Disable 'not for web' and enable each desired business-line you want to connect the function group to. You need at least connect it to one business-line
-2. In Wordpress, go to **Dashboard** → **Carerix** → **Application Forms** → Tab: **Settings**, and click on “**Clear DataNodes cache**”
 
 # 🔴 4. Advanced Features
 
@@ -676,7 +618,7 @@ For example https://plugin.carerix.com/category/vacatures/techniek-engineering/f
 
 ### Can I submit a sitemap to Google Search Console?
 Yes, use the following URL:
-https://domain.com/?carerix_sitemap
+https://yoursite.com/?carerix_sitemap
 
 ### When I enable 'Google For Jobs' why do I get warnings from a (structured data) testing tool?
 These are warnings and not blocking errors.
@@ -855,3 +797,4 @@ _____________
 > Advises about risks or negative outcomes of certain actions.
 
 _____________
+`````
