@@ -526,7 +526,7 @@ Additionally custom information (apply source and apply tags) can be set which w
 - JavaScript knowledge
 
 ### Configuration
-1. Go to: `**WordPress Dashboard → Carerix → Settings → Conversion tracking**`
+1. Go to: `WordPress Dashboard → Carerix → Settings → Conversion tracking`
 2. Add tracking code in script boxes
 
 
