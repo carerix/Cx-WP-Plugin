@@ -276,6 +276,8 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 | [cx_job_group] | Vacancy group(s) | `separator=", "` |
 | [cx_extra*] | Display custom Carerix fields | `field="fieldcode" separator=", " type="string\|date"` |
 
+🔴 waar verwijst die * naar bij cx_extra?
+
 ### Common Parameters
 Many shortcodes accept these standard parameters:
 | Parameters | Description |
