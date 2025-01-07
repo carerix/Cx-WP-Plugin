@@ -606,7 +606,7 @@ add_action( 'cxwordpress_post_updated', 'my_cx_post_preparation', 10, 3);
 
 ```
 
-## 🔴 DONE: New method for language edits
+## 🔴 Checken: New method for language edits
 The idea is to override portions of the plugin's language file within your own child theme. That way you are sure the language modifications aren't reverted when a new plugin version is released. You need webdevelopers skills to do this. 
 
 In this example we will change the heading text “Introductie” (introduction) which appears in the vacancy texts. We assume you've set the Wordpress site language to Dutch and have the site running in a child theme.
