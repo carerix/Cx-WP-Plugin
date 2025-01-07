@@ -529,6 +529,9 @@ Additionally custom information (apply source and apply tags) can be set which w
 1. Go to: `WordPress Dashboard → Carerix → Settings → Conversion tracking`
 2. Add tracking code in script boxes
 
+
+🔴 Wachten op: https://carerix.atlassian.net/browse/WP-230
+
 ### Available Features
 - Global `cx` object with vacancy data
 - Methods: `cx.setApplySource()`, `cx.setApplyTags()`
