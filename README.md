@@ -84,7 +84,9 @@ Table of Contents
    | JobAlert | Job alert emails |
    | web-subscribe | Job alert signup confirmation |
 
-4. Authorize the plugin with your Application Token
+🔴 Kloppen deze email templates nog??
+
+5. Authorize the plugin with your Application Token
 
 > [!IMPORTANT]
 > ## Authorisation of the Plugin for the specified Carerix application
