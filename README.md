@@ -10,7 +10,6 @@ The Carerix WordPress Plugin converts vacancies and candidates from Carerix to W
 Applications for each Vacancy are automatically processed in Carerix.
 This means more flexibility and a big performance boost. The plugin therefore works ideally for responsive websites, and also ensures search engine optimized vacancies on your website.
 
-
 ### Features
 
 * Show Carerix Vacancies (Publications) as WordPress Posts
@@ -96,24 +95,25 @@ Table of Contents
 
 5. Configure ApplyURL in Carerix:
 > [!IMPORTANT]  
-> ## Configure ApplyURL
-> The ApplyURL setting ensures candidates can apply to vacancies directly from emails, job alerts and newsletters. Without proper configuration, application links won't work correctly.
-> 
-> In Carerix, configure the ApplyURL setting:
-> 1. Go to **Settings** → **Attributes and fields** → **Apply_url**
-> 2. Set the URL format:
->    ```
->    https://yoursite.com/?pub_id=<cx:write value="$publication.publicationID"/>
->    ```
+> The ApplyURL is crucial for the correct link to a Job or Application form on the website.
 
-🔴 CHECKEN: Ik weet nog steeds niet waar of waarom je een ApplyURL zou moeten instellen. En waar die vervolgens gebruikt wordt?? Is de link hieronder niet afdoende?
+## Configure ApplyURL
+In templates use the standard ApplyURL setting when you need the same URL structure across multiple templates. This is the CxScript to fetch the Apply URL in templates:
+```
+<cx:write value="$activity.toPublication.applyUrl" />
+```
+See ApplyURL setting for more information: [ApplyURL](https://help.carerix.com/en/articles/10357776-applyurl)
 
-### Usage in Email Templates
-To create links to vacancies in your Carerix email templates, use:
+
+### Custom URL in Email Templates
+If you don't want to make use of the ApplyURL a(for specific variations or additional flexibility for particular cases) and want to create custom links to Publications or Application Forms in your Carerix templates, use this CxScript:
 ```
 <a target="_blank" href="https://yoursite.com/pubid/<cx:write value='$publication.publicationID'/>"
+or
+<a target="_blank" href="https://yoursite.com/?pub_id=<cx:write value='$publication.publicationID'/>"
 ```
-This generates URLs like: `https://yoursite.com/pubid/123`
+This generates URLs like: `https://yoursite.com/pubid/123` or `https://yoursite.com/?pub_id=123` which will both show the Publication with ID 123 on the website.
+
 
 Common use cases:
 - Job alert emails
