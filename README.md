@@ -315,6 +315,8 @@ The following shortcodes are no longer supported:
 
 
 ## Taxonomies
+**🔴 Deze worden toch automatisch gegenereerd. Kun je hier nog iets mee instellen? Vanuit Carerix de naam bepalen bijv?**
+
 The plugin automatically creates these job taxonomies in WordPress:
 
 | System Name     | Display Name         |
@@ -326,7 +328,6 @@ The plugin automatically creates these job taxonomies in WordPress:
 | cx_function    | Function           |
 | cx_location    | Work Location      |
 
-**🔴 Deze worden toch automatisch gegenereerd. Kun je hier nog iets mee instellen? Vanuit Carerix de naam bepalen bijv?**
 
 In order to use the taxonomies as filters for the 2 types of posts, the names of the taxonomies must be distinct. Otherwise, if common, the values of the taxonomies will be displayed for both type of posts and the user will experience that after sellecting a taxonomy no result will be returned.
 
