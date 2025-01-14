@@ -1,7 +1,7 @@
 Carerix WordPress Plugin
 ----------------
 
-Demo website at [plugin.carerix.com](https://plugin.carerix.com/) \
+Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
 - After installation [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
 - [Configure ApplyURL](configure-applyurl)
 - Sync all Publications
