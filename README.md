@@ -1,10 +1,10 @@
 Carerix WordPress Plugin
 ----------------
 
-1 [Download & Install Pugin](https://github.com/carerix/Cx-WP-Plugin/releases)
-2 [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
-3 [Configure ApplyURL](configure-applyurl)
-4 Sync all Publications
+1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
+2. [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
+3. [Configure ApplyURL](configure-applyurl)
+4. Sync all Publications
 Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
 
 ## 1. Introduction
