@@ -1,20 +1,17 @@
 Carerix WordPress Plugin
 ----------------
-
 1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
-2. [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
+2. [Authorize of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
 3. [Configure ApplyURL](configure-applyurl)
 4. Sync all Publications
-Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
+See the Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
 
 ## 1. Introduction
-
 The Carerix WordPress Plugin converts vacancies and candidates from Carerix to WordPress Posts (posts), making use of the power of WordPress.
 Applications for each Vacancy are automatically processed in Carerix.
 This means more flexibility and a big performance boost. The plugin therefore works ideally for responsive websites, and also ensures search engine optimized vacancies on your website.
 
 ### Features
-
 * Show Carerix Vacancies (Publications) as WordPress Posts
 * Create your own (custom) layout for Vacancy posts (with shortcodes and HTML)
 * Create your own (custom) Application Form (select and reorder form fields)
