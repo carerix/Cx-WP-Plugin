@@ -111,7 +111,7 @@ See ApplyURL setting for more information: [ApplyURL](https://help.carerix.com/e
 
 
 ### Custom URL in Email Templates
-If you don't want to make use of the ApplyURL a(for specific variations or additional flexibility for particular cases) and want to create custom links to Publications or Application Forms in your Carerix templates, use this CxScript:
+If you don't want to make use of the ApplyURL (for specific variations or additional flexibility for particular cases) and want to create custom links to Publications or Application Forms in your Carerix templates, use this CxScript:
 ```
 <a target="_blank" href="https://yoursite.com/pubid/<cx:write value='$publication.publicationID'/>"
 or
