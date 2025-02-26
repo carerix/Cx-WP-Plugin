@@ -409,12 +409,10 @@ Wie dit leest is gek!
 
 After modifying tables, clear cache: **Dashboard → Carerix → Application Forms → Settings → Clear DataNodes cache**
 
-
+<!-- 
 # 🔴 4. Advanced Features
 
-* 🔴 For developers or experienced users, this section can cover:
-    * Hooks and filters used by the plugin. 
-<!-- 
+* 🔴 For developers or experienced users, this section covers:
 Ruben zegt: ik zou graag in de volgende versie van de CX WP Plugin een nieuwe tab in WP dashboard → CX plugin → help&diagnostics willen aanmaken, genaamd "hooks & filters" met een beschrijving. Graag wil ik er ook een aantal aan toevoegen. Dus voor nu misschien dit onderdeel weglaten?
 -->
 
@@ -455,8 +453,7 @@ You can also show jobs from different languages ​​(different mediums) withou
 
 
 ## Special multilingual jobs
-🔴 CHECKEN
-Need to display job postings in multiple languages on your website? This guide explains how to configure multilingual job publications while keeping your main website in a single language.
+Do you want to display job postings in multiple languages on your website? This guide explains how to configure multilingual job publications while keeping your main website in a single language.
 
 ### Configuration 
 1. Carerix:
