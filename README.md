@@ -357,6 +357,8 @@ You can rename the taxonomies. You should create for each languge a different / 
 ## Job Alert Subscription
 In WordPress you can show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
+For the following instructions you need to have Admin rights in Carerix and be familiar with [Carerix Table](https://help.carerix.com/en/articles/1810726) editing.
+
 1. Setup in Carerix: [See Job Alert guide](https://help.carerix.com/en/articles/1954170)
 2. Required email templates: `web-subscribe`, `jobalert`
 3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page (don't forget to edit the parameters):
@@ -367,15 +369,6 @@ confirmation_message="Thank you for subscribing. Shortly you will receive an ema
 After activation you will start receiving new job opportunities in your mailbox on a daily basis!"
 confirmation_url="/jobalert_thank_you/"]
 ```
-
-For the following instructions you need to have Admin rights in Carerix and be familiar with [Carerix Table](https://help.carerix.com/en/articles/1810726) editing.
-
-
-### Prerequisites
-1. Configure Job Alerts in Carerix ([Setup guide](https://help.carerix.com/en/articles/1954170))
-2. Required email templates:
-   - `web-subscribe`: Subscription confirmation
-   - `jobalert`: Daily/weekly job alert emails
 
 ### Form Fields
 - Email address
