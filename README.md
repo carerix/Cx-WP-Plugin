@@ -237,9 +237,11 @@ These shortcodes handle the application process.
 | `[cx_open_application openpubid="XX"]` | Link to specific vacancy - Replace XX with Publication ID |
 | `[cx_open_application openFormID="3" openpubid="312"]` | Combine parameters for specific form and vacancy |
 | `[cx_job_alert_subscription]` | Job alert signup form with parameters: `frequency="daily\|weekly\|monthly" confirmation_message="..." confirmation_url="..."` |
-| `[cx_google_for_jobs]` | Structured data for Google Jobs |
+| `[cx_google_for_jobs]` | Only for web developers to check * |
 
-De Shortcode [cx_google_for_jobs] moeten webdevs alleen gebruiken als "vacature opbouw template" (zoals gemaakt in sources) niet gebruikt wordt in het theme. Dat komt voor als theme-engines zoals Divi en Elementor volledig de vacatature-pagina's zelf renderen dmv cx-shortcodes.
+* Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
+
+
 
 ### Shortcodes used in Sources
 Under 'Sources' you can use many shortcodes to built your Vacancy template.
