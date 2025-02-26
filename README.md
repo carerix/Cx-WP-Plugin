@@ -34,39 +34,42 @@ The Carerix WordPress plugin is the connection between the Carerix application a
 Table of Contents
 =================
 
-* [1. Introduction](#1-introduction)
-  * [Features](#features)
-  * [Roles & rights](#roles--rights)
-* [Installation & Configuration](#installation--configuration)
-  * [Latest release](#latest-release)
-  * [System Requirements](#system-requirements)
-  * [Installation Steps](#installation-steps)
-  * [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
-  * [Configure ApplyURL](#configure-applyurl)
-  * [Usage in Email Templates](#usage-in-email-templates)
-* [3. Settings & Usage](#3-settings--usage)
-  * [Application Forms](#application-forms)
-  * [Sources](#sources)
-  * [Shortcodes Reference](#shortcodes-reference)
-  * [Medium](#medium)
-  * [Taxonomies](#taxonomies)
-  * [Job Alert Subscription](#job-alert-subscription)
-* [4. Advanced Features](#4-advanced-features)
-  * [Diagnostics](#diagnostics)
-  * [Multilingual Websites](#multilingual-websites)
-  * [Without multilingual plugin](#without-multilingual-plugin)
-  * [Special multilingual jobs](#special-multilingual-jobs)
-  * [Featured vacancies](#featured-vacancies)
-  * [Google for Jobs](#google-for-jobs)
-  * [Web analytics](#web-analytics)
-  * [Applicant Source Tracking](#applicant-source-tracking)
-  * [Create RSS feeds per category](#create-rss-feeds-per-category)
-* [5. FAQ (Frequently Asked Questions)](#5-faq-frequently-asked-questions)
-* [6. Support](#6-support)
-  * [System Requirements](#system-requirements-1)
-  * [Updating the Plugin](#updating-the-plugin)
-  * [Uninstall the Plugin](#uninstall-the-plugin)
-  * [Disclaimer](#disclaimer)
+## Table of Contents
+1. [Introduction](#1-introduction)
+   - [Features](#features)
+   - [Roles & rights](#roles--rights)
+2. [Installation & Configuration](#installation--configuration)
+   - [Latest release](#latest-release)
+   - [System Requirements](#system-requirements)
+   - [Installation Steps](#installation-steps)
+   - [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
+   - [Configure ApplyURL](#configure-applyurl)
+   - [Usage in Email Templates](#usage-in-email-templates)
+3. [Settings & Usage](#3-settings--usage)
+   - [Application Forms](#application-forms)
+   - [Sources](#sources)
+   - [Shortcodes Reference](#shortcodes-reference)
+   - [Medium](#medium)
+   - [Taxonomies](#taxonomies)
+   - [Job Alert Subscription](#job-alert-subscription)
+4. [Advanced Features](#4-advanced-features)
+   - [Diagnostics](#diagnostics)
+   - [Multilingual Websites](#multilingual-websites)
+   - [Without multilingual plugin](#without-multilingual-plugin)
+   - [Special multilingual jobs](#special-multilingual-jobs)
+   - [Featured vacancies](#featured-vacancies)
+   - [Google for Jobs](#google-for-jobs)
+   - [Web analytics](#web-analytics)
+   - [Applicant Source Tracking](#applicant-source-tracking)
+   - [Create RSS feeds per category](#create-rss-feeds-per-category)
+5. [FAQ (Frequently Asked Questions)](#5-faq-frequently-asked-questions)
+6. [Support](#6-support)
+   - [System Requirements](#system-requirements-1)
+   - [Updating the Plugin](#updating-the-plugin)
+   - [Uninstall the Plugin](#uninstall-the-plugin)
+7. [Disclaimer](#disclaimer)
+8. 2. Required and recommended specifications
+
 
 ## Latest release
 
@@ -811,9 +814,7 @@ Currently we have chosen not offering Jobs as Custom Post Types because many of 
 **Altering the plugin**
 If someone alters (the code of) the plugin this will invalidate any form of support. Carerix can not support customizations. Also customizations will be lost at each update of the plugin!
 
-_____________
-
-## 2. Required and recommended specifications
+## Required and recommended specifications
 
 ## System Requirements
 
@@ -879,4 +880,3 @@ _____________
 > Advises about risks or negative outcomes of certain actions.
 
 _____________
-`````
