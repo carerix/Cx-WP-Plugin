@@ -317,7 +317,8 @@ For example you can use a shortcode like this:
 which will result in:
 ```
 <h3 class="cx_h3 contact-info cx2_introduction">Introduction</h3>
-<div class="contact-info cx2_introduction">Introduction text...</div>
+<div class="contact-info cx2_introduction">Introduction text...
+...</div>
 ```
 
 ### Deprecated Shortcodes
