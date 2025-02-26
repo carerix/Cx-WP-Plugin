@@ -133,10 +133,6 @@ Common use cases:
 
 # 3. Settings & Usage
 
-Voorbereiding in Carerix App:
-- Zorg dat in CX minimaal 1 vacature gepubliceerd is naar het medium ".eigen website" (mediumcode web) met start-/einddata in resp. verleden en toekomst.
-
-
 ### Settings of a (custom) Application Form
 You can create a new form and link it to the desired Job feed source. For each form you can synchronize the fields from Carerix.
 Note that you must first save the title of the form before you can synchronize. You can compose each form yourself by or (un)checking the appropriate (and/or required) fields.
