@@ -173,7 +173,7 @@ Configure how vacancies appear on your site:
 | Setting | Description |
 |-------|-------------|
 | Source name | Identifier for the source configuration |
-| Publications Details Options | Settings for vacancy post display and interaction |
+| Publications Details Options | Select a form and fill in the Medium (or leave blank for the default 'web') |
 | Apply Form | Select the application form for this source |
 | Title - Location | Toggle work location display in title |
 | Alternative Feed Parameters | Set custom medium code for different vacancy sets |
@@ -184,7 +184,7 @@ Configure how vacancies appear on your site:
 Use the [Shortcodes for Sources](#shortcodes-used-in-sources) in combination with Html to create your own template.
 
 ## Medium
-Medium 'web' is default.
+Select a Form and Fill in the Medium (or leave blank for the default 'web').
 
 > [!NOTE]
 > You can leave the main medium (`web`) blank in plugin settings
