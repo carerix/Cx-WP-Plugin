@@ -290,9 +290,8 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 | [cx_end_date] | Publication end date | Common parameters |
 | [cx_apply_until] | Final application date | Common parameters |
 | [cx_job_group] | Vacancy group(s) | `separator=", "` |
-| [cx_extra*] | Display custom Carerix fields | `field="fieldcode" separator=", " type="string\|date"` |
+| [cx_extra] | Display custom Carerix fields | `field="fieldcode" separator=", " type="string\|date"` |
 
-🔴 waar verwijst die * naar bij cx_extra?
 
 ### Common Parameters
 Many shortcodes accept these standard parameters:
@@ -304,6 +303,7 @@ Many shortcodes accept these standard parameters:
 | `content="yes\|no"` | Show/hide content |
 | `class="..."` | Custom CSS classes |
 | `raw="yes\|no"` | Output raw data |
+| `dateformat="d,j,S,l,D,m,n,F,M,Y,y"` | [Dateformatting](https://wordpress.org/documentation/article/customize-date-and-time-format/) |
 | `quotes="double\|single"` | Quote style for attributes |
 
 
