@@ -220,10 +220,10 @@ By default a form named Form 1 is ready for use. This default form can not be ch
 ```
 [cx_open_application openFormID="2"]
 ```
+See the Application Shortcodes below for details
+
 Make sure the Open Application in the Carerix system meets all requirements (see [Open Application](https://help.carerix.com/en/articles/2349466-open-application)). 
 By default this is Vacancy 1 with a publication is assigned as Open Application.
-
-See the Application Shortcodes below for details
 
 
 ## Shortcodes Reference
