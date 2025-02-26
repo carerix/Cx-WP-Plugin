@@ -239,6 +239,8 @@ These shortcodes handle the application process.
 | `[cx_job_alert_subscription]` | Job alert signup form with parameters: `frequency="daily\|weekly\|monthly" confirmation_message="..." confirmation_url="..."` |
 | `[cx_google_for_jobs]` | Structured data for Google Jobs |
 
+De Shortcode [cx_google_for_jobs] moeten webdevs alleen gebruiken als "vacature opbouw template" (zoals gemaakt in sources) niet gebruikt wordt in het theme. Dat komt voor als theme-engines zoals Divi en Elementor volledig de vacatature-pagina's zelf renderen dmv cx-shortcodes.
+
 ### Shortcodes used in Sources
 Under 'Sources' you can use many shortcodes to built your Vacancy template.
 That means you can use them in the Excerpt, Header, Body or Footer of the Publication post.
