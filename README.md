@@ -80,6 +80,10 @@ Table of Contents
 3. Set up required email templates in Carerix:
    | Template | Purpose |
    |----------|---------|
+   | web-confirm  | Confirmation mail to Candidate |
+   | web-notify | Internal notification email |
+   | web-dupwarn | Internal notification about a possible duplicate Candidate |
+   |----------|---------|
    | JobAlert | Job alert emails |
    | web-subscribe | Job alert signup confirmation |
 
