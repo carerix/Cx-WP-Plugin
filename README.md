@@ -184,7 +184,13 @@ Configure how vacancies appear on your site:
 Use the [Shortcodes for Sources](#shortcodes-used-in-sources) in combination with Html to create your own template.
 
 ## Medium
-Medium 'web' is default, but you can show a different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
+Medium 'web' is default.
+
+> [!NOTE]
+> You can leave the main medium (`web`) blank in plugin settings
+
+## Extra Mediums
+You can show a extra or different 'job flow' on the website. For example, a list of ZZP projects or jobs per establishment, all published to medium 'web2'.
 You can do this by publishing to a different medium. You use this medium as follows:
 
 ### In Carerix
@@ -201,9 +207,6 @@ You can do this by publishing to a different medium. You use this medium as foll
 - Plugin creates new job category matching medium name
 - Jobs appear under a new category
 - Use WordPress tags/categories to display jobs
-
-> [!NOTE]
-> Leave main medium (`web`) blank in plugin settings
 
 
 ## Application Forms
