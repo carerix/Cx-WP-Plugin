@@ -396,7 +396,6 @@ For the following instructions you need to have Admin rights in Carerix and be f
 
 ### Customizing Job Alert Selection Options
 Access Carerix Tables to customize dropdown options for the Job Alert:
-Wie dit leest is gek!
 1. **Countries** (table: 'Land')
    - Uncheck "not for web" to hide unwanted countries
    - Single enabled country removes dropdown entirely
