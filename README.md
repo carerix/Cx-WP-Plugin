@@ -76,8 +76,8 @@ Table of Contents
 # Installation & Configuration
 
 1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
-2. Configure permalinks in WordPress: **Settings → Permalinks** (choose any structure except plain)
-3. Set up required email templates in Carerix:
+2. WordPress website: Configure permalinks: **Settings → Permalinks** (choose any structure except plain)
+3. Carerix application: Set up required email templates:
    | Email template | Description |
    |----------|---------|
    | web-confirm  | Confirmation mail to Candidate |
@@ -88,6 +88,8 @@ Table of Contents
 
 
 5. Authorize the plugin with your Application Token
+6. Make sure to have at least 1 Vacancy published: Medium code 'web', Start date in the past, End date in the future
+
 
 > [!IMPORTANT]
 > ## Authorisation of the Plugin for the specified Carerix application
@@ -127,19 +129,9 @@ Common use cases:
 - Social media posts
 
 # 3. Settings & Usage
-## Application Forms
 
-By default a form named Form 1 is ready for use. This default form can not be changed. Create your a new form if you want to customize your application form:
-1. Each apply form can also be used for different kind of publications (see settings under [Sources](#sources --> Apply Form) )
-2. The **Synchronize with Carerix button** checks if fields that use values from the Carerix System are available. For example, if it can not find any values for the Nationality field, that field will be disabled.
-3. Set each fields to Visible of Required
-4. You can reorder fields with drag and drop and you can drag & drop whole sections (on the right side)
-5. Copy paste the shortcode of the form to the page where you want to use it as an 'Open Application form', for example:
-```
-[cx_open_application openFormID="2"]
-```
-
-See [Application Shortcodes](#application-shortcodes) for details
+Voorbereiding in Carerix App:
+- Zorg dat in CX minimaal 1 vacature gepubliceerd is naar het medium ".eigen website" (mediumcode web) met start-/einddata in resp. verleden en toekomst.
 
 
 ### Settings of a (custom) Application Form
@@ -212,6 +204,21 @@ You can do this by publishing to a different medium. You use this medium as foll
 
 > [!NOTE]
 > Leave main medium (`web`) blank in plugin settings
+
+
+## Application Forms
+
+By default a form named Form 1 is ready for use. This default form can not be changed. Create your a new form if you want to customize your application form:
+1. Each apply form can also be used for different kind of publications (see settings under [Sources](#sources --> Apply Form) )
+2. The **Synchronize with Carerix button** checks if fields that use values from the Carerix System are available. For example, if it can not find any values for the Nationality field, that field will be disabled.
+3. Set each fields to Visible of Required
+4. You can reorder fields with drag and drop and you can drag & drop whole sections (on the right side)
+5. Copy paste the shortcode of the form to the page where you want to use it as an 'Open Application form', for example:
+```
+[cx_open_application openFormID="2"]
+```
+
+See [Application Shortcodes](#application-shortcodes) below for details
 
 
 ## Shortcodes Reference
