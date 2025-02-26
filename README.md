@@ -78,12 +78,11 @@ Table of Contents
 1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
 2. Configure permalinks in WordPress: **Settings → Permalinks** (choose any structure except plain)
 3. Set up required email templates in Carerix:
-   | Template | Purpose |
+   | Email template | Description |
    |----------|---------|
    | web-confirm  | Confirmation mail to Candidate |
    | web-notify | Internal notification email |
    | web-dupwarn | Internal notification about a possible duplicate Candidate |
-   |----------|---------|
    | JobAlert | Job alert emails |
    | web-subscribe | Job alert signup confirmation |
 
