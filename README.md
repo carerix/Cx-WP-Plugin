@@ -331,7 +331,6 @@ The following shortcodes are no longer supported:
 
 
 ## Taxonomies
-**🔴 Deze worden toch automatisch gegenereerd. Kun je hier nog iets mee instellen? Vanuit Carerix de naam bepalen bijv?**
 
 The plugin automatically creates these job taxonomies in WordPress:
 
@@ -349,7 +348,7 @@ In order to use the taxonomies as filters for the 2 types of posts, the names of
 
 Default resources are used to generate the names of the taxonomies. The language applied will follow the language of the plugin.
 
-Define your own values for the taxonomies creating for each languge a different / new value to overwrite the default ones filled from resources.
+You can rename the taxonomies. You should create for each languge a different / new value to overwrite the default ones filled from resources.
 
 
 
