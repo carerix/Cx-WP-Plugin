@@ -221,7 +221,7 @@ By default a form named Form 1 is ready for use. This default form can not be ch
 [cx_open_application openFormID="2"]
 ```
 
-See [Application Shortcodes](#application-shortcodes) below for details
+See the Application Shortcodes below for details
 
 
 ## Shortcodes Reference
