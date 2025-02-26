@@ -80,8 +80,6 @@ Table of Contents
 3. Set up required email templates in Carerix:
    | Template | Purpose |
    |----------|---------|
-   | CxpeForgotPwd | Password recovery |
-   | CxpResetPwd | Password reset |
    | JobAlert | Job alert emails |
    | web-subscribe | Job alert signup confirmation |
 
