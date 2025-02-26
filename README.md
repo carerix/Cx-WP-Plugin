@@ -220,6 +220,8 @@ By default a form named Form 1 is ready for use. This default form can not be ch
 ```
 [cx_open_application openFormID="2"]
 ```
+Make sure the Open Application in the Carerix system meets all requirements (see [Open Application](https://help.carerix.com/en/articles/2349466-open-application)). 
+By default this is Vacancy 1 with a publication is assigned as Open Application.
 
 See the Application Shortcodes below for details
 
@@ -351,7 +353,7 @@ Define your own values for the taxonomies creating for each languge a different 
 ## Job Alert Subscription
 In WordPress you can show a form for job alerts (vacancy subscription). When candidates signup they will receive emails in the future containing vacancies that fit their selected criteria, on a daily basis.
 
-1. Setup in Carerix: [See guide](https://help.carerix.com/en/articles/1954170)
+1. Setup in Carerix: [See Job Alert guide](https://help.carerix.com/en/articles/1954170)
 2. Required email templates: `web-subscribe`, `jobalert`
 3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page (don't forget to edit the parameters):
 
