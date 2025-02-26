@@ -44,7 +44,7 @@ Table of Contents
    - [Installation Steps](#installation-steps)
    - [Authorisation of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
    - [Configure ApplyURL](#configure-applyurl)
-   - [Usage in Email Templates](#usage-in-email-templates)
+   - [Usage in Email Templates](#custom-url-in-email-templates)
 3. [Settings & Usage](#3-settings--usage)
    - [Application Forms](#application-forms)
    - [Sources](#sources)
