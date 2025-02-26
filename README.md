@@ -83,7 +83,6 @@ Table of Contents
    | JobAlert | Job alert emails |
    | web-subscribe | Job alert signup confirmation |
 
-🔴 Kloppen deze email templates nog??
 
 5. Authorize the plugin with your Application Token
 
