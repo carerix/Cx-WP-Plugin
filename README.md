@@ -155,7 +155,7 @@ Configure how vacancies appear on your site:
 4. Location display options
 
 > [!TIP]
-> Use different mediums (web, web2, etc.) to separate vacancy flows
+> Use different mediums (web, web2, etc.) to separate vacancy flows, see [Extra Mediums](#extra-mediums)
 
 ### Configuring a Job source
 
