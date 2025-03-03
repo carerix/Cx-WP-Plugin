@@ -30,10 +30,6 @@ The Carerix WordPress plugin is the connection between the Carerix application a
 * **Carerix administrator**: Has the administrator user role and is able to manage the Carerix data-tables (e.g. Country table), mediums and email templates.
 * **Wordpress administrator**: Webbuilder with rights to manage the settings of Wordpress, can install/configure plugins and knows how to create/edit pages (with sidebars). HTML skills are useful
 
-
-Table of Contents
-=================
-
 ## Table of Contents
 1. [Introduction](#1-introduction)
    - [Features](#features)
