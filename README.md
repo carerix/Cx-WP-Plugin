@@ -530,16 +530,10 @@ The Carerix WordPress plugin allows you to embed custom JavaScript code (e.g., F
 1. Go to: **WordPress Dashboard → Carerix → Settings → Conversion Tracking**
 2. Add your tracking code snippets into the designated script boxes.
 
-### Available Features
-- A global `cx` JavaScript object is available, containing vacancy data.
-- Use the following methods to enhance tracking:
-  - `cx.setApplySource()`
-  - `cx.setApplyTags()`
-
 > [!Tip]
 > You can test the `cx` object by typing `console.log(cx);` in your browser's developer console on a vacancy page.
 
-### Applicant Source Tracking
+## Applicant Source Tracking
 
 Track and enrich candidate data using URL parameters. When a candidate applies via a custom link, source information is captured and stored in the **Candidate Match file**.
 
@@ -571,14 +565,12 @@ Once candidates apply using a tracked URL, their source and tags are visible in 
 - **Read-only** fields that appear **only when values are present**
 ---
 
-### Why Use This?
+### Why Use Applicant Source Tracking?
+Use `applySource` and `applyTags` to enrich your Matches and take control of your recruitment insights. With this data you can analyse:
 
-By enriching your Matches with `applySource` and `applyTags`, you gain insights into:
-
-- Which job boards are most effective
-- Where top candidates are coming from
-- Optimizing your sourcing strategy
-
+- Identify your most effective job boards
+- Pinpoint exactly through which channels your top candidates originate
+- Fine-tune your sourcing strategy for better results
 
 ## Create RSS feeds per category
 Build an RSS feed for all your jobs as posts in WordPress or build a Feed for each Category or any tag. Use the built-in feature of WordPress for generating feeds.
