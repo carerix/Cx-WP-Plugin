@@ -545,8 +545,8 @@ When building a tracking URL (for example `?utm_source=LinkedIn&utm_medium=web&u
 
 ### Usage Example
 ```
-**https://yoursite.com/pubid/123/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA**&utm_source=LinkedIn&utm_medium=web
-&utm_campaign=Recruiting+via+LinkedIn&utm_content=first+contac
+https://yoursite.com/pubid/123/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA&utm_source=LinkedIn&utm_medium=web
+&utm_campaign=Recruiting+via+LinkedIn&utm_content=first+contact
 ```
 
 > [!Note]
