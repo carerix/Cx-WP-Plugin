@@ -4,7 +4,7 @@ Carerix WordPress Plugin
 > [!Tip]
 > 1. Download and install the [latest plugin version](https://github.com/carerix/Cx-WP-Plugin/releases)
 > 2. [Authorize of the Plugin](#authorisation-of-the-plugin-for-the-specified-carerix-application)
-> 3. [Configure ApplyURL](configure-applyurl)
+> 3. [Configure ApplyURL](#configure-applyurl)
 > 4. Sync all Publications
 >
 > See the Demo website at [plugin.carerix.com](https://plugin.carerix.com/)
