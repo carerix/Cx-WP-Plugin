@@ -507,7 +507,7 @@ Adds structured job data to your pages for Google Jobs search integration.
    - Verify "JobPosting" entity appears
 
 ### Hiring Organization Config
-- For anonymous jobs: Set your company as hiring org
+- For anonymous jobs: Set your company as hiring organisation
 - Navigate: `Carerix → Settings → Google for jobs`
 - Configure:
   - Company name
