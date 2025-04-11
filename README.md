@@ -54,7 +54,7 @@ The Carerix WordPress plugin is the connection between the Carerix application a
    - [Special multilingual jobs](#special-multilingual-jobs)
    - [Featured vacancies](#featured-vacancies)
    - [Google for Jobs](#google-for-jobs)
-   - [Web analytics](#web-analytics--applicant-source-tracking-in-carerix)
+   - [Web analytics](#web-analytics)
    - [Applicant Source Tracking](#applicant-source-tracking)
    - [Create RSS feeds per category](#create-rss-feeds-per-category)
 5. [FAQ (Frequently Asked Questions)](#5-faq-frequently-asked-questions)
