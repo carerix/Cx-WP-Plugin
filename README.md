@@ -398,12 +398,12 @@ Access Carerix Tables to customize dropdown options for the Job Alert:
 After modifying tables, clear cache: **Dashboard → Carerix → Application Forms → Settings → Clear DataNodes cache**
 
 <!-- 
-# 🔴 4. Advanced Features
+# 🔴 
 
 * 🔴 For developers or experienced users, this section covers:
 Ruben zegt: ik zou graag in de volgende versie van de CX WP Plugin een nieuwe tab in WP dashboard → CX plugin → help&diagnostics willen aanmaken, genaamd "hooks & filters" met een beschrijving. Graag wil ik er ook een aantal aan toevoegen. Dus voor nu misschien dit onderdeel weglaten?
 -->
-
+4. Advanced Features
 ## Diagnostics
 
 The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
@@ -530,8 +530,9 @@ Additionally custom information (apply source and apply tags) can be set which w
 1. Go to: `WordPress Dashboard → Carerix → Settings → Conversion tracking`
 2. Add tracking code in script boxes
 
-
+<!--
 🔴 Wachten op: https://carerix.atlassian.net/browse/WP-230
+-->
 
 ### Available Features
 - Global `cx` object with vacancy data
