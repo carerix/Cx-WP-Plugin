@@ -536,7 +536,8 @@ The Carerix WordPress plugin allows you to embed custom JavaScript code (e.g., F
   - `cx.setApplySource()`
   - `cx.setApplyTags()`
 
-> 💡 **Tip**: You can test the `cx` object by typing `console.log(cx);` in your browser's developer console on a vacancy page.
+> [!Tip]
+> You can test the `cx` object by typing `console.log(cx);` in your browser's developer console on a vacancy page.
 
 ### Applicant Source Tracking
 
