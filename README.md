@@ -513,7 +513,7 @@ Adds structured job data to your pages for Google Jobs search integration.
   - Company name
   - Logo (optional)
 
-## Web Analytics & Applicant Source Tracking in Carerix
+## Web Analytics
 
 Carerix supports advanced web analytics integration and applicant tracking through custom code snippets and URL parameters. This enables precise measurement of candidate sources and the effectiveness of job boards.
 
