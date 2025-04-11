@@ -114,7 +114,9 @@ See ApplyURL setting for more information: [ApplyURL](https://help.carerix.com/e
 If you don't want to make use of the ApplyURL (for specific variations or additional flexibility for particular cases) and want to create custom links to Publications or Application Forms in your Carerix templates, use this CxScript:
 ```
 <a target="_blank" href="https://yoursite.com/pubid/<cx:write value='$publication.publicationID'/>"
+```
 or
+```
 <a target="_blank" href="https://yoursite.com/?pub_id=<cx:write value='$publication.publicationID'/>"
 ```
 This generates URLs like: `https://yoursite.com/pubid/123` or `https://yoursite.com/?pub_id=123` which will both show the Publication with ID 123 on the website.
