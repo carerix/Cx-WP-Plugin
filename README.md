@@ -543,16 +543,12 @@ Track and enrich candidate data using URL parameters. When a candidate applies v
 
 ### Usage Example
 ```
-https://yoursite.com/vacancy/1234/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA
+https://yoursite.com/pubid/123/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA
 ```
 
-**Note:**
-- These values are stored in a 30-day cookie.
-- They auto-apply to all applications from the same candidate.
-- Append `apply=true` if you're using custom URLs:
-```
-https://yoursite.com/vacancy/ID/apply
-```
+> [!Note]
+> - These values are stored in a 30-day cookie.
+> - They auto-apply to all applications from the same candidate.
 
 ### Match Details in Carerix
 
