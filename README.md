@@ -403,7 +403,7 @@ After modifying tables, clear cache: **Dashboard → Carerix → Application For
 * 🔴 For developers or experienced users, this section covers:
 Ruben zegt: ik zou graag in de volgende versie van de CX WP Plugin een nieuwe tab in WP dashboard → CX plugin → help&diagnostics willen aanmaken, genaamd "hooks & filters" met een beschrijving. Graag wil ik er ook een aantal aan toevoegen. Dus voor nu misschien dit onderdeel weglaten?
 -->
-4. Advanced Features
+# 4. Advanced Features
 ## Diagnostics
 
 The jobs synchronizing process will be fully handled by the REST API. The diagnostics tool (**Wordpress Dashboard** → **Carerix** → **Settings** → **Tab Diagnostics**) will help you find possible inconsistencies between published vacancies in your Carerix system and the vacancies that are retrieved by your Wordpress site.
