@@ -718,13 +718,15 @@ Yes, absolutely:
 * In Google Analytics you can track the statistics of this page
 * You could also add this confirmation page as one of your Goals
 
-🔴 CHECKEN: Also see [Applicant Source Tracking](#applicant-source-tracking) for tracking candidates in Carerix throughout their application process.
+<!-- 🔴 CHECKEN:-->
+Also see [Applicant Source Tracking](#applicant-source-tracking) for tracking candidates in Carerix throughout their application process.
 
 ### How to search / filter by taxonomy?
 Jobs include taxonomy by Country and Region, Function and Training. Use those taxonomies in your  Search & Filter widgets of plugins.
 
+<!-- 
 ### 🔴 CHECKEN: Can I use a search radius from a postal code area?
-<!-- Opmerking: de search widget is verder een beperkte widget in functionaliteit. Aangeraden wordt om zoek & filter mogelijkheden met 3rd party plugins te bouwen. Helaas kun je dan niet gebruik maken van post code radius, tenzij ontwikkelaars zelf iets bouwen.
+Opmerking: de search widget is verder een beperkte widget in functionaliteit. Aangeraden wordt om zoek & filter mogelijkheden met 3rd party plugins te bouwen. Helaas kun je dan niet gebruik maken van post code radius, tenzij ontwikkelaars zelf iets bouwen.
 -->
 With the 'Carerix Search widget' it is possible to search by radius. These can be found under Wordpress → Dashboard → View → Widgets. You need WordPress editing rights. However, if you use a third party search-plugin (like Search & Filter or Jet SmartFilters) you cannot use this radius function because of technical limitations.
 See the example in https://demo.carerix.com/plugin/zoeken-filteren/
@@ -786,12 +788,9 @@ After a few hours the files are automatically removed by the plugin and will onl
 * Blog post listings: It is not possible to show vacancies in major blog listing.
 * Compatibility: Switch between regular and post types Custom post types can cause synchronization problems.
 
-
 Currently we have chosen not offering Jobs as Custom Post Types because many of our customers use the standard features like blog listing.
 
-<!--
-🔴 [TO DO LATER: FAQs]
--->
+
 
 # 6. Support
 
