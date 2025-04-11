@@ -513,53 +513,75 @@ Adds structured job data to your pages for Google Jobs search integration.
   - Company name
   - Logo (optional)
 
+# Web Analytics & Applicant Source Tracking in Carerix
 
-## Web analytics
-The plugin supports custom code snippets for extended web analytics usage (e.g. Facebook pixel, Google Analytics, etc.). Apply custom (javascript) code to the following webpage sections:
+Carerix supports advanced web analytics integration and applicant tracking through custom code snippets and URL parameters. This enables precise measurement of candidate sources and the effectiveness of job boards.
 
-* General (basically to all pages)
-* Job description page
-* Job application page
-* Job application confirmation page
+---
 
-Additionally custom information (apply source and apply tags) can be set which will be stored in the “Candidate Match file”.
+## 1. Custom Web Analytics Integration
 
-### Prerequisites
-- WordPress admin access
-- JavaScript knowledge
+The Carerix WordPress plugin allows you to embed custom JavaScript code (e.g., Facebook Pixel, Google Analytics) into key sections of your recruitment site:
 
-### Configuration
-1. Go to: `WordPress Dashboard → Carerix → Settings → Conversion tracking`
-2. Add tracking code in script boxes
+- **General** (applies to all pages)
+- **Job description page**
+- **Job application page**
+- **Job application confirmation page**
 
-<!--
-🔴 Wachten op: https://carerix.atlassian.net/browse/WP-230
--->
+### How to Configure
+1. Go to: **WordPress Dashboard → Carerix → Settings → Conversion Tracking**
+2. Add your tracking code snippets into the designated script boxes.
 
 ### Available Features
-- Global `cx` object with vacancy data
-- Methods: `cx.setApplySource()`, `cx.setApplyTags()`
+- A global `cx` JavaScript object is available, containing vacancy data.
+- Use the following methods to enhance tracking:
+  - `cx.setApplySource()`
+  - `cx.setApplyTags()`
 
-> [!TIP]
-> You can also dump this information in your browser debug console by entering console.log(cx); at a vacancy description page.
+> 💡 **Tip**: You can test the `cx` object by typing `console.log(cx);` in your browser's developer console on a vacancy page.
 
-## Applicant Source Tracking
-The apply page supports the following GET parameters `cx_applysource` and `cx_applytags`
+## 2. Applicant Source Tracking
 
-## Usage example
+Track and enrich candidate data using URL parameters. When a candidate applies via a custom link, source information is captured and stored in the **Candidate Match file**.
+
+### Supported URL Parameters
+- `cx_applysource`
+- `cx_applytags`
+
+### Usage Example
 ```
 https://yoursite.com/vacancy/1234/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA
 ```
-> [!NOTE]
-> - Tracking data saves in 30-day cookie
-> - Data auto-adds to all applications from same candidate
-> - Appears in Carerix under Match details
-> - Add apply=true parameter if using custom URLs:
 
-```url
-https://yoursite.com/vacancy/ID/apply
-
+**Note:**
+- These values are stored in a 30-day cookie.
+- They auto-apply to all applications from the same candidate.
+- Append `apply=true` if you're using custom URLs:
 ```
+https://yoursite.com/vacancy/ID/apply
+```
+
+### Match Details in Carerix
+
+Once candidates apply using a tracked URL, their source and tags are visible in the **Match** details within Carerix:
+
+![Match Details - Applicant tracking-oTg](https://github.com/user-attachments/assets/98de8870-55f9-400f-a2a8-114a5f773d9c)
+
+- Fields: `applySource` and `applyTags`
+- Location: Within the Match tab (as shown above)
+- **Read-only** fields that appear **only when values are present**
+- Populated via the Carerix API (e.g. through WordPress Plugin or custom API integration)
+
+---
+
+### Why Use This?
+
+By enriching your Matches with `applySource` and `applyTags`, you gain insights into:
+
+- Which job boards are most effective
+- Where top candidates are coming from
+- Optimizing your sourcing strategy
+
 
 ## Create RSS feeds per category
 Build an RSS feed for all your jobs as posts in WordPress or build a Feed for each Category or any tag. Use the built-in feature of WordPress for generating feeds.
