@@ -539,13 +539,14 @@ Track and enrich candidate data using URL parameters. It's an addition to URL pa
 When a candidate applies via a custom link, source information is captured and stored in the **Candidate Match file**.
 
 ### Supported URL Parameters
-When building a tracking URL (for example `?utm_source=LinkedIn&utm_medium=web&utm_campaign=Welcome&utm_content=first+contact`) you can add these parameters:
+When building a tracking URL (for example `?utm_source=LinkedIn&utm_medium=web&utm_campaign=Recruiting+via+LinkedIn&utm_content=first+contact`) you can add these parameters:
 - `cx_applysource`
 - `cx_applytags`
 
 ### Usage Example
 ```
-*https://yoursite.com/pubid/123/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA*&utm_source=LinkedIn&utm_medium=web&utm_campaign=Welcome&utm_content=first+contac
+**https://yoursite.com/pubid/123/apply?cx_applysource=Google&cx_applytags=jobboard.nl,paid,regionA**&utm_source=LinkedIn&utm_medium=web
+&utm_campaign=Recruiting+via+LinkedIn&utm_content=first+contac
 ```
 
 > [!Note]
