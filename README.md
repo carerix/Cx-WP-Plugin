@@ -513,13 +513,11 @@ Adds structured job data to your pages for Google Jobs search integration.
   - Company name
   - Logo (optional)
 
-# Web Analytics & Applicant Source Tracking in Carerix
+## Web Analytics & Applicant Source Tracking in Carerix
 
 Carerix supports advanced web analytics integration and applicant tracking through custom code snippets and URL parameters. This enables precise measurement of candidate sources and the effectiveness of job boards.
 
----
-
-## 1. Custom Web Analytics Integration
+### Custom Web Analytics Integration
 
 The Carerix WordPress plugin allows you to embed custom JavaScript code (e.g., Facebook Pixel, Google Analytics) into key sections of your recruitment site:
 
@@ -540,7 +538,7 @@ The Carerix WordPress plugin allows you to embed custom JavaScript code (e.g., F
 
 > 💡 **Tip**: You can test the `cx` object by typing `console.log(cx);` in your browser's developer console on a vacancy page.
 
-## 2. Applicant Source Tracking
+### Applicant Source Tracking
 
 Track and enrich candidate data using URL parameters. When a candidate applies via a custom link, source information is captured and stored in the **Candidate Match file**.
 
@@ -570,8 +568,6 @@ Once candidates apply using a tracked URL, their source and tags are visible in 
 - Fields: `applySource` and `applyTags`
 - Location: Within the Match tab (as shown above)
 - **Read-only** fields that appear **only when values are present**
-- Populated via the Carerix API (e.g. through WordPress Plugin or custom API integration)
-
 ---
 
 ### Why Use This?
