@@ -767,7 +767,7 @@ Also, Google For Jobs wants to know the address location of the jobs. Not all cu
 No, this is not possible
 
 ### Why should I enable this: 'Reporting its location'?
-We can continue to make the plugin better and better with the necessary feedback that we receive from the plugin. No vacancy or candidate data is send, so there is no privacy issue, and it gives no performance issues.
+We can continue to make the plugin better and better with the necessary feedback that we receive from the plugin. No vacancy or candidate data is send, for the protection of confidential information, and it gives no performance issues.
 
 ### How to enable logging and where is the logfile?
 You can enable the logging in Wordpress → Dashboard → Carerix → Settings → Tab Settings. The logfile is created in
