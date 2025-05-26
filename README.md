@@ -422,10 +422,19 @@ You can review the 'active job publications' but also the available 'medium code
 #### Prerequisites
 - **Required**: WPML plugin (other multi-language plugins like Polylang are not supported)
 
-#### WPML Configuration
-1. Go to **wp-admin → WPML → Languages**
-2. Set default language to **Dutch**
-3. Go to **WPML → Languages → Edit languages** and verify these languages exist:
+### WPML Plugin Multi-Language Setup
+
+#### Prerequisites
+- **Required**: WPML plugin (most popular WordPress multilingual plugin)
+- Other multi-language plugins like Polylang are not supported
+- WPML is a premium plugin but worth the investment
+
+#### WPML Installation & Configuration
+1. Install and activate WPML plugin
+2. Go to **wp-admin → WPML → Languages**
+3. Set default language to **Dutch**
+4. Configure as desired for your site needs
+5. Go to **WPML → Languages → Edit languages** and verify these languages exist:
 
 | Language | Code | Dutch Translation | English Translation | Locale | hreflang |
 |----------|------|-------------------|---------------------|--------|----------|
@@ -437,35 +446,23 @@ You can review the 'active job publications' but also the available 'medium code
 
 #### Carerix Setup
 1. Find your Dutch job publication medium code via **Maintenance → Media** (usually "web")
-2. Create new medium with code: `[original-code]-en` (e.g., "web-en")
-3. Copy settings from Dutch medium but give it a clear English name
+2. Create new medium with code format: `[original-code]-XX` where XX is the ICU Locale language code
+   - Example: "web" becomes "web-en" for English
+3. Copy settings from Dutch medium but give it a clear English name for recruiters
 
 #### Publishing Jobs
-- **Dutch**: Publish to original medium (e.g., "web")
-- **English**: Publish to new medium (e.g., "web-en") with English translations
+1. **First publication (Dutch)**: Use original medium (e.g., "web")
+2. **Additional publication (English)**: 
+   - Create extra publication of the same job
+   - Use new medium (e.g., "web-en") 
+   - **Important**: Ensure publication contains texts in the 2nd language
 
 #### WordPress Sync
 1. Go to **wp-admin → CX WP Plugin → Settings**
 2. Click **"Enforce full sync of all items from Carerix"**
+3. In WordPress posts list, you can see which posts are published in which language
 
 > **Note**: After initial setup, sync happens automatically every 10 minutes.
-
-ABOVE IS TO REPLACE THIS TEXT:
-
-The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
-
-1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
-2. Create an additional publications of a job
-3. One publication (1st language) already has the medium `web`. Make an extra publication of the same job and web (2nd language) with it. Please note that this publication contains the texts in the 2nd language.
-4. Go to the WordPress Website
-5. Install WPML and adjust it as desired
-6. Go to the Carerix settings and synchronize all items Carerix
-7. In the list of all messages (posts) you can see which posts have been published in any language
-
-Use the medium code 'web-XX', where 'XX' is the ICU Locale language.
-
-The Carerix plugin works perfectly with WPML, one of the best WordPress plugins multilingual. The price WPML is worth it, see [WPML](https://wpml.org/)
-
 
 ## Without multilingual plugin
 IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
