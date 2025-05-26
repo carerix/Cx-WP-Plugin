@@ -417,11 +417,6 @@ You can review the 'active job publications' but also the available 'medium code
 
 ## Multilingual Websites
 
-### CX WP Plugin Multi-Language Setup
-
-#### Prerequisites
-- **Required**: WPML plugin (other multi-language plugins like Polylang are not supported)
-
 ### WPML Plugin Multi-Language Setup
 
 #### Prerequisites
