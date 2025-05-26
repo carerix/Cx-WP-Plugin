@@ -436,6 +436,8 @@ You can review the 'active job publications' but also the available 'medium code
 | Dutch    | nl   | Nederlands        | Dutch               | nl_NL  | nl       |
 | English  | en   | Engels            | English             | en_US  | en       |
 
+![WPML-Plugin-Multi-Language-Setup](https://github.com/user-attachments/assets/cd9604df-2c3c-49e1-a687-c5ba4937cbc1)
+
 #### WordPress Cleanup
 - Delete all existing job posts and empty trash (important!)
 
