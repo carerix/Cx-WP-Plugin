@@ -417,6 +417,41 @@ You can review the 'active job publications' but also the available 'medium code
 
 ## Multilingual Websites
 
+### CX WP Plugin Multi-Language Setup
+
+#### Prerequisites
+- **Required**: WPML plugin (other multi-language plugins like Polylang are not supported)
+
+#### WPML Configuration
+1. Go to **wp-admin → WPML → Languages**
+2. Set default language to **Dutch**
+3. Go to **WPML → Languages → Edit languages** and verify these languages exist:
+
+| Language | Code | Dutch Translation | English Translation | Locale | hreflang |
+|----------|------|-------------------|---------------------|--------|----------|
+| Dutch    | nl   | Nederlands        | Dutch               | nl_NL  | nl       |
+| English  | en   | Engels            | English             | en_US  | en       |
+
+#### WordPress Cleanup
+- Delete all existing job posts and empty trash (important!)
+
+#### Carerix Setup
+1. Find your Dutch job publication medium code via **Maintenance → Media** (usually "web")
+2. Create new medium with code: `[original-code]-en` (e.g., "web-en")
+3. Copy settings from Dutch medium but give it a clear English name
+
+#### Publishing Jobs
+- **Dutch**: Publish to original medium (e.g., "web")
+- **English**: Publish to new medium (e.g., "web-en") with English translations
+
+#### WordPress Sync
+1. Go to **wp-admin → CX WP Plugin → Settings**
+2. Click **"Enforce full sync of all items from Carerix"**
+
+> **Note**: After initial setup, sync happens automatically every 10 minutes.
+
+ABOVE IS TO REPLACE THIS TEXT:
+
 The Carerix WordPress plugin supports multilingualism. To do this, you use a multilingual plugin. Carerix supports [Multilingual Plugin WPML](http://wpml.org/), the most popular plugin on multilingualism. We assume that you all vacancies in both Dutch as a 2nd language publishing (English in this example). Proceed as follows
 
 1. Make Carerix in another medium (in tables). You've already medium 'web', add a new medium to eg code web-en 'for English.
