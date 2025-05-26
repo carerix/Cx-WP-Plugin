@@ -436,7 +436,7 @@ You can review the 'active job publications' but also the available 'medium code
 | Dutch    | nl   | Nederlands        | Dutch               | nl_NL  | nl       |
 | English  | en   | Engels            | English             | en_US  | en       |
 
-<img src="https://github.com/user-attachments/assets/cd9604df-2c3c-49e1-a687-c5ba4937cbc1" width="200" height="200" />
+<img src="https://github.com/user-attachments/assets/cd9604df-2c3c-49e1-a687-c5ba4937cbc1" width="600" height="" />
 
 #### WordPress Cleanup
 - Delete all existing job posts and empty trash (important!)
