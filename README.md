@@ -705,7 +705,10 @@ See [Multilingual Websites](#multilingual-websites)
 
 ## Cx Module – Developer Documentation
 Further Technical documentation for developers implementing the Carerix WordPress plugin, see: [Cx Module – Developer Documentation](https://github.com/carerix/Cx-WP-Plugin/blob/main/Cx%20Module%20%E2%80%93%20Developer%20Documentation.md)
-
+<br>
+<br>
+<br>
+<br>
 
 # 5. FAQ (Frequently Asked Questions)
 
