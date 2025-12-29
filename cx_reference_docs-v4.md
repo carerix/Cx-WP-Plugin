@@ -1,4 +1,4 @@
-# cx Module – Developer Documentation
+# Cx Module – Developer Documentation
 
 ## Purpose
 
@@ -143,3 +143,4 @@ cx.setApplyTags('linkedin,campaign-abcd');
 - All other fields are page-specific and sourced from the WordPress vacancy post (reloaded fresh per vacancy view).
 
 ---
+
