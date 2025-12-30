@@ -43,8 +43,8 @@ The Carerix WordPress plugin is the connection between the Carerix application a
 3. [Settings & Usage](#3-settings--usage)
    - [Application Forms](#application-forms)
    - [Sources](#sources)
-   - [Shortcodes Reference](#shortcodes-reference)
    - [Medium](#medium)
+   - [Shortcodes Reference](#shortcodes-reference)
    - [Taxonomies](#taxonomies)
    - [Job Alert Subscription](#job-alert-subscription)
 4. [Advanced Features](#4-advanced-features)
@@ -347,8 +347,8 @@ The following shortcodes are no longer supported:
 - [cx_rss_for_category]
 
 ### Other Shortcodes
-Looking for the shortcode for the [Job Alert Subscription?](https://github.com/carerix/Cx-WP-Plugin/blob/main/README.md#job-alert-subscription)
-
+Shortcode for [Application Form](#application-forms)
+Shortcode for the [Job Alert Subscription?](#job-alert-subscription)
 
 ## Taxonomies
 
