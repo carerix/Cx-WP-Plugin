@@ -564,6 +564,10 @@ Adds structured job data to your pages for Google Jobs search integration.
   - Company name
   - Logo (optional)
 
+`[cx_google_for_jobs]` Only for web developers to check*
+*Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
+
+
 ## Web Analytics
 
 Carerix supports advanced web analytics integration and applicant tracking through custom code snippets and URL parameters. This enables precise measurement of candidate sources and the effectiveness of job boards.
