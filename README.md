@@ -345,6 +345,9 @@ The following shortcodes are no longer supported:
 Shortcodes for [Application Form](#application-forms)
 \
 Shortcode for the [Job Alert Subscription](#job-alert-subscription)
+\
+Shortcode for [Google for Jobs](#google-for-jobs-shortcode)
+
 
 ## Taxonomies
 
@@ -560,7 +563,7 @@ Adds structured job data to your pages for Google Jobs search integration.
   - Company name
   - Logo (optional)
 
-### For web developers to check
+### Google for Jobs Shortcode
 `[cx_google_for_jobs]`
 \
 Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
