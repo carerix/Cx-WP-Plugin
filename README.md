@@ -897,11 +897,6 @@ If someone alters (the code of) the plugin this will invalidate any form of supp
 * MySQL 5+ / MariaDB
 * PHP Memory: 256MB recommended (128MB min, 512MB+ for complex sites)
 
-### **Updating the Plugin**
-1. Make sure to make a backup of your website before updating the plugin which is good practice for updating WordPress plugins. Also check your Website after updating.
-2. In Wordpress dashboard → Plugins, locate the Carerix Wordpress Plugin
-3. If there's an update available you can click on the 'Update now' link
-
 ### **Install the Plugin**
 * Make sure the hosting environment meets the technical requirements
 * Go to **Plugins** → **Add New** → **Upload**
@@ -914,10 +909,17 @@ If someone alters (the code of) the plugin this will invalidate any form of supp
 * Check your Administration Panels or WordPress blog to see if the Plugin is working.
 * Follow the instructions in the Settings section to setup the plugin.
 
+
+### **Updating the Plugin**
+1. Make sure to make a backup of your website before updating the plugin which is good practice for updating WordPress plugins. Also check your Website after updating.
+2. In Wordpress dashboard → Plugins, locate the Carerix Wordpress Plugin
+3. If there's an update available you can click on the 'Update now' link
+
+
 ### **Downgrading the Plugin**
 If an update is not satisfactory:
 * Download an old version from [Releases](https://github.com/carerix/Cx-WP-Plugin/releases)
-* Go to CX Dash → plugins → add new plugin
+* Go to the Dashboard → Plugins → Add new plugin
 * Upload the older version plugin
 * Confirm that you want to override the current and newer version
 
