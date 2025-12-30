@@ -299,7 +299,7 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 | [cx_owner_name]                  | Name of vacancy owner                                                       | `type="name\|id"    `                                   |
 | [cx_owner_phonenumberbusiness]   | Business phone number of vacancy owner                                      | `type="label\|link"   `                                 |
 | [cx_owner_promotext]             | Promotional text of vacancy owner                                           | -                                                     |
-| [cx_owner_url]                   | Social/personal URL of vacancy owner                                        | `ref="UrlLinkedInTag\|...\|UrlWebsiteTag\|etc"` [(i)](https://help.carerix.com/en/articles/9721456-release-5-357-10-august-2024)        |
+| [cx_owner_url]                   | Social/personal URL of vacancy owner                                        | `ref="UrlLinkedInTag\|...\|UrlWebsiteTag\|etc"` [ℹ️](https://help.carerix.com/en/articles/9721456-release-5-357-10-august-20)        |
 | [cx_procedure]                   | Hiring procedure of the vacancy                                             | Common parameters|
 | [cx_procedure_category]          | Category of the hiring procedure                                            | Common parameters|
 | [cx_required_drivinglicense]     | Driving license requirement                                                 | Common parameters|
