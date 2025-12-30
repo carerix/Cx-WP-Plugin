@@ -420,12 +420,7 @@ Access Carerix Tables to customize dropdown options for the Job Alert:
 
 After modifying tables, clear cache: **Dashboard → Carerix → Application Forms → Settings → Clear DataNodes cache**
 
-<!-- 
-# 🔴 
 
-* 🔴 For developers or experienced users, this section covers:
-Ruben zegt: ik zou graag in de volgende versie van de CX WP Plugin een nieuwe tab in WP dashboard → CX plugin → help&diagnostics willen aanmaken, genaamd "hooks & filters" met een beschrijving. Graag wil ik er ook een aantal aan toevoegen. Dus voor nu misschien dit onderdeel weglaten?
--->
 # 4. Advanced Features
 ## Diagnostics
 
@@ -954,6 +949,3 @@ _____________
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 -->
-_____________
-
-
