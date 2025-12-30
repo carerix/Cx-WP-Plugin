@@ -565,8 +565,9 @@ Adds structured job data to your pages for Google Jobs search integration.
 
 ### Google for Jobs Shortcode
 `[cx_google_for_jobs]`
-\
-Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
+
+> [!Note]
+> Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
 
 
 ## Web Analytics
