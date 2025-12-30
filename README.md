@@ -876,11 +876,13 @@ Currently we have chosen not offering Jobs as Custom Post Types because many of 
 
 # 6. Support
 
-* [Github issues](https://github.com/carerix/Cx-WP-Plugin/issues)? Provide information on where users can get help, such as a support forum, email address or via ticketing system.
+* If you run into issues regarding the Carerix Wordpress Plugin, please create it as issue under [Plugin issues](https://github.com/carerix/Cx-WP-Plugin/issues):
 * Give a clear description of the issue 
 * Use screenshots and visuals to enhance clarity.
 * Include clear code snippets if necessary.
-* Make sure not to send confidential information
+* Make sure not to send confidential information!
+
+These issues are publicly visible, so that other web builders can benefit from the answers or solutions.
 
 ## Disclaimer
 **Altering the plugin**
