@@ -235,10 +235,6 @@ These shortcodes handle the application process.
 | `[cx_open_application openFormID="XX"]` | Use specific form - Replace XX with Form ID from Carerix → Application Forms |
 | `[cx_open_application openpubid="XX"]` | Link to specific vacancy - Replace XX with Publication ID |
 | `[cx_open_application openFormID="3" openpubid="312"]` | Combine parameters for specific form and vacancy |
-| `[cx_google_for_jobs]` | Only for web developers to check * |
-
-* Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
-
 
 
 ### Shortcodes used in Sources
@@ -529,19 +525,19 @@ Daarnaast ondersteunt de CX WP Plugin de WPML plugin voor multilingal sites + va
 ## Featured vacancies
 You can find the feature in **Carerix Dashboard→Carerix→Settings→ Technology previews**
 
-In the Carerix system extra/additional fields can be added to Job orders and Publications. The information from these custom fields can be displayed in your vacancies. You can also use it as options in a “vacancy-listing search & filter” widget.
+In the Carerix system extra/additional fields can be added to Job orders and Publications. The information from these custom fields can be displayed in your vacancies. You can also use it as options in a "vacancy-listing search & filter" widget.
 
 **Use case**
-A nice use case is a “featured/highlighted” vacancy widget to highlight some vacancies. Therefore in Carerix you need to create an additional field called “featured on website” (type single checkbox) and attach it to the “Publications entity”.
+A nice use case is a "featured/highlighted" vacancy widget to highlight some vacancies. Therefore in Carerix you need to create an additional field called "featured on website" (type single checkbox) and attach it to the “Publications entity”.
 In Carerix, recruiters can tag preferred publications as “Featured on website”.
 
-The Wordpress developer can create a "Featured vacancies section" based on a “vacancy post loop” restricted to the custom-field “featured on website”.
+The Wordpress developer can create a "Featured vacancies section" based on a “vacancy post loop” restricted to the custom-field "featured on website".
 
 
 ## Google for Jobs
 Google for Jobs is an enhanced search functionality from Google. It aggregates listings from job boards and vacancy sites and displays them prominently in Google search.
 
-You need to add “structured job posting data” to have your jobs included to these listings. This information is invisible, so your job pages are still looking the same. When Google is indexing your site, the structured data is recognized and added to Google for Jobs.
+You need to add "structured job posting data" to have your jobs included to these listings. This information is invisible, so your job pages are still looking the same. When Google is indexing your site, the structured data is recognized and added to Google for Jobs.
 
 ### Overview
 Adds structured job data to your pages for Google Jobs search integration.
@@ -565,6 +561,7 @@ Adds structured job data to your pages for Google Jobs search integration.
   - Logo (optional)
 
 `[cx_google_for_jobs]` Only for web developers to check*
+\
 *Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
 
 
