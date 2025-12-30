@@ -304,7 +304,6 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 | [cx_procedure_category]          | Category of the hiring procedure                                            | Common parameters|
 | [cx_required_drivinglicense]     | Driving license requirement                                                 | Common parameters|
 | [cx_required_experience]         | Required experience (in time)                                               | Common parameters|
-| [cx_rss_for_category]            | RSS feed link for current posts-category (deprecated)                       | -                                                     |
 | [cx_vacancy_status]              | Vacancy status (Lead, New, Active, etc.)                                    | `type="label\|classification"`                          |
 
 
@@ -345,6 +344,7 @@ The following shortcodes are no longer supported:
 - [cx_newsletter_subscription]
 - [cx_social_icons]
 - [cx_vacancy_number]
+- [cx_rss_for_category]
 
 
 ## Taxonomies
