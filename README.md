@@ -290,16 +290,16 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 | [cx_apply_until] | Final application date | Common parameters |
 | [cx_job_group] | Vacancy group(s) | `separator=", "` |
 | [cx_extra] | Display custom Carerix fields | `field="fieldcode" separator=", " type="string\|date"` |
-| [cx_campaign]                    | Carerix campaign signup form                                                | sendto="recruiter@yourcompany.com", campaignid="1234", codeinname="abc" |
+| [cx_campaign]                    | Carerix campaign signup form                                                | `sendto="recruiter@yourcompany.com", campaignid="1234", codeinname="abc"` |
 | [cx_job_end_date]                | Last working day of the employee                                            | Common parameters|
 | [cx_job_start_date]              | First working day of the employee                                           | Common parameters|
 | [cx_owner_emailaddressbusiness]  | Business email address of vacancy owner                                     | -                                                     |
 | [cx_owner_jobtitle]              | Job title of vacancy owner                                                  | -                                                     |
-| [cx_owner_mobilenumberbusiness]  | Business mobile phone number of vacancy owner                               | type="label\|link"                                    |
-| [cx_owner_name]                  | Name of vacancy owner                                                       | type="name\|id"                                       |
-| [cx_owner_phonenumberbusiness]   | Business phone number of vacancy owner                                      | type="label\|link"                                    |
+| [cx_owner_mobilenumberbusiness]  | Business mobile phone number of vacancy owner                               | `type="label\|link"     `                               |
+| [cx_owner_name]                  | Name of vacancy owner                                                       | `type="name\|id"    `                                   |
+| [cx_owner_phonenumberbusiness]   | Business phone number of vacancy owner                                      | `type="label\|link"   `                                 |
 | [cx_owner_promotext]             | Promotional text of vacancy owner                                           | -                                                     |
-| [cx_owner_url]                   | Social/personal URL of vacancy owner                                        | ref="UrlLinkedInTag|...|UrlWebsiteTag|etc"                                                   |
+| [cx_owner_url]                   | Social/personal URL of vacancy owner                                        | `ref="UrlLinkedInTag|...|UrlWebsiteTag|etc"`         |
 | [cx_procedure]                   | Hiring procedure of the vacancy                                             | Common parameters|
 | [cx_procedure_category]          | Category of the hiring procedure                                            | Common parameters|
 | [cx_required_drivinglicense]     | Driving license requirement                                                 | Common parameters|
