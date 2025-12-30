@@ -299,13 +299,13 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 | [cx_owner_name]                  | Name of vacancy owner                                                       | `type="name\|id"    `                                   |
 | [cx_owner_phonenumberbusiness]   | Business phone number of vacancy owner                                      | `type="label\|link"   `                                 |
 | [cx_owner_promotext]             | Promotional text of vacancy owner                                           | -                                                     |
-| [cx_owner_url]                   | Social/personal URL of vacancy owner                                        | `ref="UrlLinkedInTag|...|UrlWebsiteTag|etc"`         |
+| [cx_owner_url]                   | Social/personal URL of vacancy owner                                        | `ref="UrlLinkedInTag\|...\|UrlWebsiteTag\|etc"`         |
 | [cx_procedure]                   | Hiring procedure of the vacancy                                             | Common parameters|
 | [cx_procedure_category]          | Category of the hiring procedure                                            | Common parameters|
 | [cx_required_drivinglicense]     | Driving license requirement                                                 | Common parameters|
 | [cx_required_experience]         | Required experience (in time)                                               | Common parameters|
 | [cx_rss_for_category]            | RSS feed link for current posts-category (deprecated)                       | -                                                     |
-| [cx_vacancy_status]              | Vacancy status (Lead, New, Active, etc.)                                    | type="label\|classification"                          |
+| [cx_vacancy_status]              | Vacancy status (Lead, New, Active, etc.)                                    | `type="label\|classification"`                          |
 
 
 ### Common Parameters
