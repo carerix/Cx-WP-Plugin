@@ -346,6 +346,8 @@ The following shortcodes are no longer supported:
 - [cx_vacancy_number]
 - [cx_rss_for_category]
 
+[Looking for the shortcode for the Job Alert Subscription?](https://github.com/carerix/Cx-WP-Plugin/blob/main/README.md#job-alert-subscription)
+
 
 ## Taxonomies
 
