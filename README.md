@@ -347,7 +347,8 @@ The following shortcodes are no longer supported:
 - [cx_rss_for_category]
 
 ### Other Shortcodes
-Shortcode for [Application Form](#application-forms)
+Shortcodes for [Application Form](#application-forms) 
+/
 Shortcode for the [Job Alert Subscription?](#job-alert-subscription)
 
 ## Taxonomies
