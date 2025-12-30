@@ -483,7 +483,8 @@ You can review the 'active job publications' but also the available 'medium code
 > **Note**: After initial setup, sync happens automatically every 10 minutes.
 
 ## Without multilingual plugin
-IMPORTANT! You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
+> [!Important]
+> You can do steps below only in case when WPML plugin is NOT installed. If you have WPML plugin please skip this section!
 
 You can also show jobs from different languages ​​(different mediums) without multilingual plugin:
 
@@ -566,7 +567,7 @@ Adds structured job data to your pages for Google Jobs search integration.
 ### Google for Jobs Shortcode
 `[cx_google_for_jobs]`
 
-> [!Note]
+> [!Important]
 > Web developers should use the shortcode [cx_google_for_jobs] only if the "Custom Vacancy template" from the Sources is not used in the theme. This happens when theme engines like Divi and Elementor fully render the vacancy pages using cx-shortcodes.
 
 
@@ -937,7 +938,7 @@ If an update is not satisfactory:
     * Click on **Delete**
 
 _____________
-
+<!--
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
@@ -952,5 +953,7 @@ _____________
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
-
+-->
 _____________
+
+
