@@ -290,6 +290,22 @@ Furthermore these shortcodes can be used in vacancy templates to display job det
 | [cx_apply_until] | Final application date | Common parameters |
 | [cx_job_group] | Vacancy group(s) | `separator=", "` |
 | [cx_extra] | Display custom Carerix fields | `field="fieldcode" separator=", " type="string\|date"` |
+| [cx_campaign]                    | Carerix campaign signup form                                                | sendto, campaignid, codeinname                        |
+| [cx_job_end_date]                | Last working day of the employee                                            | Common parameters|
+| [cx_job_start_date]              | First working day of the employee                                           | Common parameters|
+| [cx_owner_emailaddressbusiness]  | Business email address of vacancy owner                                     | -                                                     |
+| [cx_owner_jobtitle]              | Job title of vacancy owner                                                  | -                                                     |
+| [cx_owner_mobilenumberbusiness]  | Business mobile phone number of vacancy owner                               | type="label\|link"                                    |
+| [cx_owner_name]                  | Name of vacancy owner                                                       | type="name\|id"                                       |
+| [cx_owner_phonenumberbusiness]   | Business phone number of vacancy owner                                      | type="label\|link"                                    |
+| [cx_owner_promotext]             | Promotional text of vacancy owner                                           | -                                                     |
+| [cx_owner_url]                   | Social/personal URL of vacancy owner                                        | ref                                                   |
+| [cx_procedure]                   | Hiring procedure of the vacancy                                             | Common parameters|
+| [cx_procedure_category]          | Category of the hiring procedure                                            | Common parameters|
+| [cx_required_drivinglicense]     | Driving license requirement                                                 | Common parameters|
+| [cx_required_experience]         | Required experience (in time)                                               | Common parameters|
+| [cx_rss_for_category]            | RSS feed link for current posts-category (deprecated)                       | -                                                     |
+| [cx_vacancy_status]              | Vacancy status (Lead, New, Active, etc.)                                    | type="label\|classification"                          |
 
 
 ### Common Parameters
@@ -799,7 +815,7 @@ Yes you can! You can build a template with the use of shortcodes in combination 
 
 ### Can I offer an RSS feed of all job vacancies or by function?
 Yes, you can use standard WordPress RSS feeds. The URLs for this example:
-* /category-name/publications/feed /
+* /category-name/publications/feed/
 * /tag/utrecht/feed/
 
 For example https://plugin.carerix.com/category/vacatures/techniek-engineering/feed/
