@@ -396,6 +396,7 @@ For the following instructions you need to have Admin rights in Carerix and be f
 > <BR>
 > You need to **enable the Flexbox layout**: <BR>
 > `WP Dashboard → CX WP Plugin → Application Forms → General Forms Settings → CSS flexbox layout`
+> `WP Dashboard` → `CX WP Plugin` → `Application Forms` → `General Forms Settings` → `CSS flexbox layout`
 
 ### Form Fields
 - Email address
