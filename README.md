@@ -391,8 +391,8 @@ For the following instructions you need to have Admin rights in Carerix and be f
           functions:1/2,regions:1/2;"]
 ```
 > [!TIP]
-> The layout attribute allows developers to control the visual layout of fields in the [cx_job_alert_subscription] shortcode with 1/1, 1/3 or 1/2 or the regular full width.<BR>
-> Maximum of 3 elements per row. More than 3 elements will fall back to full-width rendering.
+> The layout attribute allows developers to control the visual layout of fields in the [cx_job_alert_subscription] shortcode with 1/1, 1/3 or 1/2 or the regular full width.
+> Maximum of 3 elements per row. More than 3 elements will fall back to full-width rendering.<BR>
 > <BR>
 > You need to **enable the Flexbox layout**: <BR>
 > `WP Dashboard → CX WP Plugin → Application Forms → General Forms Settings → CSS flexbox layout`
