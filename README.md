@@ -381,11 +381,18 @@ For the following instructions you need to have Admin rights in Carerix and be f
 3. Create a standalone Job Alert Subscription page, use this shortcode on a regular WordPress page (don't forget to edit the parameters):
 
 ```
-[cx_job_alert_subscription frequency="daily|bidaily|tridaily|twiceweekly|weekly|biweekly|monthly"
-confirmation_message="Thank you for subscribing. Shortly you will receive an email with an activation link.
-After activation you will start receiving new job opportunities in your mailbox on a daily basis!"
-confirmation_url="/jobalert_thank_you/"]
+[cx_job_alert_subscription
+  confirmation_message="Thank you!"
+  confirmation_url="/thank_you/"
+  frequency="twiceweekly"
+  layout="firstname,lastnameprefix,lastname;
+          email:1/1;
+          gender:1/3;
+          functions:1/2,regions:1/2;"]
 ```
+> [!TIP]
+> The layout attribute allows developers to control the visual layout of fields in the [cx_job_alert_subscription] shortcode with 1/1, 1/3 or 1/2 or the regular full width.
+> `WP Dashboard → CX WP Plugin → Application Forms → General Forms Settings → Enable: CSS flexbox layout`
 
 ### Form Fields
 - Email address
@@ -396,6 +403,9 @@ confirmation_url="/jobalert_thank_you/"]
 - Two function group preferences with optional business-line selector
 - GDPR agreement checkbox
 - Captcha anti-abuse system
+
+
+
 
 ### Subscription Process
 1. Candidate submits form with job preferences
