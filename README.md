@@ -395,7 +395,6 @@ For the following instructions you need to have Admin rights in Carerix and be f
 > Maximum of 3 elements per row. More than 3 elements will fall back to full-width rendering.<BR>
 > <BR>
 > You need to **enable the Flexbox layout**: <BR>
-> `WP Dashboard → CX WP Plugin → Application Forms → General Forms Settings → CSS flexbox layout`
 > `WP Dashboard` → `CX WP Plugin` → `Application Forms` → `General Forms Settings` → `CSS flexbox layout`
 
 ### Form Fields
