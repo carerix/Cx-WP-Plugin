@@ -535,12 +535,12 @@ Daarnaast ondersteunt de CX WP Plugin de WPML plugin voor multilingal sites + va
 
 
 ## Featured vacancies
-You can find the feature in **Carerix Dashboard→Carerix→Settings→ Technology previews**
 
-In the Carerix system extra/additional fields can be added to Job orders and Publications. The information from these custom fields can be displayed in your vacancies. You can also use it as options in a "vacancy-listing search & filter" widget.
+You can find the feature in **Carerix Dashboard → Carerix → Settings → Additional fields**
 
-**Use case**
-A nice use case is a "featured/highlighted" vacancy widget to highlight some vacancies. Therefore in Carerix you need to create an additional field called "featured on website" (type single checkbox) and attach it to the “Publications entity”.
+In the Carerix system extra/additional fields can be added to Job orders and Publications. Tick **"Enable additional Carerix fields support"** on the **Additional fields** tab and save. The information from these custom fields can then be displayed in your vacancies with the [`[cx_extra]`](#basic-shortcodes-for-vacancy-template) shortcode. You can also use it as options in a "vacancy-listing search & filter" widget.
+
+**Use case** A nice use case is a "featured/highlighted" vacancy widget to highlight some vacancies. Therefore in Carerix you need to create an additional field called "featured on website" (type single checkbox) and attach it to the “Publications entity”.
 In Carerix, recruiters can tag preferred publications as “Featured on website”.
 
 The Wordpress developer can create a "Featured vacancies section" based on a “vacancy post loop” restricted to the custom-field "featured on website".
